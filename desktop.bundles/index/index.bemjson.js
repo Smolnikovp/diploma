@@ -9,25 +9,48 @@ module.exports = {
     scripts: [{elem: 'js', url: 'index.min.js'}],
     content: {
         block: 'head',
-        content: [
+        content: {
+            block: 'layout',
+            content: [
             {
-                block: 'menu',
-                mods: {okay: 'header'},
+                elem: 'left',
+                content: 'Панель управления',
+            },
+            {
+                elem: 'right',
                 content: [
                     {
-                        block: 'menu-item',
-                        mods: {type: 'link'},
-                        val: 1,
-                        content: 'Море'
+                        block: 'image',
+                        attrs: {src: 'http://varya.me/online-shop-dummy/desktop.blocks/b-logo/b-logo.png', width: '50px', height: '50px'},
                     },
                     {
-                        block: 'menu-item',
-                        val: 2,
-                        content: 'Горы'
+                        elem: 'cmsname',
+                        content: 'CMS on BEM',
                     }
-                ]
-            }
+                ],
+            },
+            //{
+            //    elem: 'bottom',
+            //    content: [
+            //        {
+            //            block: 'menu',
+            //            content: [
+            //                {
+            //                    elem: 'menu-item',
+            //                    val: 1,
+            //                    content: 'Море'
+            //                },
+            //                {
+            //                    elem: 'menu-item',
+            //                    val: 2,
+            //                    content: 'Горы'
+            //                }
+            //            ]
+            //        }
+            //    ]
+            //},
         ]
     },
+    }
 };
 
