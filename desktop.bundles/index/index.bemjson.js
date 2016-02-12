@@ -12,45 +12,33 @@ module.exports = {
         content: {
             block: 'layout',
             content: [
-            {
-                elem: 'left',
-                content: 'Панель управления',
-            },
-            {
-                elem: 'right',
-                content: [
-                    {
-                        block: 'image',
-                        attrs: {src: 'http://varya.me/online-shop-dummy/desktop.blocks/b-logo/b-logo.png', width: '50px', height: '50px'},
-                    },
-                    {
-                        elem: 'cmsname',
-                        content: 'CMS on BEM',
-                    }
-                ],
-            },
-            //{
-            //    elem: 'bottom',
-            //    content: [
-            //        {
-            //            block: 'menu',
-            //            content: [
-            //                {
-            //                    elem: 'menu-item',
-            //                    val: 1,
-            //                    content: 'Море'
-            //                },
-            //                {
-            //                    elem: 'menu-item',
-            //                    val: 2,
-            //                    content: 'Горы'
-            //                }
-            //            ]
-            //        }
-            //    ]
-            //},
-        ]
+                {
+                    elem: 'left',
+                    content: 'Панель управления',
+                },
+                {
+                    elem: 'right',
+                    content: [
+                        {
+                            block: 'image',
+                            attrs: {
+                                src: 'http://varya.me/online-shop-dummy/desktop.blocks/b-logo/b-logo.png',
+                                width: '50px',
+                                height: '50px'
+                            },
+                        },
+                        {
+                            elem: 'cmsname',
+                            content: 'CMS on BEM',
+                        }
+                    ],
+                },
+                {
+                    block: 'delimeter',
+                    content: ''
+                }
+            ]
+        }
     },
-    }
 };
 
