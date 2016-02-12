@@ -1,0 +1,12 @@
+.menu_type_left{
+    width: 1200px;
+}
+
+.menu_type_left .link_hovered {
+    background-color: #fff;
+}
+
+.menu_type_left .link{
+    text-decoration: none;
+    color: #000;
+}

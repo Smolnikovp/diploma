@@ -1,8 +1,8 @@
 .layout{
+    font-size: 26px;
     height: 60px;
     background-color: #00cbca;
     color: #fff;
-    font-size: 26px;
     font-family: Verdana, sans-serif;
 }
 
@@ -21,9 +21,9 @@
 .layout__left{
     height: 35px;
     font-weight: bold;
-    padding: 12px 45px;
+    padding: 12px 30px;
 }
 
-.layout__cmsname{
+.layout__cms-name{
     padding: 8px 0;
 }

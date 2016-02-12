@@ -1,0 +1,21 @@
+.menu_type_right{
+    width: 480px;
+    font-size: 12px;
+}
+
+.menu_type_right .menu__menu-item{
+    border: none;
+}
+
+.menu_type_right .image{
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+}
+
+.menu_type_right .link,
+.menu_type_right .link_activated
+{
+    color: #0000ff;
+    text-decoration: none;
+}
