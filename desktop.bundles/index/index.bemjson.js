@@ -7,29 +7,33 @@ module.exports = {
         {elem: 'css', url: 'index.min.css'}
     ],
     scripts: [{elem: 'js', url: 'index.min.js'}],
-    content: {
-        block: 'head',
-        content: {
-            block: 'layout',
+    content: [
+        {
+            block: 'head',
             content: [
                 {
-                    elem: 'left',
-                    content: 'Панель управления'
-                },
-                {
-                    elem: 'right',
+                    block: 'layout',
                     content: [
                         {
-                            block: 'image',
-                            attrs: {
-                                src: 'http://varya.me/online-shop-dummy/desktop.blocks/b-logo/b-logo.png',
-                                width: '50px',
-                                height: '50px'
-                            }
+                            elem: 'left',
+                            content: 'Панель управления'
                         },
                         {
-                            elem: 'cms-name',
-                            content: 'CMS on BEM'
+                            elem: 'right',
+                            content: [
+                                {
+                                    block: 'image',
+                                    attrs: {
+                                        src: 'http://varya.me/online-shop-dummy/desktop.blocks/b-logo/b-logo.png',
+                                        width: '50px',
+                                        height: '50px'
+                                    }
+                                },
+                                {
+                                    elem: 'cms-name',
+                                    content: 'CMS on BEM'
+                                }
+                            ]
                         }
                     ]
                 },
@@ -38,177 +42,190 @@ module.exports = {
                     content: ''
                 },
                 {
-                    block: 'menu',
-                    mods: {type: 'left'},
+                    block: 'dual-menu',
                     content: [
                         {
-                            elem: 'menu-item',
-                            val: 1,
-                            mods: {type: 'link'},
-                            content: {
-                                block: 'link',
-                                url: '#',
-                                content: 'Сайт'
-                            }
-                        },
-                        {
-                            elem: 'menu-item',
-                            val: 2,
-                            mods: {type: 'link'},
-                            content: {
-                                block: 'link',
-                                url: '#',
-                                content: 'пользователи'
-                            }
-                        },
-                        {
-                            elem: 'menu-item',
-                            val: 3,
-                            mods: {type: 'link'},
-                            content: {
-                                block: 'link',
-                                url: '#',
-                                content: 'меню'
-                            }
-                        },
-                        {
-                            elem: 'menu-item',
-                            val: 4,
-                            mods: {type: 'link'},
-                            content: {
-                                block: 'link',
-                                url: '#',
-                                content: 'материалы'
-                            }
-                        },
-                        {
-                            elem: 'menu-item',
-                            val: 5,
-                            mods: {type: 'link'},
-                            content: {
-                                block: 'link',
-                                url: '#',
-                                content: 'компоненты'
-                            }
-                        },
-                        {
-                            elem: 'menu-item',
-                            val: 6,
-                            mods: {type: 'link'},
-                            content: {
-                                block: 'link',
-                                url: '#',
-                                content: 'расширения'
-                            }
-                        },
-                        {
-                            elem: 'menu-item',
-                            val: 7,
-                            mods: {type: 'link'},
-                            content: {
-                                block: 'link',
-                                url: '#',
-                                content: 'справка'
-                            }
-                        }
-                    ]
-                },
-                {
-                    block: 'menu',
-                    mods: {type: 'right'},
-                    content: [
-                        {
-                            elem: 'menu-item',
-                            val: 1,
+                            block: 'menu',
+                            mods: {type: 'left'},
                             content: [
                                 {
-                                    block: 'image',
-                                    attrs: {
-                                        src: '#'
+                                    elem: 'menu-item',
+                                    val: 1,
+                                    mods: {type: 'link'},
+                                    content: {
+                                        block: 'link',
+                                        url: '#',
+                                        content: 'Сайт'
                                     }
                                 },
                                 {
-                                    block: 'text',
-                                    url: '#',
-                                    content: 'на сайте: 0'
+                                    elem: 'menu-item',
+                                    val: 2,
+                                    mods: {type: 'link'},
+                                    content: {
+                                        block: 'link',
+                                        url: '#',
+                                        content: 'пользователи'
+                                    }
+                                },
+                                {
+                                    elem: 'menu-item',
+                                    val: 3,
+                                    mods: {type: 'link'},
+                                    content: {
+                                        block: 'link',
+                                        url: '#',
+                                        content: 'меню'
+                                    }
+                                },
+                                {
+                                    elem: 'menu-item',
+                                    val: 4,
+                                    mods: {type: 'link'},
+                                    content: {
+                                        block: 'link',
+                                        url: '#',
+                                        content: 'материалы'
+                                    }
+                                },
+                                {
+                                    elem: 'menu-item',
+                                    val: 5,
+                                    mods: {type: 'link'},
+                                    content: {
+                                        block: 'link',
+                                        url: '#',
+                                        content: 'компоненты'
+                                    }
+                                },
+                                {
+                                    elem: 'menu-item',
+                                    val: 6,
+                                    mods: {type: 'link'},
+                                    content: {
+                                        block: 'link',
+                                        url: '#',
+                                        content: 'расширения'
+                                    }
+                                },
+                                {
+                                    elem: 'menu-item',
+                                    val: 7,
+                                    mods: {type: 'link'},
+                                    content: {
+                                        block: 'link',
+                                        url: '#',
+                                        content: 'справка'
+                                    }
                                 }
                             ]
                         },
                         {
-                            elem: 'menu-item',
-                            val: 2,
+                            block: 'menu',
+                            mods: {type: 'right'},
                             content: [
                                 {
-                                    block: 'image',
-                                    attrs: {
-                                        src: '#'
-                                    }
+                                    elem: 'menu-item',
+                                    val: 1,
+                                    content: [
+                                        {
+                                            block: 'image',
+                                            attrs: {
+                                                src: '#'
+                                            }
+                                        },
+                                        {
+                                            block: 'text',
+                                            url: '#',
+                                            content: 'на сайте: 0'
+                                        }
+                                    ]
                                 },
                                 {
-                                    block: 'text',
-                                    url: '#',
-                                    content: 'в панели: 1'
-                                }
-                            ]
-                        },
-                        {
-                            elem: 'menu-item',
-                            val: 3,
-                            mods: {type: 'link'},
-                            content: [
-                                {
-                                    block: 'image',
-                                    attrs: {
-                                        src: '#'
-                                    }
+                                    elem: 'menu-item',
+                                    val: 2,
+                                    content: [
+                                        {
+                                            block: 'image',
+                                            attrs: {
+                                                src: '#'
+                                            }
+                                        },
+                                        {
+                                            block: 'text',
+                                            url: '#',
+                                            content: 'в панели: 1'
+                                        }
+                                    ]
                                 },
                                 {
-                                    block: 'link',
-                                    url: '#',
-                                    content: '0'
-                                }
-                            ]
-                        },
-                        {
-                            elem: 'menu-item',
-                            val: 4,
-                            mods: {type: 'link'},
-                            content: [
-                                {
-                                    block: 'image',
-                                    attrs: {
-                                        src: '#'
-                                    }
+                                    elem: 'menu-item',
+                                    val: 3,
+                                    mods: {type: 'link'},
+                                    content: [
+                                        {
+                                            block: 'image',
+                                            attrs: {
+                                                src: '#'
+                                            }
+                                        },
+                                        {
+                                            block: 'link',
+                                            url: '#',
+                                            content: '0'
+                                        }
+                                    ]
                                 },
                                 {
-                                    block: 'link',
-                                    url: '#',
-                                    content: 'просмотр сайта'
-                                }
-                            ]
-                        },
-                        {
-                            elem: 'menu-item',
-                            val: 5,
-                            mods: {type: 'link'},
-                            content: [
-                                {
-                                    block: 'image',
-                                    attrs: {
-                                        src: '#'
-                                    }
+                                    elem: 'menu-item',
+                                    val: 4,
+                                    mods: {type: 'link'},
+                                    content: [
+                                        {
+                                            block: 'image',
+                                            attrs: {
+                                                src: '#'
+                                            }
+                                        },
+                                        {
+                                            block: 'link',
+                                            url: '#',
+                                            content: 'просмотр сайта'
+                                        }
+                                    ]
                                 },
                                 {
-                                    block: 'link',
-                                    url: '#',
-                                    content: 'выйти'
+                                    elem: 'menu-item',
+                                    val: 5,
+                                    mods: {type: 'link'},
+                                    content: [
+                                        {
+                                            block: 'image',
+                                            attrs: {
+                                                src: '#'
+                                            }
+                                        },
+                                        {
+                                            block: 'link',
+                                            url: '#',
+                                            content: 'выйти'
+                                        }
+                                    ]
                                 }
                             ]
                         }
                     ]
                 }
             ]
+        },
+        {
+            block: 'article',
+            content:[
+                {
+
+                }
+            ]
         }
-    }
+    ]
 };
 
