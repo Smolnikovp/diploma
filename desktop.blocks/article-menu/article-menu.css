@@ -1,5 +1,7 @@
 .article-menu{
     /*display: none;*/
+    position: absolute;
+    left: 0;
     height: 1000px;
     width: 160px;
     background-color: #333333;
