@@ -17,10 +17,14 @@ module.exports = {
                 content: [
                     {
                         elem: 'menu-item',
-                        content: 'Host'
+                        content: {
+                            block: 'text',
+                            content: 'Host'
+                        }
                     },
                     {
                         elem: 'menu-item',
+                        mods: {'fa-icon': 'fa-bluetooth'},
                         val: 2,
                         content: ''
                     },
@@ -29,9 +33,8 @@ module.exports = {
                         val: 3,
                         content: [
                             {
-                            },
-                            {
                                 block: 'link',
+                                mods: {'fa-icon': 'fa-home'},
                                 url: '#',
                                 content: 'Первый сайт'
                             }
@@ -43,6 +46,7 @@ module.exports = {
                         content: [
                             {
                                 block: 'link',
+                                mods: {'fa-icon': 'fa-refresh'},
                                 url: '#',
                                 content: '1'
                             }
@@ -53,9 +57,8 @@ module.exports = {
                         val: 5,
                         content: [
                             {
-                            },
-                            {
                                 block: 'link',
+                                mods: {'fa-icon': 'fa-envelope'},
                                 url: '#',
                                 content: '0'
                             }
@@ -66,11 +69,22 @@ module.exports = {
                         val: 6,
                         content: [
                             {
-                            },
-                            {
                                 block: 'link',
+                                mods: {'fa-icon': 'fa-plus-circle'},
                                 url: '#',
                                 content: 'Добавить'
+                            }
+                        ]
+                    },
+                    {
+                        block: 'menu-item',
+                        val: 7,
+                        content: [
+                            {
+                                block: 'link',
+                                mods: {'fa-icon': 'fa-user'},
+                                url: '#',
+                                content: 'Привет, %user%'
                             }
                         ]
                     }

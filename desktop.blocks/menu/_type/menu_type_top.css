@@ -1,15 +1,33 @@
 .menu_type_top{
-    font-size: 13px;
+    color: #d3d3d3;
+    font-size: 15px;
+    line-height: 14px;
     font-family: Helvetica, sans-serif;
 }
 
 .menu_type_top .menu__menu-item{
-    padding: 0 10px;
-    border: 1px solid #fff;
+    height: 16px;
+    padding: 4px 10px;
+}
+
+*[class*='fa-icon']:after,
+*[class*='fa-icon']:before{
+    font-size: 18px;
 }
 
 .menu_type_top .link,
 .menu_type_top .link_activated{
     color: #d3d3d3;
     text-decoration: none;
+}
+
+.menu_type_top .link_hovered{
+    color: #00bfff;
+}
+
+.menu-item .link_fa-icon_fa-user{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 8px 10px;
 }

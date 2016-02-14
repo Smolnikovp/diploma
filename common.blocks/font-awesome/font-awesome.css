@@ -36,4 +36,29 @@
 *[class*='fa-icon']:after,
 *[class*='fa-icon']:before{
     font-family: FontAwesome;
+    margin: 0 5px;
+}
+
+*[class*='fa-bluetooth']:before{
+    content: "\f293";
+}
+
+*[class*='fa-home']:before{
+    content: "\f015";
+}
+
+*[class*='fa-refresh']:before{
+    content: "\f021";
+}
+
+*[class*='fa-envelope']:before{
+    content: "\f0e0";
+}
+
+*[class*='fa-plus-circle']:before{
+    content: "\f055";
+}
+
+*[class*='fa-user']:after{
+    content: "\f007";
 }
