@@ -24,7 +24,7 @@ module.exports = {
                     },
                     {
                         elem: 'menu-item',
-                        mods: {'fa-icon': 'fa-bluetooth'},
+                        mods: {'fa-icon': 'bluetooth'},
                         val: 2,
                         content: ''
                     },
@@ -34,7 +34,7 @@ module.exports = {
                         content: [
                             {
                                 block: 'link',
-                                mods: {'fa-icon': 'fa-home'},
+                                mods: {'fa-icon': 'home'},
                                 url: '#',
                                 content: 'Первый сайт'
                             }
@@ -46,7 +46,7 @@ module.exports = {
                         content: [
                             {
                                 block: 'link',
-                                mods: {'fa-icon': 'fa-refresh'},
+                                mods: {'fa-icon': 'refresh'},
                                 url: '#',
                                 content: '1'
                             }
@@ -58,7 +58,7 @@ module.exports = {
                         content: [
                             {
                                 block: 'link',
-                                mods: {'fa-icon': 'fa-envelope'},
+                                mods: {'fa-icon': 'envelope'},
                                 url: '#',
                                 content: '0'
                             }
@@ -70,7 +70,7 @@ module.exports = {
                         content: [
                             {
                                 block: 'link',
-                                mods: {'fa-icon': 'fa-plus-circle'},
+                                mods: {'fa-icon': 'plus-circle'},
                                 url: '#',
                                 content: 'Добавить'
                             }
@@ -82,7 +82,7 @@ module.exports = {
                         content: [
                             {
                                 block: 'link',
-                                mods: {'fa-icon': 'fa-user'},
+                                mods: {'fa-icon': 'user'},
                                 url: '#',
                                 content: 'Привет, %user%'
                             }
@@ -103,7 +103,7 @@ module.exports = {
                             val: 1,
                             content: {
                                 block: 'link',
-                                mods: {'fa-icon': 'fa-cogs'},
+                                mods: {'fa-icon': 'cogs'},
                                 url: '#',
                                 content: 'Консоль'
                             }
@@ -131,7 +131,7 @@ module.exports = {
                             val: 4,
                             content: {
                                 block: 'link',
-                                mods: {'fa-icon': 'fa-thumb-tack'},
+                                mods: {'fa-icon': 'thumb-tack'},
                                 url: '#',
                                 content: 'Заметки'
                             }
