@@ -94,7 +94,50 @@ module.exports = {
         {
             block: 'article',
             content: [
-                {}
+                {
+                    block: 'menu',
+                    mods: {type: 'left'},
+                    content: [
+                        {
+                            elem: 'menu-item',
+                            val: 1,
+                            content: {
+                                block: 'link',
+                                mods: {'fa-icon': 'fa-cogs'},
+                                url: '#',
+                                content: 'Консоль'
+                            }
+                        },
+                        {
+                            elem: 'menu-item',
+                            val: 2,
+                            content: {
+                                block: 'link',
+                                url: '#',
+                                content: 'Главная'
+                            }
+                        },
+                        {
+                            elem: 'menu-item',
+                            val: 3,
+                            content: {
+                                block: 'link',
+                                url: '#',
+                                content: 'Обновления'
+                            }
+                        },
+                        {
+                            elem: 'menu-item',
+                            val: 4,
+                            content: {
+                                block: 'link',
+                                mods: {'fa-icon': 'fa-thumb-tack'},
+                                url: '#',
+                                content: 'Заметки'
+                            }
+                        }
+                    ]
+                }
             ]
         }
     ]

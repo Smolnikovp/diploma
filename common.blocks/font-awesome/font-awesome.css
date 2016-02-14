@@ -36,7 +36,6 @@
 *[class*='fa-icon']:after,
 *[class*='fa-icon']:before{
     font-family: FontAwesome;
-    margin: 0 5px;
 }
 
 *[class*='fa-bluetooth']:before{
@@ -61,4 +60,12 @@
 
 *[class*='fa-user']:after{
     content: "\f007";
+}
+
+*[class*='fa-cogs']:before{
+    content: "\f085";
+}
+
+*[class*='fa-thumb-tack']:before{
+    content: "\f08d";
 }

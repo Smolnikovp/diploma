@@ -1,0 +1,32 @@
+.menu_type_left{
+    width: 160px;
+    height: 1000px;
+}
+
+.menu_type_left *[class*='fa-icon']:after,
+.menu_type_left *[class*='fa-icon']:before{
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.menu_type_left .menu__menu-item{
+    height: 35px;
+    line-height: 15px;
+    border: 1px solid #fff;
+}
+
+.menu_type_left .menu__menu-item .link{
+    display: block;
+    padding: 10px 0 10px 15px;
+    width: 97%;
+}
+
+.menu_type_left .link_hovered{
+    background-color: #d3d3d3;
+    color: #000;
+}
+
+.menu_type_left .link_focused{
+    background-color: dodgerblue;
+    color: #fff;
+}

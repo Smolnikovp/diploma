@@ -1,24 +1,17 @@
 .menu_type_top{
-    color: #d3d3d3;
-    font-size: 15px;
-    line-height: 14px;
-    font-family: Helvetica, sans-serif;
+    padding: 5px;
 }
 
 .menu_type_top .menu__menu-item{
     height: 16px;
     padding: 4px 10px;
+    display: inline-block;
 }
 
-*[class*='fa-icon']:after,
-*[class*='fa-icon']:before{
+.menu_type_top *[class*='fa-icon']:after,
+.menu_type_top *[class*='fa-icon']:before{
     font-size: 18px;
-}
-
-.menu_type_top .link,
-.menu_type_top .link_activated{
-    color: #d3d3d3;
-    text-decoration: none;
+    margin: 0 5px;
 }
 
 .menu_type_top .link_hovered{
