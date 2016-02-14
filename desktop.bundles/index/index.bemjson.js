@@ -24,9 +24,12 @@ module.exports = {
                     },
                     {
                         elem: 'menu-item',
-                        mods: {'fa-icon': 'bluetooth'},
                         val: 2,
-                        content: ''
+                        content: {
+                            block: 'link',
+                            mods: {'fa-icon': 'wordpress'},
+                            content: ''
+                        }
                     },
                     {
                         elem: 'menu-item',
@@ -58,7 +61,7 @@ module.exports = {
                         content: [
                             {
                                 block: 'link',
-                                mods: {'fa-icon': 'envelope'},
+                                mods: {'fa-icon': 'comments'},
                                 url: '#',
                                 content: '0'
                             }
@@ -95,46 +98,137 @@ module.exports = {
             block: 'article',
             content: [
                 {
-                    block: 'menu',
-                    mods: {type: 'left'},
+                    block: 'menu-block',
                     content: [
                         {
-                            elem: 'menu-item',
-                            val: 1,
-                            content: {
-                                block: 'link',
-                                mods: {'fa-icon': 'cogs'},
-                                url: '#',
-                                content: 'Консоль'
-                            }
+                            block: 'menu',
+                            mods: {type: 'left'},
+                            content: [
+                                {
+                                    elem: 'menu-item',
+                                    val: 1,
+                                    content: {
+                                        block: 'link',
+                                        mods: {'fa-icon': 'tachometer'},
+                                        url: '#',
+                                        content: 'Консоль'
+                                    }
+                                },
+                                {
+                                    elem: 'menu-item',
+                                    val: 2,
+                                    content: {
+                                        block: 'link',
+                                        url: '#',
+                                        content: 'Главная'
+                                    }
+                                },
+                                {
+                                    elem: 'menu-item',
+                                    val: 3,
+                                    content: {
+                                        block: 'link',
+                                        url: '#',
+                                        content: 'Обновления'
+                                    }
+                                },
+                                {
+                                    elem: 'menu-item',
+                                    val: 4,
+                                    content: {
+                                        block: 'link',
+                                        mods: {'fa-icon': 'thumb-tack'},
+                                        url: '#',
+                                        content: 'Заметки'
+                                    }
+                                },
+                                {
+                                    elem: 'menu-item',
+                                    val: 5,
+                                    content: {
+                                        block: 'link',
+                                        mods: {'fa-icon': 'file'},
+                                        url: '#',
+                                        content: 'Страницы'
+                                    }
+                                },
+                                {
+                                    elem: 'menu-item',
+                                    val: 6,
+                                    content: {
+                                        block: 'link',
+                                        mods: {'fa-icon': 'comments'},
+                                        url: '#',
+                                        content: 'Комментарии'
+                                    }
+                                }
+                            ]
                         },
                         {
-                            elem: 'menu-item',
-                            val: 2,
-                            content: {
-                                block: 'link',
-                                url: '#',
-                                content: 'Главная'
-                            }
-                        },
-                        {
-                            elem: 'menu-item',
-                            val: 3,
-                            content: {
-                                block: 'link',
-                                url: '#',
-                                content: 'Обновления'
-                            }
-                        },
-                        {
-                            elem: 'menu-item',
-                            val: 4,
-                            content: {
-                                block: 'link',
-                                mods: {'fa-icon': 'thumb-tack'},
-                                url: '#',
-                                content: 'Заметки'
-                            }
+                            block: 'menu',
+                            mods: {type: 'left'},
+                            content: [
+                                {
+                                    elem: 'menu-item',
+                                    val: 1,
+                                    content: {
+                                        block: 'link',
+                                        mods: {'fa-icon': 'paint-brush'},
+                                        url: '#',
+                                        content: 'Внешний вид'
+                                    }
+                                },
+                                {
+                                    elem: 'menu-item',
+                                    val: 2,
+                                    content: {
+                                        block: 'link',
+                                        mods: {'fa-icon': 'plug'},
+                                        url: '#',
+                                        content: 'Плагины'
+                                    }
+                                },
+                                {
+                                    elem: 'menu-item',
+                                    val: 3,
+                                    content: {
+                                        block: 'link',
+                                        mods: {'fa-icon': 'uses'},
+                                        url: '#',
+                                        content: 'Пользователи'
+                                    }
+                                },
+                                {
+                                    elem: 'menu-item',
+                                    val: 4,
+                                    content: {
+                                        block: 'link',
+                                        mods: {'fa-icon': 'wrench'},
+                                        url: '#',
+                                        content: 'Инструменты'
+                                    }
+                                },
+                                {
+                                    elem: 'menu-item',
+                                    val: 5,
+                                    content: {
+                                        block: 'link',
+                                        mods: {'fa-icon': 'cogs'},
+                                        url: '#',
+                                        content: 'Настройки'
+                                    }
+                                },
+                                {
+                                    elem: 'menu-item',
+                                    val: 6,
+                                    content: {
+                                        block: 'link',
+                                        mods: {'fa-icon': 'chevron-circle-left'},
+                                        url: '#',
+                                        content: 'Свернуть меню'
+                                    }
+                                }
+                            ]
                         }
                     ]
                 }

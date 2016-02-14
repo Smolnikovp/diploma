@@ -1,6 +1,6 @@
 .menu_type_left{
     width: 160px;
-    height: 1000px;
+    padding: 15px 0;
 }
 
 .menu_type_left *[class*='fa-icon']:after,
@@ -12,13 +12,12 @@
 .menu_type_left .menu__menu-item{
     height: 35px;
     line-height: 15px;
-    border: 1px solid #fff;
 }
 
-.menu_type_left .menu__menu-item .link{
+.menu_type_left .link{
     display: block;
     padding: 10px 0 10px 15px;
-    width: 97%;
+    width: 90%;
 }
 
 .menu_type_left .link_hovered{
@@ -29,4 +28,8 @@
 .menu_type_left .link_focused{
     background-color: dodgerblue;
     color: #fff;
+}
+
+.menu_type_left .link_fa-icon_file:before{
+    font-size: 15px;
 }

@@ -17,8 +17,8 @@
     font-family: FontAwesome;
 }
 
-*[class*='bluetooth']:before{
-    content: "\f293";
+*[class*='wordpress']:before{
+    content: "\f19a";
 }
 
 *[class*='home']:before{
@@ -29,8 +29,8 @@
     content: "\f021";
 }
 
-*[class*='envelope']:before{
-    content: "\f0e0";
+*[class*='comments']:before{
+    content: "\f086";
 }
 
 *[class*='plus-circle']:before{
@@ -45,6 +45,34 @@
     content: "\f085";
 }
 
+*[class*='tachometer']:before{
+    content: "\f0e4";
+}
+
 *[class*='thumb-tack']:before{
     content: "\f08d";
+}
+
+*[class*='file']:before{
+    content: "\f15b";
+}
+
+*[class*='paint-brush']:before{
+    content: "\f1fc";
+}
+
+*[class*='plug']:before{
+    content: "\f1e6";
+}
+
+*[class*='uses']:before{
+    content: "\f0c0";
+}
+
+*[class*='wrench']:before{
+    content: "\f0ad";
+}
+
+*[class*='chevron-circle-left']:before{
+    content: "\f137";
 }

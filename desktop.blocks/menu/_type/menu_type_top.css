@@ -1,5 +1,6 @@
 .menu_type_top{
     padding: 5px;
+    background-color: #000;
 }
 
 .menu_type_top .menu__menu-item{
@@ -16,6 +17,7 @@
 
 .menu_type_top .link_hovered{
     color: #00bfff;
+    cursor: pointer; /*для второго элемента меню??????*/
 }
 
 .menu-item .link_fa-icon_user{
