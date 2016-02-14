@@ -98,7 +98,7 @@ module.exports = {
             block: 'article',
             content: [
                 {
-                    block: 'menu-block',
+                    block: 'article-menu',
                     content: [
                         {
                             block: 'menu',
@@ -231,6 +231,9 @@ module.exports = {
                             ]
                         }
                     ]
+                },
+                {
+                    block: ''
                 }
             ]
         }
