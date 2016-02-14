@@ -1,0 +1,15 @@
+.menu_type_top{
+    font-size: 13px;
+    font-family: Helvetica, sans-serif;
+}
+
+.menu_type_top .menu__menu-item{
+    padding: 0 10px;
+    border: 1px solid #fff;
+}
+
+.menu_type_top .link,
+.menu_type_top .link_activated{
+    color: #d3d3d3;
+    text-decoration: none;
+}
