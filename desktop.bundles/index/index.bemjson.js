@@ -236,46 +236,62 @@ module.exports = {
                     block: 'container',
                     content: [
                         {
-                            elem: 'text',
-                            mods: {type: 'heading'},
-                            content: 'Консоль'
-                        },
-                        {
-                            elem: 'block-horiz',
-                            mods: {type: 'full'},
+                            elem: 'top',
                             content: [
                                 {
-
+                                    block: 'text',
+                                    mods: {type: 'heading'},
+                                    content: 'Консоль'
+                                },
+                                {
+                                    block: 'block-horiz',
+                                    content: [
+                                        {}
+                                    ]
                                 }
                             ]
                         },
                         {
-                            elem: 'block-horiz',
-                            mods: {type: 'half'},
+                            elem: 'left',
                             content: [
                                 {
-
+                                    block: 'block-horiz',
+                                    content: [
+                                        {}
+                                    ]
+                                },
+                                {
+                                    block: 'block-horiz',
+                                    content: [
+                                        {}
+                                    ]
                                 }
                             ]
                         },
                         {
-                            elem: 'block-horiz',
-                            mods: {type: 'half'},
+                            elem: 'right',
                             content: [
                                 {
-
-                                }
-                            ]
-                        },
-                        {
-                            elem: 'block-horiz',
-                            mods: {type: 'half'},
-                            content: [
+                                    block: 'block-horiz',
+                                    content: [
+                                        {}
+                                    ]
+                                },
                                 {
-
+                                    block: 'block-horiz',
+                                    content: [
+                                        {}
+                                    ]
+                                },
+                                {
+                                    block: 'block-horiz',
+                                    content: [
+                                        {}
+                                    ]
                                 }
                             ]
                         }
+
                     ]
                 }
             ]

@@ -1,0 +1,5 @@
+.container__right{
+    float: right;
+    width: calc(50% - 20px);
+    margin-left: 20px;
+}
