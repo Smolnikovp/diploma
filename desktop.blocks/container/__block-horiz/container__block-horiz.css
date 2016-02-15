@@ -1,5 +1,5 @@
-.article__welcome{
-    width: 100%;
+.container__block-horiz{
+    margin: 20px 0;
     height: 200px;
     background-color: #ffb6c1;
 }

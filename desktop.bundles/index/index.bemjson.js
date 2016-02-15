@@ -233,14 +233,21 @@ module.exports = {
                     ]
                 },
                 {
-                    elem:'text',
-                    mods: {type: 'heading'},
-                    content: 'Консоль'
-                },
-                {
-                    elem: 'welcome',
-                    content:[
+                    block: 'container',
+                    content: [
                         {
+                            elem: 'text',
+                            mods: {type: 'heading'},
+                            content: 'Консоль'
+                        },
+                        {
+                            elem: 'block-horiz',
+                            mods: {type: 'full'},
+                            content: [
+                                {
+
+                                }
+                            ]
                         }
                     ]
                 }
