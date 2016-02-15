@@ -1,5 +1,6 @@
 .container__block-horiz{
-    margin: 20px 0;
+    margin: 20px;
     height: 200px;
+    float: left;
     background-color: #ffb6c1;
 }

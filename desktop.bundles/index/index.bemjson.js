@@ -248,6 +248,33 @@ module.exports = {
 
                                 }
                             ]
+                        },
+                        {
+                            elem: 'block-horiz',
+                            mods: {type: 'half'},
+                            content: [
+                                {
+
+                                }
+                            ]
+                        },
+                        {
+                            elem: 'block-horiz',
+                            mods: {type: 'half'},
+                            content: [
+                                {
+
+                                }
+                            ]
+                        },
+                        {
+                            elem: 'block-horiz',
+                            mods: {type: 'half'},
+                            content: [
+                                {
+
+                                }
+                            ]
                         }
                     ]
                 }

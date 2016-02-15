@@ -1,6 +1,5 @@
 .container{
-    width: auto;
+    width: 100%;
     float: right;
-    padding: 20px 40px;
-    background-color: #fbfbfb;
+    background-color: #ebebeb;
 }
