@@ -233,65 +233,110 @@ module.exports = {
                     ]
                 },
                 {
-                    block: 'container',
+                    block: 'article-body',
                     content: [
                         {
-                            elem: 'top',
+                            block: 'console',
                             content: [
                                 {
-                                    block: 'text',
-                                    mods: {type: 'heading'},
-                                    content: 'Консоль'
+
+                                    elem: 'top',
+                                    content: [
+                                        {
+                                            block: 'text',
+                                            mods: {type: 'heading'},
+                                            content: 'Консоль'
+                                        },
+                                        {
+                                            block: 'block',
+                                            mods: {type: 'horiz'},
+                                            content: [
+                                                {}
+                                            ]
+                                        }
+                                    ]
                                 },
                                 {
-                                    block: 'block-horiz',
+                                    elem: 'left',
                                     content: [
-                                        {}
+                                        {
+                                            block: 'block',
+                                            mods: {type: 'horiz'},
+                                            content: [
+                                                {}
+                                            ]
+                                        },
+                                        {
+                                            block: 'block',
+                                            mods: {type: 'horiz'},
+                                            content: [
+                                                {}
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'right',
+                                    content: [
+                                        {
+                                            block: 'block',
+                                            mods: {type: 'horiz'},
+                                            content: [
+                                                {}
+                                            ]
+                                        },
+                                        {
+                                            block: 'block',
+                                            mods: {type: 'horiz'},
+                                            content: [
+                                                {}
+                                            ]
+                                        },
+                                        {
+                                            block: 'block',
+                                            mods: {type: 'horiz'},
+                                            content: [
+                                                {}
+                                            ]
+                                        }
                                     ]
                                 }
                             ]
                         },
                         {
-                            elem: 'left',
+                            block: 'bookmarks',
                             content: [
                                 {
-                                    block: 'block-horiz',
+                                    elem: 'left',
                                     content: [
-                                        {}
+                                        {
+                                            block: 'text',
+                                            mods: {type: 'heading', 'fa-icon': 'file-text'},
+                                            content: 'Новая запись'
+                                        },
+                                        {
+                                            block: 'input',
+                                            mods: {type: 'bmheading'}
+                                        },
+                                        {
+
+                                        }
                                     ]
                                 },
                                 {
-                                    block: 'block-horiz',
+                                    elem: 'right',
                                     content: [
-                                        {}
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            elem: 'right',
-                            content: [
-                                {
-                                    block: 'block-horiz',
-                                    content: [
-                                        {}
-                                    ]
-                                },
-                                {
-                                    block: 'block-horiz',
-                                    content: [
-                                        {}
-                                    ]
-                                },
-                                {
-                                    block: 'block-horiz',
-                                    content: [
-                                        {}
+                                        {
+                                            block: 'block',
+                                            mods: {type: 'horiz'},
+                                            content: [
+                                                {}
+                                            ]
+                                        }
                                     ]
                                 }
                             ]
                         }
-
                     ]
                 }
             ]

@@ -76,3 +76,7 @@
 *[class*='chevron-circle-left']:before{
     content: "\f137";
 }
+
+*[class*='file-text']:before{
+    content: "\f15c";
+}
