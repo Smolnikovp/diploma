@@ -1,4 +1,4 @@
-.bookmarks__right{
+.layout__right_type_bookmarks{
     float: right;
     width: calc(40% - 20px);
     padding: 20px 10px;

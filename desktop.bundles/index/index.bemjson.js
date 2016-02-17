@@ -236,11 +236,12 @@ module.exports = {
                     block: 'article-body',
                     content: [
                         {
-                            block: 'console',
+                            block: 'layout',
                             content: [
                                 {
 
                                     elem: 'top',
+                                    mods: {type: 'console'},
                                     content: [
                                         {
                                             block: 'text',
@@ -258,6 +259,7 @@ module.exports = {
                                 },
                                 {
                                     elem: 'left',
+                                    mods: {type: 'console'},
                                     content: [
                                         {
                                             block: 'block',
@@ -277,6 +279,7 @@ module.exports = {
                                 },
                                 {
                                     elem: 'right',
+                                    mods: {type: 'console'},
                                     content: [
                                         {
                                             block: 'block',
@@ -304,10 +307,11 @@ module.exports = {
                             ]
                         },
                         {
-                            block: 'bookmarks',
+                            block: 'layout',
                             content: [
                                 {
                                     elem: 'left',
+                                    mods: {type: 'bookmarks'},
                                     content: [
                                         {
                                             block: 'text',
@@ -325,6 +329,7 @@ module.exports = {
                                 },
                                 {
                                     elem: 'right',
+                                    mods: {type: 'bookmarks'},
                                     content: [
                                         {
                                             block: 'block',

@@ -1,4 +1,4 @@
-.console__right{
+.layout__right_type_console{
     float: right;
     width: calc(50% - 20px);
     margin-left: 20px;

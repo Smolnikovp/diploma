@@ -1,15 +1,15 @@
-.bookmarks__left{
+.layout__left_type_bookmarks{
     width: calc(60% - 20px);
     float: left;
     margin-right: 20px;
 }
 
-.bookmarks__left .text_type_heading{
+.layout__left_type_bookmarks .text_type_heading{
     font-style: italic;
     color: #565656;
 }
 
-.bookmarks__left .text_type_heading:before{
+.layout__left_type_bookmarks .text_type_heading:before{
     font-style: normal;
     margin-right: 10px;
 }
