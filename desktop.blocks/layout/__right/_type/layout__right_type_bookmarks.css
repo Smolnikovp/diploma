@@ -1,5 +1,9 @@
 .layout__right_type_bookmarks{
     float: right;
-    width: calc(40% - 20px);
+    width: calc(35% - 20px);
     padding: 20px 10px;
+}
+
+.layout__right_type_bookmarks .block_type_horiz{
+    border-radius: 5px;
 }

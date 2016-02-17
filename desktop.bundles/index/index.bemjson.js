@@ -237,6 +237,7 @@ module.exports = {
                     content: [
                         {
                             block: 'layout',
+                            mods: {type: 'disabled'},
                             content: [
                                 {
 
@@ -322,9 +323,7 @@ module.exports = {
                                             block: 'input',
                                             mods: {type: 'bmheading'}
                                         },
-                                        {
-
-                                        }
+                                        {}
                                     ]
                                 },
                                 {
@@ -335,7 +334,22 @@ module.exports = {
                                             block: 'block',
                                             mods: {type: 'horiz'},
                                             content: [
-                                                {}
+                                                {
+                                                    block: 'text',
+                                                    mods: {type: 'publish'},
+                                                    content: 'Опубликовать'
+                                                },
+                                                {
+                                                    block: 'button',
+                                                    mods: {type: 'left'},
+                                                    content: 'Сохранить'
+                                                },
+                                                {
+                                                    block: 'button',
+                                                    mods: {type: 'right'},
+                                                    content: 'Просмотреть'
+                                                },
+
                                             ]
                                         }
                                     ]

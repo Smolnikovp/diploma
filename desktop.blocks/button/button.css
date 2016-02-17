@@ -1,0 +1,15 @@
+.button{
+    margin: 10px 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.button_hovered{
+    background-color: #dddddd;
+}
+
+.button_type_left,
+.button_type_right{
+    font-size: 15px;
+    padding: 2px 30px;
+}
