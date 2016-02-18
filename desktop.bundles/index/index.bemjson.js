@@ -95,312 +95,247 @@ module.exports = {
             }
         },
         {
-            block: 'article',
+            block: 'article-menu',
             content: [
                 {
-                    block: 'article-menu',
+                    block: 'menu',
+                    mods: {type: 'left'},
                     content: [
                         {
-                            block: 'menu',
-                            mods: {type: 'left'},
-                            content: [
-                                {
-                                    elem: 'menu-item',
-                                    val: 1,
-                                    content: {
-                                        block: 'link',
-                                        mods: {'fa-icon': 'tachometer'},
-                                        url: '#',
-                                        content: 'Консоль'
-                                    }
-                                },
-                                {
-                                    elem: 'menu-item',
-                                    val: 2,
-                                    content: {
-                                        block: 'link',
-                                        url: '#',
-                                        content: 'Главная'
-                                    }
-                                },
-                                {
-                                    elem: 'menu-item',
-                                    val: 3,
-                                    content: {
-                                        block: 'link',
-                                        url: '#',
-                                        content: 'Обновления'
-                                    }
-                                },
-                                {
-                                    elem: 'menu-item',
-                                    val: 4,
-                                    content: {
-                                        block: 'link',
-                                        mods: {'fa-icon': 'thumb-tack'},
-                                        url: '#',
-                                        content: 'Заметки'
-                                    }
-                                },
-                                {
-                                    elem: 'menu-item',
-                                    val: 5,
-                                    content: {
-                                        block: 'link',
-                                        mods: {'fa-icon': 'file'},
-                                        url: '#',
-                                        content: 'Страницы'
-                                    }
-                                },
-                                {
-                                    elem: 'menu-item',
-                                    val: 6,
-                                    content: {
-                                        block: 'link',
-                                        mods: {'fa-icon': 'comments'},
-                                        url: '#',
-                                        content: 'Комментарии'
-                                    }
-                                }
-                            ]
+                            elem: 'menu-item',
+                            val: 1,
+                            content: {
+                                block: 'link',
+                                mods: {'fa-icon': 'tachometer'},
+                                url: '#',
+                                content: 'Консоль'
+                            }
                         },
                         {
-                            block: 'menu',
-                            mods: {type: 'left'},
-                            content: [
-                                {
-                                    elem: 'menu-item',
-                                    val: 1,
-                                    content: {
-                                        block: 'link',
-                                        mods: {'fa-icon': 'paint-brush'},
-                                        url: '#',
-                                        content: 'Внешний вид'
-                                    }
-                                },
-                                {
-                                    elem: 'menu-item',
-                                    val: 2,
-                                    content: {
-                                        block: 'link',
-                                        mods: {'fa-icon': 'plug'},
-                                        url: '#',
-                                        content: 'Плагины'
-                                    }
-                                },
-                                {
-                                    elem: 'menu-item',
-                                    val: 3,
-                                    content: {
-                                        block: 'link',
-                                        mods: {'fa-icon': 'uses'},
-                                        url: '#',
-                                        content: 'Пользователи'
-                                    }
-                                },
-                                {
-                                    elem: 'menu-item',
-                                    val: 4,
-                                    content: {
-                                        block: 'link',
-                                        mods: {'fa-icon': 'wrench'},
-                                        url: '#',
-                                        content: 'Инструменты'
-                                    }
-                                },
-                                {
-                                    elem: 'menu-item',
-                                    val: 5,
-                                    content: {
-                                        block: 'link',
-                                        mods: {'fa-icon': 'cogs'},
-                                        url: '#',
-                                        content: 'Настройки'
-                                    }
-                                },
-                                {
-                                    elem: 'menu-item',
-                                    val: 6,
-                                    content: {
-                                        block: 'link',
-                                        mods: {'fa-icon': 'chevron-circle-left'},
-                                        url: '#',
-                                        content: 'Свернуть меню'
-                                    }
-                                }
-                            ]
+                            elem: 'menu-item',
+                            val: 2,
+                            content: {
+                                block: 'link',
+                                url: '#',
+                                content: 'Главная'
+                            }
+                        },
+                        {
+                            elem: 'menu-item',
+                            val: 3,
+                            content: {
+                                block: 'link',
+                                url: '#',
+                                content: 'Обновления'
+                            }
+                        },
+                        {
+                            elem: 'menu-item',
+                            val: 4,
+                            content: {
+                                block: 'link',
+                                mods: {'fa-icon': 'thumb-tack'},
+                                url: '#',
+                                content: 'Заметки'
+                            }
+                        },
+                        {
+                            elem: 'menu-item',
+                            val: 5,
+                            content: {
+                                block: 'link',
+                                mods: {'fa-icon': 'file'},
+                                url: '#',
+                                content: 'Страницы'
+                            }
+                        },
+                        {
+                            elem: 'menu-item',
+                            val: 6,
+                            content: {
+                                block: 'link',
+                                mods: {'fa-icon': 'comments'},
+                                url: '#',
+                                content: 'Комментарии'
+                            }
                         }
                     ]
                 },
                 {
-                    block: 'layout',
-                    //mods: {type: 'disabled'},
+                    block: 'menu',
+                    mods: {type: 'left'},
                     content: [
                         {
-                            elem: 'top',
-                            mods: {type: 'console'},
+                            elem: 'menu-item',
+                            val: 1,
+                            content: {
+                                block: 'link',
+                                mods: {'fa-icon': 'paint-brush'},
+                                url: '#',
+                                content: 'Внешний вид'
+                            }
+                        },
+                        {
+                            elem: 'menu-item',
+                            val: 2,
+                            content: {
+                                block: 'link',
+                                mods: {'fa-icon': 'plug'},
+                                url: '#',
+                                content: 'Плагины'
+                            }
+                        },
+                        {
+                            elem: 'menu-item',
+                            val: 3,
+                            content: {
+                                block: 'link',
+                                mods: {'fa-icon': 'uses'},
+                                url: '#',
+                                content: 'Пользователи'
+                            }
+                        },
+                        {
+                            elem: 'menu-item',
+                            val: 4,
+                            content: {
+                                block: 'link',
+                                mods: {'fa-icon': 'wrench'},
+                                url: '#',
+                                content: 'Инструменты'
+                            }
+                        },
+                        {
+                            elem: 'menu-item',
+                            val: 5,
+                            content: {
+                                block: 'link',
+                                mods: {'fa-icon': 'cogs'},
+                                url: '#',
+                                content: 'Настройки'
+                            }
+                        },
+                        {
+                            elem: 'menu-item',
+                            val: 6,
+                            content: {
+                                block: 'link',
+                                mods: {'fa-icon': 'chevron-circle-left'},
+                                url: '#',
+                                content: 'Свернуть меню'
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            block: 'article',
+            content: [
+
+                {
+                    block: 'text',
+                    mods: {type: 'heading'},
+                    content: 'Консоль'
+                },
+                {
+                    block: 'welcome',
+                    content: [
+                        {
+                            elem: 'heading',
                             content: [
                                 {
                                     block: 'text',
                                     mods: {type: 'heading'},
-                                    content: 'Консоль'
+                                    content: 'Добро пожаловать в %projectname%!'
                                 },
                                 {
-                                    block: 'welcome',
+                                    block: 'link',
+                                    mods: {type: 'close', 'fa-icon': 'times-circle'},
+                                    url: '#',
+                                    content: 'Закрыть'
+                                }
+                            ]
+                        },
+                        {
+                            elem: 'text',
+                            mods: {type: 'description'},
+                            content: 'Мы собрали несколько ссылок для вашего удобства:'
+                        },
+                        {
+                            elem: 'table',
+                            mix: {block: 'table'},
+                            content: [
+                                {
+                                    elem: 'row',
                                     content: [
                                         {
-                                            elem: 'heading',
-                                            content: [
-                                                {
-                                                    block: 'text',
-                                                    mods: {type: 'heading'},
-                                                    content: 'Добро пожаловать в %projectname%!'
-                                                },
-                                                {
-                                                    block: 'link',
-                                                    mods: {type: 'close', 'fa-icon': 'times-circle'},
-                                                    url: '#',
-                                                    content: 'Закрыть'
-                                                }
-                                            ]
+                                            block: 'text',
+                                            mods: {type: 'heading'},
+                                            content: 'Для начала'
+                                        },
+                                        {
+                                            block: 'button',
+                                            mods: {theme: 'turquoise', type: 'options'},
+                                            text: 'Настройте свой сайт'
                                         },
                                         {
                                             block: 'text',
-                                            mods: {type: 'description'},
-                                            content: 'Мы собрали несколько ссылок для вашего удобства:'
+                                            content: 'или выберите <a href="#">другую тему</a>'
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'row',
+                                    content: [
+                                        {
+                                            block: 'text',
+                                            mods: {type: 'heading'},
+                                            content: 'Следующие шаги'
                                         },
                                         {
-                                            elem: 'table',
-                                            content: [
-                                                {
-                                                    elem: 'row',
-                                                    content: [
-                                                        {
-                                                            block: 'text',
-                                                            mods: {type: 'heading'},
-                                                            content: 'Для начала'
-                                                        },
-                                                        {
-                                                            block: 'button',
-                                                            mods: {theme: 'turquoise', type: 'options'},
-                                                            text: 'Настройте свой сайт'
-                                                        },
-                                                        {
-                                                            block: 'text',
-                                                            content: 'или выберите <a href="#">другую тему</a>'
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    elem: 'row',
-                                                    content: [
-                                                        {
-                                                            block: 'text',
-                                                            mods: {type: 'heading'},
-                                                            content: 'Следующие шаги'
-                                                        },
-                                                        {
-                                                            block: 'text',
-                                                            mods: {'fa-icon': 'pencil-square-o'},
-                                                            content: '<a href="#">Напишите свою первую запись</a>'
-                                                        },
-                                                        {
-                                                            block: 'text',
-                                                            mods: {'fa-icon': 'plus'},
-                                                            content: '<a href="#">Создайте страницу &#171;Обо мне&#187;</a>'
-                                                        },
-                                                        {
-                                                            block: 'text',
-                                                            mods: {'fa-icon': 'eye'},
-                                                            content: '<a href="#">Просмотрите свой сайт</a>'
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    elem: 'row',
-                                                    content: [
-                                                        {
-                                                            block: 'text',
-                                                            mods: {type: 'heading'},
-                                                            content: 'Другие действия'
-                                                        },
-                                                        {
-                                                            block: 'text',
-                                                            mods: {'fa-icon': 'cogs'},
-                                                            content: 'Настройте <a href="#">виджеты</a> и <a href="#">меню</a>'
-                                                        },
-                                                        {
-                                                            block: 'text',
-                                                            mods: {'fa-icon': 'comments'},
-                                                            content: '<a href="#">Включите или выключите комментарии</a>'
-                                                        },
-                                                        {
-                                                            block: 'text',
-                                                            mods: {'fa-icon': 'wordpress'},
-                                                            content: '<a href="#">Узнайте больше о работе с %projectname%</a>'
-                                                        }
-                                                    ]
-                                                }
-                                            ]
+                                            block: 'text',
+                                            mods: {'fa-icon': 'pencil-square-o'},
+                                            content: '<a href="#">Напишите свою первую запись</a>'
+                                        },
+                                        {
+                                            block: 'text',
+                                            mods: {'fa-icon': 'plus'},
+                                            content: '<a href="#">Создайте страницу &#171;Обо мне&#187;</a>'
+                                        },
+                                        {
+                                            block: 'text',
+                                            mods: {'fa-icon': 'eye'},
+                                            content: '<a href="#">Просмотрите свой сайт</a>'
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'row',
+                                    content: [
+                                        {
+                                            block: 'text',
+                                            mods: {type: 'heading'},
+                                            content: 'Другие действия'
+                                        },
+                                        {
+                                            block: 'text',
+                                            mods: {'fa-icon': 'cogs'},
+                                            content: 'Настройте <a href="#">виджеты</a> и <a href="#">меню</a>'
+                                        },
+                                        {
+                                            block: 'text',
+                                            mods: {'fa-icon': 'comments'},
+                                            content: '<a href="#">Включите или выключите комментарии</a>'
+                                        },
+                                        {
+                                            block: 'text',
+                                            mods: {'fa-icon': 'wordpress'},
+                                            content: '<a href="#">Узнайте больше о работе с %projectname%</a>'
                                         }
                                     ]
                                 }
                             ]
-                        },
-                        {
-                            elem: 'left',
-                            mods: {type: 'console'},
-                            content: [
-                                {
-                                    block: 'block',
-                                    mods: {type: 'horiz'},
-                                    content: [
-                                        {}
-                                    ]
-                                },
-                                {
-                                    block: 'block',
-                                    mods: {type: 'horiz'},
-                                    content: [
-                                        {}
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            elem: 'right',
-                            mods: {type: 'console'},
-                            content: [
-                                {
-                                    block: 'block',
-                                    mods: {type: 'horiz'},
-                                    content: [
-                                        {}
-                                    ]
-                                },
-                                {
-                                    block: 'block',
-                                    mods: {type: 'horiz'},
-                                    content: [
-                                        {}
-                                    ]
-                                },
-                                {
-                                    block: 'block',
-                                    mods: {type: 'horiz'},
-                                    content: [
-                                        {}
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    block: 'layout',
-                    mods: {type: 'disabled'},
-                    content: [
-                        {
                         }
                     ]
                 }
