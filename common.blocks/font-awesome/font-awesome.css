@@ -80,3 +80,7 @@
 *[class*='file-text']:before{
     content: "\f15c";
 }
+
+*[class*='times-circle']:before{
+    content: "\f057";
+}

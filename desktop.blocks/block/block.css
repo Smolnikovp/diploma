@@ -1,5 +1,6 @@
 .block{
     float: left;
-    background-color: #ffb6c1;
+    background-color: #fff;
+    border: 1px solid #a9a9a9;
     margin: 20px 0;
 }

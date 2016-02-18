@@ -233,74 +233,48 @@ module.exports = {
                     ]
                 },
                 {
-                    block: 'article-body',
+                    block: 'layout',
+                    //mods: {type: 'disabled'},
                     content: [
                         {
-                            block: 'layout',
-                            mods: {type: 'disabled'},
+                            elem: 'top',
+                            mods: {type: 'console'},
                             content: [
                                 {
-
-                                    elem: 'top',
-                                    mods: {type: 'console'},
+                                    block: 'text',
+                                    mods: {type: 'heading'},
+                                    content: 'Консоль'
+                                },
+                                {
+                                    block: 'block',
+                                    mods: {type: 'horiz'},
                                     content: [
+                                        {
+                                            elem: 'heading',
+                                            content: [
+                                                {
+                                                    block: 'text',
+                                                    mods: {type: 'heading'},
+                                                    content: 'Добро пожаловать в %projectname%!'
+                                                },
+                                                {
+                                                    block: 'link',
+                                                    mods: {type: 'close', 'fa-icon': 'times-circle'},
+                                                    url: '#',
+                                                    content: 'Закрыть'
+                                                }
+                                            ]
+                                        },
                                         {
                                             block: 'text',
-                                            mods: {type: 'heading'},
-                                            content: 'Консоль'
+                                            mods: {type: 'description'},
+                                            content: 'Мы собрали несколько ссылок для вашего удобства:'
                                         },
                                         {
-                                            block: 'block',
-                                            mods: {type: 'horiz'},
+                                            block: 'layout',
                                             content: [
-                                                {}
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    elem: 'left',
-                                    mods: {type: 'console'},
-                                    content: [
-                                        {
-                                            block: 'block',
-                                            mods: {type: 'horiz'},
-                                            content: [
-                                                {}
-                                            ]
-                                        },
-                                        {
-                                            block: 'block',
-                                            mods: {type: 'horiz'},
-                                            content: [
-                                                {}
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    elem: 'right',
-                                    mods: {type: 'console'},
-                                    content: [
-                                        {
-                                            block: 'block',
-                                            mods: {type: 'horiz'},
-                                            content: [
-                                                {}
-                                            ]
-                                        },
-                                        {
-                                            block: 'block',
-                                            mods: {type: 'horiz'},
-                                            content: [
-                                                {}
-                                            ]
-                                        },
-                                        {
-                                            block: 'block',
-                                            mods: {type: 'horiz'},
-                                            content: [
-                                                {}
+                                                {
+                                                }
                                             ]
                                         }
                                     ]
@@ -308,50 +282,98 @@ module.exports = {
                             ]
                         },
                         {
-                            block: 'layout',
+                            elem: 'left',
+                            mods: {type: 'console'},
                             content: [
                                 {
-                                    elem: 'left',
-                                    mods: {type: 'bookmarks'},
+                                    block: 'block',
+                                    mods: {type: 'horiz'},
                                     content: [
-                                        {
-                                            block: 'text',
-                                            mods: {type: 'heading', 'fa-icon': 'file-text'},
-                                            content: 'Новая запись'
-                                        },
-                                        {
-                                            block: 'input',
-                                            mods: {type: 'bmheading'}
-                                        },
                                         {}
                                     ]
                                 },
                                 {
-                                    elem: 'right',
-                                    mods: {type: 'bookmarks'},
+                                    block: 'block',
+                                    mods: {type: 'horiz'},
+                                    content: [
+                                        {}
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            elem: 'right',
+                            mods: {type: 'console'},
+                            content: [
+                                {
+                                    block: 'block',
+                                    mods: {type: 'horiz'},
+                                    content: [
+                                        {}
+                                    ]
+                                },
+                                {
+                                    block: 'block',
+                                    mods: {type: 'horiz'},
+                                    content: [
+                                        {}
+                                    ]
+                                },
+                                {
+                                    block: 'block',
+                                    mods: {type: 'horiz'},
+                                    content: [
+                                        {}
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    block: 'layout',
+                    mods: {type: 'disabled'},
+                    content: [
+                        {
+                            elem: 'left',
+                            mods: {type: 'bookmarks'},
+                            content: [
+                                {
+                                    block: 'text',
+                                    mods: {type: 'heading', 'fa-icon': 'file-text'},
+                                    content: 'Новая запись'
+                                },
+                                {
+                                    block: 'input',
+                                    mods: {type: 'bmheading'}
+                                },
+                                {}
+                            ]
+                        },
+                        {
+                            elem: 'right',
+                            mods: {type: 'bookmarks'},
+                            content: [
+                                {
+                                    block: 'block',
+                                    mods: {type: 'horiz'},
                                     content: [
                                         {
-                                            block: 'block',
-                                            mods: {type: 'horiz'},
-                                            content: [
-                                                {
-                                                    block: 'text',
-                                                    mods: {type: 'publish'},
-                                                    content: 'Опубликовать'
-                                                },
-                                                {
-                                                    block: 'button',
-                                                    mods: {type: 'left'},
-                                                    content: 'Сохранить'
-                                                },
-                                                {
-                                                    block: 'button',
-                                                    mods: {type: 'right'},
-                                                    content: 'Просмотреть'
-                                                },
-
-                                            ]
+                                            block: 'text',
+                                            mods: {type: 'publish'},
+                                            content: 'Опубликовать'
+                                        },
+                                        {
+                                            block: 'button',
+                                            mods: {type: 'left'},
+                                            content: 'Сохранить'
+                                        },
+                                        {
+                                            block: 'button',
+                                            mods: {type: 'right'},
+                                            content: 'Просмотреть'
                                         }
+
                                     ]
                                 }
                             ]

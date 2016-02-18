@@ -1,0 +1,7 @@
+.block__heading{
+
+}
+
+.block__heading > *{
+    display: inline-block;
+}
