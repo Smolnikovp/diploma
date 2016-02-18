@@ -276,7 +276,7 @@ module.exports = {
                                         },
                                         {
                                             block: 'button',
-                                            mods: {theme: 'turquoise', type: 'options'},
+                                            mods: {theme: 'turquoise', type: 'max'},
                                             text: 'Настройте свой сайт'
                                         },
                                         {
@@ -339,6 +339,51 @@ module.exports = {
                         }
                     ]
                 },
+                {
+                    block: 'layout',
+                    content: [
+                        //{
+                        //    elem: 'left',
+                        //    mods: {type: 'console'},
+                        //    content: {
+                        //        block: 'lego-block',
+                        //        mods: {type: 'horiz'},
+                        //        content: [
+                        //            {}
+                        //        ]
+                        //    }
+                        //},
+                        {
+                            elem: 'right',
+                            content: [
+                                {
+                                    block: 'template',
+                                    content: [
+                                        {
+                                            elem: 'text',
+                                            mods: {'fa-icon': 'caret-up'},
+                                            mix: {block: 'text', type: 'heading'},
+                                            content: 'Быстрый черновик'
+                                        },
+                                        {
+                                            block: 'input',
+                                            placeholder: 'Заголовок'
+                                        },
+                                        {
+                                            block: 'textarea',
+                                            placeholder: 'О чем хотите написать?'
+                                        },
+                                        {
+                                            block: 'button',
+                                            mods: {theme: 'turquoise', type: 'min'},
+                                            content: 'Сохранить'
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
             ]
         }
     ]

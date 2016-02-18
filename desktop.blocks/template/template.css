@@ -1,0 +1,21 @@
+.template{
+    height: auto;
+    background-color: #fff;
+}
+
+.template .textarea{
+    font: 16px Aerial, Helvetica, sans-serif;
+    outline: none;
+    margin: 10px;
+    height: 100px;
+}
+
+.template .input__control{
+    font-size: 17px;
+}
+
+.template .input__control,
+.template .textarea{
+    width: calc(100% - 35px);
+    padding: 5px;
+}

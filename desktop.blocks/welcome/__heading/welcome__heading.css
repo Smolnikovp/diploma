@@ -1,3 +1,7 @@
+.welcome__heading .text_type_heading{
+    font-size: 25px;
+}
+
 .welcome__heading > *{
     display: inline-block;
 }

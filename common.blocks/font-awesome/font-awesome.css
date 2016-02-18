@@ -101,3 +101,7 @@
 *[class*='eye']:before{
     content: "\f06e";
 }
+
+*[class*='caret-up']:after{
+    content: "\f0d8 ";
+}

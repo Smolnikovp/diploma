@@ -1,0 +1,6 @@
+.layout__right{
+    float: right;
+    margin-left: 20px;
+    width: calc(50% - 40px);
+    border: 1px solid #a9a9a9;
+}

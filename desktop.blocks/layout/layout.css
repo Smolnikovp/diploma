@@ -1,6 +1,6 @@
 .layout{
-    width: calc(100% - 200px);
-    padding: 20px;
+    width: 100%;
+    padding: 10px 0;
     float: right;
 }
 
