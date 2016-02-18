@@ -6,7 +6,6 @@
 .menu_type_left *[class*='fa-icon']:after,
 .menu_type_left *[class*='fa-icon']:before{
     font-size: 18px;
-    margin-right: 5px;
 }
 
 .menu_type_left .menu__menu-item{

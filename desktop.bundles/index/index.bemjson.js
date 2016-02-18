@@ -73,7 +73,7 @@ module.exports = {
                         content: [
                             {
                                 block: 'link',
-                                mods: {'fa-icon': 'plus-circle'},
+                                mods: {'fa-icon': 'plus'},
                                 url: '#',
                                 content: 'Добавить'
                             }
@@ -271,9 +271,76 @@ module.exports = {
                                             content: 'Мы собрали несколько ссылок для вашего удобства:'
                                         },
                                         {
-                                            block: 'layout',
+                                            block: 'table',
                                             content: [
                                                 {
+                                                    elem: 'row',
+                                                    content: [
+                                                        {
+                                                            block: 'text',
+                                                            mods: {type: 'heading'},
+                                                            content: 'Для начала'
+                                                        },
+                                                        {
+                                                            block: 'button',
+                                                            mods: {theme: 'turquoise', type: 'options'},
+                                                            text: 'Настройте свой сайт'
+                                                        },
+                                                        {
+                                                            block: 'text',
+                                                            content: 'или выберите <a href="#">другую тему</a>'
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    elem: 'row',
+                                                    content: [
+                                                        {
+                                                            block: 'text',
+                                                            mods: {type: 'heading'},
+                                                            content: 'Следующие шаги'
+                                                        },
+                                                        {
+                                                            block: 'text',
+                                                            mods: {'fa-icon': 'pencil-square-o'},
+                                                            content: '<a href="#">Напишите свою первую запись</a>'
+                                                        },
+                                                        {
+                                                            block: 'text',
+                                                            mods: {'fa-icon': 'plus'},
+                                                            content: '<a href="#">Создайте страницу &#171;Обо мне&#187;</a>'
+                                                        },
+                                                        {
+                                                            block: 'text',
+                                                            mods: {'fa-icon': 'eye'},
+                                                            content: '<a href="#">Просмотрите свой сайт</a>'
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    elem: 'row',
+                                                    content: [
+                                                        {
+                                                            block: 'text',
+                                                            mods: {type: 'heading'},
+                                                            content: 'Другие действия'
+                                                        },
+                                                        {
+                                                            block: 'text',
+                                                            mods: {'fa-icon': 'cogs'},
+                                                            content: 'Настройте <a href="#">виджеты</a> и <a href="#">меню</a>'
+                                                        },
+                                                        {
+                                                            block: 'text',
+                                                            mods: {'fa-icon': 'comments'},
+                                                            content: '<a href="#">Включите или выключите комментарии</a>'
+                                                        },
+                                                        {
+                                                            block: 'text',
+                                                            mods: {'fa-icon': 'wordpress'},
+                                                            content: '<a href="#">Узнайте больше о работе с %projectname%</a>'
+                                                        }
+                                                    ]
                                                 }
                                             ]
                                         }
@@ -335,48 +402,6 @@ module.exports = {
                     mods: {type: 'disabled'},
                     content: [
                         {
-                            elem: 'left',
-                            mods: {type: 'bookmarks'},
-                            content: [
-                                {
-                                    block: 'text',
-                                    mods: {type: 'heading', 'fa-icon': 'file-text'},
-                                    content: 'Новая запись'
-                                },
-                                {
-                                    block: 'input',
-                                    mods: {type: 'bmheading'}
-                                },
-                                {}
-                            ]
-                        },
-                        {
-                            elem: 'right',
-                            mods: {type: 'bookmarks'},
-                            content: [
-                                {
-                                    block: 'block',
-                                    mods: {type: 'horiz'},
-                                    content: [
-                                        {
-                                            block: 'text',
-                                            mods: {type: 'publish'},
-                                            content: 'Опубликовать'
-                                        },
-                                        {
-                                            block: 'button',
-                                            mods: {type: 'left'},
-                                            content: 'Сохранить'
-                                        },
-                                        {
-                                            block: 'button',
-                                            mods: {type: 'right'},
-                                            content: 'Просмотреть'
-                                        }
-
-                                    ]
-                                }
-                            ]
                         }
                     ]
                 }

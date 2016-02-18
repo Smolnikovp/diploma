@@ -12,6 +12,14 @@
     font-style: normal;
 }
 
+*[class*='fa-icon']:after{
+    margin-left: 5px;
+}
+
+*[class*='fa-icon']:before{
+    margin-right: 5px;
+}
+
 *[class*='fa-icon']:after,
 *[class*='fa-icon']:before{
     font-family: FontAwesome;
@@ -33,8 +41,9 @@
     content: "\f086";
 }
 
-*[class*='plus-circle']:before{
-    content: "\f055";
+*[class*='plus']:before{
+    content: "\f067";
+    margin-right: 10px;
 }
 
 *[class*='user']:after{
@@ -83,4 +92,12 @@
 
 *[class*='times-circle']:before{
     content: "\f057";
+}
+
+*[class*='pencil-square-o']:before{
+    content: "\f044";
+}
+
+*[class*='eye']:before{
+    content: "\f06e";
 }
