@@ -1,4 +1,3 @@
-.table__row{
+.welcome__heading > *{
     display: inline-block;
-    width: 33%;
 }

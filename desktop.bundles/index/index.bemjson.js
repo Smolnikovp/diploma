@@ -246,8 +246,7 @@ module.exports = {
                                     content: 'Консоль'
                                 },
                                 {
-                                    block: 'block',
-                                    mods: {type: 'horiz'},
+                                    block: 'welcome',
                                     content: [
                                         {
                                             elem: 'heading',

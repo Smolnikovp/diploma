@@ -1,0 +1,26 @@
+.welcome{
+    background-color: #fff;
+    padding: 20px 30px 10px 30px;
+    border: 1px solid #a9a9a9;
+    margin: 20px 0;
+}
+
+.welcome .table__row .text{
+    padding: 10px 0;
+}
+
+.welcome .table__row .text_type_heading{
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.welcome .table__row .text:before{
+    font-size: 18px;
+}
+
+.welcome .table__row .text a,
+.welcome .table__row .text a:active{
+    text-decoration: none;
+    color: #00bfff;
+}
