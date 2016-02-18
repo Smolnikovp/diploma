@@ -270,7 +270,7 @@ module.exports = {
                                             content: 'Мы собрали несколько ссылок для вашего удобства:'
                                         },
                                         {
-                                            block: 'table',
+                                            elem: 'table',
                                             content: [
                                                 {
                                                     elem: 'row',
