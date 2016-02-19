@@ -263,11 +263,11 @@ module.exports = {
                             content: 'Мы собрали несколько ссылок для вашего удобства:'
                         },
                         {
-                            elem: 'table',
-                            mix: {block: 'table'},
+                            block: 'table',
                             content: [
                                 {
                                     elem: 'row',
+                                    mods: {theme: 'turquoise'},
                                     content: [
                                         {
                                             block: 'text',
@@ -287,6 +287,7 @@ module.exports = {
                                 },
                                 {
                                     elem: 'row',
+                                    mods: {theme: 'turquoise'},
                                     content: [
                                         {
                                             block: 'text',
@@ -312,6 +313,7 @@ module.exports = {
                                 },
                                 {
                                     elem: 'row',
+                                    mods: {theme: 'turquoise'},
                                     content: [
                                         {
                                             block: 'text',
@@ -342,45 +344,88 @@ module.exports = {
                 {
                     block: 'layout',
                     content: [
-                        //{
-                        //    elem: 'left',
-                        //    mods: {type: 'console'},
-                        //    content: {
-                        //        block: 'lego-block',
-                        //        mods: {type: 'horiz'},
-                        //        content: [
-                        //            {}
-                        //        ]
-                        //    }
-                        //},
+                        {
+                            elem: 'left',
+                            content: {
+                                block: 'template',
+                                content: [
+                                    {
+                                        elem: 'text',
+                                        mods: {'fa-icon': 'caret-up'},
+                                        mix: {block: 'text', type: 'heading'},
+                                        content: 'На виду'
+                                    },
+                                    {
+                                        block: 'table',
+                                        content:[
+                                            {
+                                                elem: 'row',
+                                                mods: {theme: 'turquoise'},
+                                                content:[
+                                                    {
+                                                        block: 'text',
+                                                        mods: {'fa-icon': 'thumb-tack'},
+                                                        content: '<a href="#">n запись</a>'
+                                                    },
+                                                    {
+                                                        block: 'text',
+                                                        mods: {'fa-icon': 'comments'},
+                                                        content: '<a href="#">n комментарий</a>'
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                elem: 'row',
+                                                mods: {theme: 'turquoise'},
+                                                content: [
+                                                    {
+                                                        block: 'text',
+                                                        mods: {'fa-icon': 'file'},
+                                                        content: '<a href="#">n страниц</a>'
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                elem: 'row',
+                                                mods: {theme: 'turquoise'},
+                                                content: [
+                                                    {
+                                                        block: 'text',
+                                                        content: '%projectname% с темой оформления <a href="#">turquoise</a>'
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
                         {
                             elem: 'right',
-                            content: [
-                                {
-                                    block: 'template',
-                                    content: [
-                                        {
-                                            elem: 'text',
-                                            mods: {'fa-icon': 'caret-up'},
-                                            mix: {block: 'text', type: 'heading'},
-                                            content: 'Быстрый черновик'
-                                        },
-                                        {
-                                            block: 'input',
-                                            placeholder: 'Заголовок'
-                                        },
-                                        {
-                                            block: 'textarea',
-                                            placeholder: 'О чем хотите написать?'
-                                        },
-                                        {
-                                            block: 'button',
-                                            mods: {theme: 'turquoise', type: 'min'},
-                                            content: 'Сохранить'
-                                        }
-                                    ]
-                                }
-                            ]
+                            content: {
+                                block: 'template',
+                                content: [
+                                    {
+                                        elem: 'text',
+                                        mods: {'fa-icon': 'caret-up'},
+                                        mix: {block: 'text', type: 'heading'},
+                                        content: 'Быстрый черновик'
+                                    },
+                                    {
+                                        block: 'input',
+                                        placeholder: 'Заголовок'
+                                    },
+                                    {
+                                        block: 'textarea',
+                                        placeholder: 'О чем хотите написать?'
+                                    },
+                                    {
+                                        block: 'button',
+                                        mods: {theme: 'turquoise', type: 'min'},
+                                        content: 'Сохранить'
+                                    }
+                                ]
+                            }
                         }
                     ]
                 }

@@ -2,8 +2,14 @@
     width: 100%;
     padding: 10px 0;
     float: right;
+    margin: 10px 0;
 }
 
 .layout_type_disabled{
     display: none;
+}
+
+.layout > *{
+    border: 1px solid #a9a9a9;
+    width: calc(50% - 20px);
 }
