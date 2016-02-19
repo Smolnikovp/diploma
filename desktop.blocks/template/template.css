@@ -9,10 +9,6 @@
     padding: 5px 30px;
 }
 
-.template .table__row:last-child{
-    width: calc(100% - 60px);
-}
-
 .template .textarea{
     font: 16px Aerial, Helvetica, sans-serif;
     outline: none;

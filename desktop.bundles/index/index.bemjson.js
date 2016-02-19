@@ -357,11 +357,11 @@ module.exports = {
                                     },
                                     {
                                         block: 'table',
-                                        content:[
+                                        content: [
                                             {
                                                 elem: 'row',
                                                 mods: {theme: 'turquoise'},
-                                                content:[
+                                                content: [
                                                     {
                                                         block: 'text',
                                                         mods: {'fa-icon': 'thumb-tack'},
@@ -386,14 +386,9 @@ module.exports = {
                                                 ]
                                             },
                                             {
-                                                elem: 'row',
-                                                mods: {theme: 'turquoise'},
-                                                content: [
-                                                    {
-                                                        block: 'text',
-                                                        content: '%projectname% с темой оформления <a href="#">turquoise</a>'
-                                                    }
-                                                ]
+                                                block: 'text',
+                                                mods: {type: 'bottom'},
+                                                content: '%projectname% с темой оформления <a href="#">turquoise</a>'
                                             }
                                         ]
                                     }

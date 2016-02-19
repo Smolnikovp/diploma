@@ -1,0 +1,9 @@
+.text_type_bottom{
+    padding: 10px 30px;
+}
+
+.text_type_bottom a,
+.text_type_bottom a:active{
+    color: #00bfff;
+    text-decoration: none;
+}
