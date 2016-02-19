@@ -346,54 +346,72 @@ module.exports = {
                     content: [
                         {
                             elem: 'left',
-                            content: {
-                                block: 'template',
-                                content: [
-                                    {
-                                        elem: 'text',
-                                        mods: {'fa-icon': 'caret-up'},
-                                        mix: {block: 'text', type: 'heading'},
-                                        content: 'На виду'
-                                    },
-                                    {
-                                        block: 'table',
-                                        content: [
-                                            {
-                                                elem: 'row',
-                                                mods: {theme: 'turquoise'},
-                                                content: [
-                                                    {
-                                                        block: 'text',
-                                                        mods: {'fa-icon': 'thumb-tack'},
-                                                        content: '<a href="#">n запись</a>'
-                                                    },
-                                                    {
-                                                        block: 'text',
-                                                        mods: {'fa-icon': 'comments'},
-                                                        content: '<a href="#">n комментарий</a>'
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                elem: 'row',
-                                                mods: {theme: 'turquoise'},
-                                                content: [
-                                                    {
-                                                        block: 'text',
-                                                        mods: {'fa-icon': 'file'},
-                                                        content: '<a href="#">n страниц</a>'
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                block: 'text',
-                                                mods: {type: 'bottom'},
-                                                content: '%projectname% с темой оформления <a href="#">turquoise</a>'
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
+                            content: [
+                                {
+                                    block: 'template',
+                                    content: [
+                                        {
+                                            elem: 'text',
+                                            mods: {'fa-icon': 'caret-up'},
+                                            mix: {block: 'text', type: 'heading'},
+                                            content: 'На виду'
+                                        },
+                                        {
+                                            block: 'table',
+                                            content: [
+                                                {
+                                                    elem: 'row',
+                                                    mods: {theme: 'turquoise'},
+                                                    content: [
+                                                        {
+                                                            block: 'text',
+                                                            mods: {'fa-icon': 'thumb-tack'},
+                                                            content: '<a href="#">n запись</a>'
+                                                        },
+                                                        {
+                                                            block: 'text',
+                                                            mods: {'fa-icon': 'comments'},
+                                                            content: '<a href="#">n комментарий</a>'
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    elem: 'row',
+                                                    mods: {theme: 'turquoise'},
+                                                    content: [
+                                                        {
+                                                            block: 'text',
+                                                            mods: {'fa-icon': 'file'},
+                                                            content: '<a href="#">n страниц</a>'
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    block: 'text',
+                                                    mods: {type: 'bottom'},
+                                                    content: '%projectname% с темой оформления <a href="#">turquoise</a>'
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    block: 'template',
+                                    content: [
+                                        {
+                                            elem: 'text',
+                                            mods: {'fa-icon': 'caret-up'},
+                                            mix: {block: 'text'},
+                                            content: 'Активность'
+                                        },
+                                        {
+                                            elem: 'text',
+                                            mods: {theme: 'normal'},
+                                            content: 'Недавно опубликованы'
+                                        }
+                                    ]
+                                }
+                            ]
                         },
                         {
                             elem: 'right',

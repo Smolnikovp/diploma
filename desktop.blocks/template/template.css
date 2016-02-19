@@ -1,4 +1,6 @@
 .template{
+    border: 1px solid #a9a9a9;
+    margin-bottom: 20px;
     height: auto;
     background-color: #fff;
 }
