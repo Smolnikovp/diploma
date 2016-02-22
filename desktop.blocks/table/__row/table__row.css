@@ -1,4 +1,17 @@
 .table__row{
-    display: inline-block;
-    font-size: 15px;
+    flex-grow: 1;
+}
+
+.table__row .text a{
+    color: #00bfff;
+    text-decoration: none;
+}
+
+.table__row .text{
+    padding: 10px;
+}
+
+.table__row .text:before{
+    color: #777;
+    margin-right: 10px;
 }

@@ -1,0 +1,12 @@
+.text_type_heading-mid{
+    font-size: 18px;
+}
+
+.welcome .text_type_heading-mid{
+    color: #777;
+}
+
+.table__row .text_type_heading-mid{
+    color: #000;
+    font-weight: bold;
+}

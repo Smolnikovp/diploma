@@ -1,9 +1,8 @@
 .link_type_close{
     float: right;
-    text-decoration: none;
     color: #00bfff;
 }
 
 .link_type_close:before{
-    color: #3a3a3a;
+    color: #777777;
 }

@@ -1,8 +1,8 @@
 .article-menu{
-    /*display: none;*/
-    position: absolute;
+    position: fixed;
     left: 0;
-    height: 1000px;
+    bottom: 0;
+    top: 35px;
     width: 160px;
     background-color: #333333;
 }
