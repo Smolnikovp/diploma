@@ -278,7 +278,13 @@ module.exports = {
                                         },
                                         {
                                             block: 'text',
-                                            content: 'или <a href="#">выберите другую тему</a>'
+                                            tag: 'span',
+                                            content: 'или'
+                                        },
+                                        {
+                                            block: 'link',
+                                            url: '#',
+                                            content: 'выберите другую тему'
                                         }
                                     ]
                                 },
@@ -291,19 +297,22 @@ module.exports = {
                                             content: 'Следующие шаги'
                                         },
                                         {
-                                            block: 'text',
+                                            block: 'link',
+                                            url: '#',
                                             mods: {'fa-icon': 'file-text'},
-                                            content: '<a href="#">Напишите свою первую запись</a>'
+                                            content: 'Напишите свою первую запись'
                                         },
                                         {
-                                            block: 'text',
+                                            block: 'link',
+                                            url: '#',
                                             mods: {'fa-icon': 'pencil-square-o'},
-                                            content: '<a href="#">Создайте запись &#171;обо мне&#187;</a>'
+                                            content: 'Создайте запись &#171;обо мне&#187;'
                                         },
                                         {
-                                            block: 'text',
+                                            block: 'link',
+                                            url: '#',
                                             mods: {'fa-icon': 'eye'},
-                                            content: '<a href="#">Просмотрите свой сайт</a>'
+                                            content: 'Просмотрите свой сайт'
                                         }
                                     ]
                                 },
@@ -316,19 +325,19 @@ module.exports = {
                                             content: 'Другие действия'
                                         },
                                         {
-                                            block: 'text',
+                                            block: 'link',
                                             mods: {'fa-icon': 'cogs'},
-                                            content: 'Настройте <a href="#">виджеты</a> и <a href="#">меню</a>'
+                                            content: 'Настройте виджеты и меню'
                                         },
                                         {
-                                            block: 'text',
+                                            block: 'link',
                                             mods: {'fa-icon': 'comments'},
-                                            content: '<a href="#">Включите или выключите комментарии</a>'
+                                            content: 'Включите или выключите комментарии'
                                         },
                                         {
-                                            block: 'text',
+                                            block: 'link',
                                             mods: {'fa-icon': 'wrench'},
-                                            content: '<a href="#">Узнайте больше о %projectname%</a>'
+                                            content: 'Узнайте больше о %projectname%'
                                         }
                                     ]
                                 }

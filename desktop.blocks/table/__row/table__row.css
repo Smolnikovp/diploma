@@ -2,16 +2,18 @@
     flex-grow: 1;
 }
 
-.table__row .text a{
+.table__row .link{
+    padding: 10px 0;
+    display: block;
     color: #00bfff;
-    text-decoration: none;
 }
 
-.table__row .text{
-    padding: 10px;
-}
-
-.table__row .text:before{
+.table__row .link:before{
     color: #777;
     margin-right: 10px;
+}
+
+.table__row:first-child .link{
+    display: inline-block;
+    padding: 0 5px;
 }
