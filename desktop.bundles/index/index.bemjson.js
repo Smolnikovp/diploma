@@ -250,7 +250,7 @@ module.exports = {
                                 {
                                     block: 'link',
                                     url: '#',
-                                    mods:{type: 'close', 'fa-icon': 'times-circle'},
+                                    mods: {type: 'close', 'fa-icon': 'times-circle'},
                                     content: 'Закрыть'
                                 }
                             ]
@@ -265,7 +265,7 @@ module.exports = {
                             content: [
                                 {
                                     elem: 'row',
-                                    content:[
+                                    content: [
                                         {
                                             block: 'text',
                                             mods: {type: 'heading-mid'},
@@ -290,7 +290,7 @@ module.exports = {
                                 },
                                 {
                                     elem: 'row',
-                                    content:[
+                                    content: [
                                         {
                                             block: 'text',
                                             mods: {type: 'heading-mid'},
@@ -318,7 +318,7 @@ module.exports = {
                                 },
                                 {
                                     elem: 'row',
-                                    content:[
+                                    content: [
                                         {
                                             block: 'text',
                                             mods: {type: 'heading-mid'},
@@ -326,16 +326,19 @@ module.exports = {
                                         },
                                         {
                                             block: 'link',
+                                            url: '#',
                                             mods: {'fa-icon': 'cogs'},
                                             content: 'Настройте виджеты и меню'
                                         },
                                         {
                                             block: 'link',
+                                            url: '#',
                                             mods: {'fa-icon': 'comments'},
                                             content: 'Включите или выключите комментарии'
                                         },
                                         {
                                             block: 'link',
+                                            url: '#',
                                             mods: {'fa-icon': 'wrench'},
                                             content: 'Узнайте больше о %projectname%'
                                         }
@@ -344,8 +347,81 @@ module.exports = {
                             ]
                         }
                     ]
+                },
+                {
+                    block: 'layout',
+                    content: [
+                        {
+                            elem: 'left',
+                            content: [
+                                {
+                                    block: 'lego',
+                                    content: [
+                                        {
+                                            block: 'text',
+                                            mods: {type: 'heading-mid'},
+                                            content: 'На виду'
+                                        },
+                                        {
+                                            block: 'link',
+                                            mods: {type: 'close', 'fa-icon': 'caret-up'}
+                                        },
+                                        {
+                                            block: 'table',
+                                            content: [
+                                                {
+                                                    elem: 'row',
+                                                    content: [
+                                                        {
+                                                            block: 'link',
+                                                            url: '#',
+                                                            mods: {'fa-icon': 'thumb-tack'},
+                                                            content: 'n запись'
+                                                        },
+                                                        {
+                                                            block: 'link',
+                                                            url: '#',
+                                                            mods: {'fa-icon': 'comments'},
+                                                            content: 'n комментария'
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    elem: 'row',
+                                                    content: {
+                                                        block: 'link',
+                                                        url: '#',
+                                                        mods: {'fa-icon': 'file'},
+                                                        content: 'n страница'
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            block: 'text',
+                                            tag: 'span',
+                                            content: '%projectname% с темой оформления'
+                                        },
+                                        {
+                                            block: 'link',
+                                            url: '#',
+                                            content: 'turquoise'
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            elem: 'right',
+                            content: [
+                                {
+                                    block: 'lego'
+                                }
+                            ]
+                        }
+                    ]
                 }
-             ]
+            ]
         }
     ]
 };

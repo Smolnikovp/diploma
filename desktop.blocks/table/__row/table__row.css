@@ -12,8 +12,3 @@
     color: #777;
     margin-right: 10px;
 }
-
-.table__row:first-child .link{
-    display: inline-block;
-    padding: 0 5px;
-}

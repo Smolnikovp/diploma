@@ -1,0 +1,32 @@
+.lego{
+    padding: 10px 0;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+.lego .link_type_close{
+    margin: 0 10px 10px 0;
+    color: #000;
+}
+
+.lego .text{
+    padding: 0 10px 0 20px;
+}
+
+.lego .link_type_close:hover{
+    cursor: pointer;
+}
+
+.lego .table{
+    border-top: 1px solid #a7a7a7;
+}
+
+.lego .table__row{
+    padding: 10px 20px;
+}
+
+.lego .text_type_heading-mid{
+    display: inline-block;
+    font-weight: bold;
+}
+
