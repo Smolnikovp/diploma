@@ -273,7 +273,7 @@ module.exports = {
                                         },
                                         {
                                             block: 'button',
-                                            mods: {type: 'options'},
+                                            mods: {type: 'large'},
                                             text: 'Настройте свой сайт'
                                         },
                                         {
@@ -359,12 +359,8 @@ module.exports = {
                                     content: [
                                         {
                                             block: 'text',
-                                            mods: {type: 'heading-mid'},
+                                            mods: {type: 'heading-mid', 'fa-icon': 'caret-up'},
                                             content: 'На виду'
-                                        },
-                                        {
-                                            block: 'link',
-                                            mods: {type: 'close', 'fa-icon': 'caret-up'}
                                         },
                                         {
                                             block: 'table',
@@ -415,7 +411,29 @@ module.exports = {
                             elem: 'right',
                             content: [
                                 {
-                                    block: 'lego'
+                                    block: 'lego',
+                                    content: [
+                                        {
+                                            block: 'text',
+                                            mods: {type: 'heading-mid', 'fa-icon': 'caret-up'},
+                                            content: 'Быстрый черновик'
+                                        },
+
+                                        {
+                                            block: 'input',
+                                            mods: {type: 'medium'},
+                                            placeholder: 'Заголовок'
+                                        },
+                                        {
+                                            block: 'textarea',
+                                            placeholder: 'О чем хотите написать?'
+                                        },
+                                        {
+                                            block: 'button',
+                                            mods: {type: 'medium'},
+                                            content: 'Сохранить'
+                                        }
+                                    ]
                                 }
                             ]
                         }
