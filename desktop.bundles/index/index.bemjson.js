@@ -273,7 +273,7 @@ module.exports = {
                                         },
                                         {
                                             block: 'button',
-                                            mods: {type: 'large'},
+                                            mods: {theme: 'turquoise', type: 'large'},
                                             text: 'Настройте свой сайт'
                                         },
                                         {
@@ -430,7 +430,7 @@ module.exports = {
                                         },
                                         {
                                             block: 'button',
-                                            mods: {type: 'medium'},
+                                            mods: {theme: 'turquoise', type: 'medium'},
                                             content: 'Сохранить'
                                         }
                                     ]
