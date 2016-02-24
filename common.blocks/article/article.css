@@ -1,7 +1,7 @@
 .article{
-    position: fixed;
+    position: absolute;
     top: 35px;
-    bottom: 0;
+    height: auto;
     right: 0;
     left: 160px;
     padding: 25px 20px;

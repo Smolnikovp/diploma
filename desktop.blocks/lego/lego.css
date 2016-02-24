@@ -1,11 +1,8 @@
 .lego{
+    margin-bottom: 20px;
     padding-bottom: 10px;
     border: 1px solid #000;
     background-color: #fff;
-}
-
-.lego .text{
-    padding: 10px 0 10px 20px;
 }
 
 .lego .input__control,
@@ -14,12 +11,13 @@
     margin: 10px 20px;
 }
 
-.lego .text_type_heading-mid{
-    width: calc(100% - 40px);
+.lego .text_type_heading-medium,
+.lego .table__row{
+    padding: 10px 20px;
 }
 
-.lego .text_type_heading-mid{
-    padding: 10px 20px;
+.lego .text_type_heading-medium{
+    width: calc(100% - 40px);
     border-bottom: 1px solid #a7a7a7;
     display: inline-block;
     font-weight: bold;
@@ -38,6 +36,3 @@
     width: calc(100% - 50px);
 }
 
-.lego .table__row{
-    padding: 10px 20px;
-}

@@ -18,7 +18,7 @@
 
 .menu_type_top .link_hovered{
     color: #00bfff;
-    cursor: pointer; /*для второго элемента меню??????*/
+    cursor: pointer;
 }
 
 .menu-item .link_fa-icon_user{

@@ -12,3 +12,8 @@
     color: #777;
     margin-right: 10px;
 }
+
+.table__row .text_type_heading-medium{
+    color: #000;
+    font-weight: bold;
+}

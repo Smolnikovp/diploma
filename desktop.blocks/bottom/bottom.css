@@ -1,0 +1,12 @@
+.bottom{
+    padding: 10px 20px;
+}
+
+.bottom .link{
+    padding: 0 20px;
+    border-right: 1px solid #a7a7a7;
+}
+
+.bottom .link:last-child{
+    border: none;
+}
