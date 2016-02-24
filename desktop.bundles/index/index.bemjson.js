@@ -250,7 +250,7 @@ module.exports = {
                                 {
                                     block: 'link',
                                     url: '#',
-                                    mods: {type: 'close', 'fa-icon': 'times-circle'},
+                                    mods: {type: 'close', 'fa-icon': 'times-circle',theme: 'turquoise'},
                                     content: 'Закрыть'
                                 }
                             ]
@@ -283,6 +283,7 @@ module.exports = {
                                         },
                                         {
                                             block: 'link',
+                                            mods: {type: 'inline', theme: 'turquoise'},
                                             url: '#',
                                             content: 'выберите другую тему'
                                         }
@@ -299,19 +300,19 @@ module.exports = {
                                         {
                                             block: 'link',
                                             url: '#',
-                                            mods: {'fa-icon': 'file-text'},
+                                            mods: {theme: 'turquoise', 'fa-icon': 'file-text'},
                                             content: 'Напишите свою первую запись'
                                         },
                                         {
                                             block: 'link',
                                             url: '#',
-                                            mods: {'fa-icon': 'pencil-square-o'},
+                                            mods: {theme: 'turquoise', 'fa-icon': 'pencil-square-o'},
                                             content: 'Создайте запись &#171;обо мне&#187;'
                                         },
                                         {
                                             block: 'link',
                                             url: '#',
-                                            mods: {'fa-icon': 'eye'},
+                                            mods: {theme: 'turquoise', 'fa-icon': 'eye'},
                                             content: 'Просмотрите свой сайт'
                                         }
                                     ]
@@ -327,19 +328,19 @@ module.exports = {
                                         {
                                             block: 'link',
                                             url: '#',
-                                            mods: {'fa-icon': 'cogs'},
+                                            mods: {theme: 'turquoise', 'fa-icon': 'cogs'},
                                             content: 'Настройте виджеты и меню'
                                         },
                                         {
                                             block: 'link',
                                             url: '#',
-                                            mods: {'fa-icon': 'comments'},
+                                            mods: {theme: 'turquoise', 'fa-icon': 'comments'},
                                             content: 'Включите или выключите комментарии'
                                         },
                                         {
                                             block: 'link',
                                             url: '#',
-                                            mods: {'fa-icon': 'wrench'},
+                                            mods: {theme: 'turquoise', 'fa-icon': 'wrench'},
                                             content: 'Узнайте больше о %projectname%'
                                         }
                                     ]
@@ -371,13 +372,13 @@ module.exports = {
                                                         {
                                                             block: 'link',
                                                             url: '#',
-                                                            mods: {'fa-icon': 'thumb-tack'},
+                                                            mods: {theme: 'turquoise', 'fa-icon': 'thumb-tack'},
                                                             content: 'n запись'
                                                         },
                                                         {
                                                             block: 'link',
                                                             url: '#',
-                                                            mods: {'fa-icon': 'comments'},
+                                                            mods: {theme: 'turquoise', 'fa-icon': 'comments'},
                                                             content: 'n комментария'
                                                         }
                                                     ]
@@ -387,7 +388,7 @@ module.exports = {
                                                     content: {
                                                         block: 'link',
                                                         url: '#',
-                                                        mods: {'fa-icon': 'file'},
+                                                        mods: {theme: 'turquoise', 'fa-icon': 'file'},
                                                         content: 'n страница'
                                                     }
                                                 }
@@ -400,6 +401,7 @@ module.exports = {
                                         },
                                         {
                                             block: 'link',
+                                            mods: {type: 'inline', theme: 'turquoise'},
                                             url: '#',
                                             content: 'turquoise'
                                         }

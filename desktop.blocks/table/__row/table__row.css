@@ -2,7 +2,7 @@
     flex-grow: 1;
 }
 
-.table__row .link{
+.table__row *[class*='link_fa-icon']{
     padding: 10px 0;
     display: block;
     color: #00bfff;
