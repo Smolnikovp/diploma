@@ -1,38 +1,11 @@
 .lego{
+    display: block;
     margin-bottom: 20px;
     padding-bottom: 10px;
     border: 1px solid #000;
     background-color: #fff;
 }
 
-.lego .input__control,
-.lego .textarea,
-.lego .button_type_medium{
-    margin: 10px 20px;
+.article_type_note .lego{
+    border-radius: 5px;
 }
-
-.lego .text_type_heading-medium,
-.lego .table__row{
-    padding: 10px 20px;
-}
-
-.lego .text_type_heading-medium{
-    width: calc(100% - 40px);
-    border-bottom: 1px solid #a7a7a7;
-    display: inline-block;
-    font-weight: bold;
-}
-
-.lego .text:after{
-    float: right;
-}
-
-.lego .textarea{
-    height: 150px;
-}
-
-.lego .input__control,
-.lego .textarea{
-    width: calc(100% - 50px);
-}
-

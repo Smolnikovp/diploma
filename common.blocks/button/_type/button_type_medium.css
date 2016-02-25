@@ -1,3 +1,7 @@
 .button_type_medium{
     padding: 10px 20px;
 }
+
+.lego .button_type_medium{
+    margin: 10px 20px;
+}

@@ -2,5 +2,14 @@
     font-size: 18px;
 }
 
+.comment .text_type_heading-medium{
+    font-weight: normal;
+}
 
-
+.lego .text_type_heading-medium{
+    width: calc(100% - 40px);
+    border-bottom: 1px solid #a7a7a7;
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px 20px;
+}

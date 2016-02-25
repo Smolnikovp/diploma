@@ -1,0 +1,14 @@
+.button_theme_grey{
+    padding: 2px 10px;
+    border: 1px solid #a7a7a7;
+    background-color: #e3e3e3;
+}
+
+.button_theme_grey:hover{
+    cursor: pointer;
+    background-color: #efefef;
+}
+
+.button_side_left.button_side_left{
+    font-weight: bold;
+}

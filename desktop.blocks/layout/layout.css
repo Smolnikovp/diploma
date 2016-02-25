@@ -1,9 +1,9 @@
 .layout{
     width: 100%;
-    display: inline-flex;
+    display: flex;
 }
 
 .layout > *{
-    width: 100%;
+    flex-grow: 1;
     margin: 20px 0;
 }

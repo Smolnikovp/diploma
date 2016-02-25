@@ -1,0 +1,8 @@
+.lego .input__control{
+    width: calc(100% - 50px);
+    margin: 10px 20px;
+}
+
+.article_type_note .input__control{
+    width: 100%;
+}

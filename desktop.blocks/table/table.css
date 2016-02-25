@@ -1,5 +1,10 @@
 .table{
-    display: inline-flex;
+    display: flex;
     width: 100%;
     font-size: 16px;
+}
+
+.comment .table{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #a7a7a7;
 }

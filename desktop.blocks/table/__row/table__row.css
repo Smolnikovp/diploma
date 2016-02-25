@@ -17,3 +17,12 @@
     color: #000;
     font-weight: bold;
 }
+
+.comment .table__row:last-child{
+    flex-grow: 2;
+}
+
+.lego .table__row{
+    padding: 10px 20px;
+}
+

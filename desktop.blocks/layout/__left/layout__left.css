@@ -1,3 +1,7 @@
 .layout__left{
     margin-right: 10px;
 }
+
+.article_type_note .layout__left{
+    flex-grow: 10;
+}

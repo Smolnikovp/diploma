@@ -228,126 +228,390 @@ module.exports = {
                 }
             ]
         },
+        //{
+        //    block: 'article',
+        //    mods: {type: 'console'},
+        //    content: [
+        //        {
+        //            block: 'text',
+        //            mods: {type: 'heading-large'},
+        //            content: 'Консоль'
+        //        },
+        //        {
+        //            block: 'welcome',
+        //            content: [
+        //                {
+        //                    elem: 'heading',
+        //                    content: [
+        //                        {
+        //                            block: 'text',
+        //                            mods: {type: 'heading-large'},
+        //                            content: 'Добро пожаловать в %projectname%!'
+        //                        },
+        //                        {
+        //                            block: 'link',
+        //                            url: '#',
+        //                            mods: {type: 'close', 'fa-icon': 'times-circle', theme: 'turquoise'},
+        //                            content: 'Закрыть'
+        //                        }
+        //                    ]
+        //                },
+        //                {
+        //                    block: 'text',
+        //                    mods: {type: 'heading-medium'},
+        //                    content: 'Мы собрали несколько ссылок для Вашего удобства:'
+        //                },
+        //                {
+        //                    block: 'table',
+        //                    content: [
+        //                        {
+        //                            elem: 'row',
+        //                            content: [
+        //                                {
+        //                                    block: 'text',
+        //                                    mods: {type: 'heading-medium'},
+        //                                    content: 'Для начала'
+        //                                },
+        //                                {
+        //                                    block: 'button',
+        //                                    mods: {theme: 'turquoise', type: 'large'},
+        //                                    text: 'Настройте свой сайт'
+        //                                },
+        //                                {
+        //                                    block: 'text',
+        //                                    tag: 'span',
+        //                                    content: 'или'
+        //                                },
+        //                                {
+        //                                    block: 'link',
+        //                                    mods: {type: 'inline', theme: 'turquoise'},
+        //                                    url: '#',
+        //                                    content: 'выберите другую тему'
+        //                                }
+        //                            ]
+        //                        },
+        //                        {
+        //                            elem: 'row',
+        //                            content: [
+        //                                {
+        //                                    block: 'text',
+        //                                    mods: {type: 'heading-medium'},
+        //                                    content: 'Следующие шаги'
+        //                                },
+        //                                {
+        //                                    block: 'link',
+        //                                    url: '#',
+        //                                    mods: {theme: 'turquoise', 'fa-icon': 'file-text'},
+        //                                    content: 'Напишите свою первую запись'
+        //                                },
+        //                                {
+        //                                    block: 'link',
+        //                                    url: '#',
+        //                                    mods: {theme: 'turquoise', 'fa-icon': 'pencil-square-o'},
+        //                                    content: 'Создайте запись &#171;обо мне&#187;'
+        //                                },
+        //                                {
+        //                                    block: 'link',
+        //                                    url: '#',
+        //                                    mods: {theme: 'turquoise', 'fa-icon': 'eye'},
+        //                                    content: 'Просмотрите свой сайт'
+        //                                }
+        //                            ]
+        //                        },
+        //                        {
+        //                            elem: 'row',
+        //                            content: [
+        //                                {
+        //                                    block: 'text',
+        //                                    mods: {type: 'heading-medium'},
+        //                                    content: 'Другие действия'
+        //                                },
+        //                                {
+        //                                    block: 'link',
+        //                                    url: '#',
+        //                                    mods: {theme: 'turquoise', 'fa-icon': 'cogs'},
+        //                                    content: 'Настройте виджеты и меню'
+        //                                },
+        //                                {
+        //                                    block: 'link',
+        //                                    url: '#',
+        //                                    mods: {theme: 'turquoise', 'fa-icon': 'comments'},
+        //                                    content: 'Включите или выключите комментарии'
+        //                                },
+        //                                {
+        //                                    block: 'link',
+        //                                    url: '#',
+        //                                    mods: {theme: 'turquoise', 'fa-icon': 'wrench'},
+        //                                    content: 'Узнайте больше о %projectname%'
+        //                                }
+        //                            ]
+        //                        }
+        //                    ]
+        //                }
+        //            ]
+        //        },
+        //        {
+        //            block: 'layout',
+        //            content: [
+        //                {
+        //                    elem: 'left',
+        //                    content: [
+        //                        {
+        //                            block: 'lego',
+        //                            content: [
+        //                                {
+        //                                    block: 'text',
+        //                                    mods: {type: 'heading-medium', 'fa-icon': 'caret-up'},
+        //                                    content: 'На виду'
+        //                                },
+        //                                {
+        //                                    block: 'table',
+        //                                    content: [
+        //                                        {
+        //                                            elem: 'row',
+        //                                            content: [
+        //                                                {
+        //                                                    block: 'link',
+        //                                                    url: '#',
+        //                                                    mods: {theme: 'turquoise', 'fa-icon': 'thumb-tack'},
+        //                                                    content: 'n запись'
+        //                                                },
+        //                                                {
+        //                                                    block: 'link',
+        //                                                    url: '#',
+        //                                                    mods: {theme: 'turquoise', 'fa-icon': 'comments'},
+        //                                                    content: 'n комментария'
+        //                                                }
+        //                                            ]
+        //                                        },
+        //                                        {
+        //                                            elem: 'row',
+        //                                            content: {
+        //                                                block: 'link',
+        //                                                url: '#',
+        //                                                mods: {theme: 'turquoise', 'fa-icon': 'file'},
+        //                                                content: 'n страница'
+        //                                            }
+        //                                        }
+        //                                    ]
+        //                                },
+        //                                {
+        //                                    block: 'bottom',
+        //                                    content: [
+        //                                        {
+        //                                            block: 'text',
+        //                                            tag: 'span',
+        //                                            content: '%projectname% с темой оформления'
+        //                                        },
+        //                                        {
+        //                                            block: 'link',
+        //                                            mods: {type: 'inline', theme: 'turquoise'},
+        //                                            url: '#',
+        //                                            content: 'turquoise'
+        //                                        }
+        //                                    ]
+        //                                }
+        //                            ]
+        //                        },
+        //                        {
+        //                            block: 'lego',
+        //                            content: [
+        //                                {
+        //                                    block: 'text',
+        //                                    mods: {type: 'heading-medium', 'fa-icon': 'caret-up'},
+        //                                    content: 'Активность'
+        //                                },
+        //                                {
+        //                                    block: 'publish',
+        //                                    content: [
+        //                                        {
+        //                                            block: 'text',
+        //                                            mods: {type: 'heading'},
+        //                                            content: 'Недавно добавлены'
+        //                                        },
+        //                                        {
+        //                                            block: 'text',
+        //                                            tag: 'span',
+        //                                            content: 'Сегодня, 12:11'
+        //                                        },
+        //                                        {
+        //                                            block: 'link',
+        //                                            mods: {theme: 'turquoise'},
+        //                                            url: '#',
+        //                                            content: 'Hello, world!'
+        //                                        }
+        //                                    ]
+        //                                },
+        //                                {
+        //                                    block: 'comment',
+        //                                    content: [
+        //                                        {
+        //                                            block: 'text',
+        //                                            mods: {type: 'heading-medium'},
+        //                                            content: 'Комментарии'
+        //                                        },
+        //                                        {
+        //                                            block: 'table',
+        //                                            content: [
+        //                                                {
+        //                                                    elem: 'row',
+        //                                                    content:[
+        //                                                        {
+        //                                                            block: 'image',
+        //                                                            url: 'https://cdn4.iconfinder.com/data/icons/gray-toolbar-7/512/user-512.png',
+        //                                                            width: 50,
+        //                                                            height: 50
+        //                                                        }
+        //                                                    ]
+        //                                                },
+        //                                                {
+        //                                                    elem: 'row',
+        //                                                    content: [
+        //                                                        {
+        //                                                            block: 'link',
+        //                                                            url: '#',
+        //                                                            mods: {type: 'inline', theme: 'turquoise'},
+        //                                                            content: '%someone%'
+        //                                                        },
+        //                                                        {
+        //                                                            block: 'text',
+        //                                                            tag: 'span',
+        //                                                            content: 'к записи'
+        //                                                        },
+        //                                                        {
+        //                                                            block: 'link',
+        //                                                            url: '#',
+        //                                                            mods: {type: 'inline', theme: 'turquoise'},
+        //                                                            content: '%notename%'
+        //                                                        },
+        //                                                        {
+        //                                                            block: 'text',
+        //                                                            content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
+        //                                                        }
+        //                                                    ]
+        //                                                }
+        //                                            ]
+        //                                        },
+        //                                        {
+        //                                            block: 'table',
+        //                                            content: [
+        //                                                {
+        //                                                    elem: 'row',
+        //                                                    content:[
+        //                                                        {
+        //                                                            block: 'image',
+        //                                                            url: 'https://cdn4.iconfinder.com/data/icons/gray-toolbar-7/512/user-512.png',
+        //                                                            width: 50,
+        //                                                            height: 50
+        //                                                        }
+        //                                                    ]
+        //                                                },
+        //                                                {
+        //                                                    elem: 'row',
+        //                                                    content: [
+        //                                                        {
+        //                                                            block: 'link',
+        //                                                            url: '#',
+        //                                                            mods: {type: 'inline', theme: 'turquoise'},
+        //                                                            content: '%someone%'
+        //                                                        },
+        //                                                        {
+        //                                                            block: 'text',
+        //                                                            tag: 'span',
+        //                                                            content: 'к записи'
+        //                                                        },
+        //                                                        {
+        //                                                            block: 'link',
+        //                                                            url: '#',
+        //                                                            mods: {type: 'inline', theme: 'turquoise'},
+        //                                                            content: '%notename%'
+        //                                                        },
+        //                                                        {
+        //                                                            block: 'text',
+        //                                                            content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
+        //                                                        }
+        //                                                    ]
+        //                                                }
+        //                                            ]
+        //                                        },
+        //                                        {
+        //                                            block: 'bottom',
+        //                                            content: [
+        //                                                {
+        //                                                    block: 'link',
+        //                                                    mods: {type: 'inline', theme: 'turquoise'},
+        //                                                    content: 'Все'
+        //                                                },
+        //                                                {
+        //                                                    block: 'link',
+        //                                                    mods: {type: 'inline', theme: 'turquoise'},
+        //                                                    content: 'Ожидающие (0)'
+        //                                                },
+        //                                                {
+        //                                                    block: 'link',
+        //                                                    mods: {type: 'inline', theme: 'turquoise'},
+        //                                                    content: 'Одобренный'
+        //                                                },
+        //                                                {
+        //                                                    block: 'link',
+        //                                                    mods: {type: 'inline', theme: 'turquoise'},
+        //                                                    content: 'Спам (0)'
+        //                                                },
+        //                                                {
+        //                                                    block: 'link',
+        //                                                    mods: {type: 'inline', theme: 'turquoise'},
+        //                                                    content: 'Корзина (0)'
+        //                                                }
+        //                                            ]
+        //                                        }
+        //                                    ]
+        //                                }
+        //                            ]
+        //                        }
+        //                    ]
+        //                },
+        //                {
+        //                    elem: 'right',
+        //                    content: [
+        //                        {
+        //                            block: 'lego',
+        //                            content: [
+        //                                {
+        //                                    block: 'text',
+        //                                    mods: {type: 'heading-medium', 'fa-icon': 'caret-up'},
+        //                                    content: 'Быстрый черновик'
+        //                                },
+        //
+        //                                {
+        //                                    block: 'input',
+        //                                    mods: {type: 'medium'},
+        //                                    placeholder: 'Заголовок'
+        //                                },
+        //                                {
+        //                                    block: 'textarea',
+        //                                    placeholder: 'О чем хотите написать?'
+        //                                },
+        //                                {
+        //                                    block: 'button',
+        //                                    mods: {theme: 'turquoise', type: 'medium'},
+        //                                    content: 'Сохранить'
+        //                                }
+        //                            ]
+        //                        }
+        //                    ]
+        //                }
+        //            ]
+        //        }
+        //    ]
+        //},
         {
             block: 'article',
+            mods: {type: 'note'},
             content: [
                 {
                     block: 'text',
-                    mods: {type: 'heading-large'},
-                    content: 'Консоль'
-                },
-                {
-                    block: 'welcome',
-                    content: [
-                        {
-                            elem: 'heading',
-                            content: [
-                                {
-                                    block: 'text',
-                                    mods: {type: 'heading-large'},
-                                    content: 'Добро пожаловать в %projectname%!'
-                                },
-                                {
-                                    block: 'link',
-                                    url: '#',
-                                    mods: {type: 'close', 'fa-icon': 'times-circle', theme: 'turquoise'},
-                                    content: 'Закрыть'
-                                }
-                            ]
-                        },
-                        {
-                            block: 'text',
-                            mods: {type: 'heading-medium'},
-                            content: 'Мы собрали несколько ссылок для Вашего удобства:'
-                        },
-                        {
-                            block: 'table',
-                            content: [
-                                {
-                                    elem: 'row',
-                                    content: [
-                                        {
-                                            block: 'text',
-                                            mods: {type: 'heading-medium'},
-                                            content: 'Для начала'
-                                        },
-                                        {
-                                            block: 'button',
-                                            mods: {theme: 'turquoise', type: 'large'},
-                                            text: 'Настройте свой сайт'
-                                        },
-                                        {
-                                            block: 'text',
-                                            tag: 'span',
-                                            content: 'или'
-                                        },
-                                        {
-                                            block: 'link',
-                                            mods: {type: 'inline', theme: 'turquoise'},
-                                            url: '#',
-                                            content: 'выберите другую тему'
-                                        }
-                                    ]
-                                },
-                                {
-                                    elem: 'row',
-                                    content: [
-                                        {
-                                            block: 'text',
-                                            mods: {type: 'heading-medium'},
-                                            content: 'Следующие шаги'
-                                        },
-                                        {
-                                            block: 'link',
-                                            url: '#',
-                                            mods: {theme: 'turquoise', 'fa-icon': 'file-text'},
-                                            content: 'Напишите свою первую запись'
-                                        },
-                                        {
-                                            block: 'link',
-                                            url: '#',
-                                            mods: {theme: 'turquoise', 'fa-icon': 'pencil-square-o'},
-                                            content: 'Создайте запись &#171;обо мне&#187;'
-                                        },
-                                        {
-                                            block: 'link',
-                                            url: '#',
-                                            mods: {theme: 'turquoise', 'fa-icon': 'eye'},
-                                            content: 'Просмотрите свой сайт'
-                                        }
-                                    ]
-                                },
-                                {
-                                    elem: 'row',
-                                    content: [
-                                        {
-                                            block: 'text',
-                                            mods: {type: 'heading-medium'},
-                                            content: 'Другие действия'
-                                        },
-                                        {
-                                            block: 'link',
-                                            url: '#',
-                                            mods: {theme: 'turquoise', 'fa-icon': 'cogs'},
-                                            content: 'Настройте виджеты и меню'
-                                        },
-                                        {
-                                            block: 'link',
-                                            url: '#',
-                                            mods: {theme: 'turquoise', 'fa-icon': 'comments'},
-                                            content: 'Включите или выключите комментарии'
-                                        },
-                                        {
-                                            block: 'link',
-                                            url: '#',
-                                            mods: {theme: 'turquoise', 'fa-icon': 'wrench'},
-                                            content: 'Узнайте больше о %projectname%'
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
+                    mods: {'fa-icon': 'thumb-tack', type: 'heading-large'},
+                    content: 'Записи'
                 },
                 {
                     block: 'layout',
@@ -356,216 +620,9 @@ module.exports = {
                             elem: 'left',
                             content: [
                                 {
-                                    block: 'lego',
-                                    content: [
-                                        {
-                                            block: 'text',
-                                            mods: {type: 'heading-medium', 'fa-icon': 'caret-up'},
-                                            content: 'На виду'
-                                        },
-                                        {
-                                            block: 'table',
-                                            content: [
-                                                {
-                                                    elem: 'row',
-                                                    content: [
-                                                        {
-                                                            block: 'link',
-                                                            url: '#',
-                                                            mods: {theme: 'turquoise', 'fa-icon': 'thumb-tack'},
-                                                            content: 'n запись'
-                                                        },
-                                                        {
-                                                            block: 'link',
-                                                            url: '#',
-                                                            mods: {theme: 'turquoise', 'fa-icon': 'comments'},
-                                                            content: 'n комментария'
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    elem: 'row',
-                                                    content: {
-                                                        block: 'link',
-                                                        url: '#',
-                                                        mods: {theme: 'turquoise', 'fa-icon': 'file'},
-                                                        content: 'n страница'
-                                                    }
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            block: 'bottom',
-                                            content: [
-                                                {
-                                                    block: 'text',
-                                                    tag: 'span',
-                                                    content: '%projectname% с темой оформления'
-                                                },
-                                                {
-                                                    block: 'link',
-                                                    mods: {type: 'inline', theme: 'turquoise'},
-                                                    url: '#',
-                                                    content: 'turquoise'
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    block: 'lego',
-                                    content: [
-                                        {
-                                            block: 'text',
-                                            mods: {type: 'heading-medium', 'fa-icon': 'caret-up'},
-                                            content: 'Активность'
-                                        },
-                                        {
-                                            block: 'publish',
-                                            content: [
-                                                {
-                                                    block: 'text',
-                                                    mods: {type: 'heading'},
-                                                    content: 'Недавно добавлены'
-                                                },
-                                                {
-                                                    block: 'text',
-                                                    tag: 'span',
-                                                    content: 'Сегодня, 12:11'
-                                                },
-                                                {
-                                                    block: 'link',
-                                                    mods: {theme: 'turquoise'},
-                                                    url: '#',
-                                                    content: 'Hello, world!'
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            block: 'comment',
-                                            content: [
-                                                {
-                                                    block: 'text',
-                                                    mods: {type: 'heading-medium'},
-                                                    content: 'Комментарии'
-                                                },
-                                                {
-                                                    block: 'table',
-                                                    content: [
-                                                        {
-                                                            elem: 'row',
-                                                            content:[
-                                                                {
-                                                                    block: 'image',
-                                                                    url: 'https://cdn4.iconfinder.com/data/icons/gray-toolbar-7/512/user-512.png',
-                                                                    width: 50,
-                                                                    height: 50
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            elem: 'row',
-                                                            content: [
-                                                                {
-                                                                    block: 'link',
-                                                                    url: '#',
-                                                                    mods: {type: 'inline', theme: 'turquoise'},
-                                                                    content: '%someone%'
-                                                                },
-                                                                {
-                                                                    block: 'text',
-                                                                    tag: 'span',
-                                                                    content: 'к записи'
-                                                                },
-                                                                {
-                                                                    block: 'link',
-                                                                    url: '#',
-                                                                    mods: {type: 'inline', theme: 'turquoise'},
-                                                                    content: '%notename%'
-                                                                },
-                                                                {
-                                                                    block: 'text',
-                                                                    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
-                                                                }
-                                                            ]
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    block: 'table',
-                                                    content: [
-                                                        {
-                                                            elem: 'row',
-                                                            content:[
-                                                                {
-                                                                    block: 'image',
-                                                                    url: 'https://cdn4.iconfinder.com/data/icons/gray-toolbar-7/512/user-512.png',
-                                                                    width: 50,
-                                                                    height: 50
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            elem: 'row',
-                                                            content: [
-                                                                {
-                                                                    block: 'link',
-                                                                    url: '#',
-                                                                    mods: {type: 'inline', theme: 'turquoise'},
-                                                                    content: '%someone%'
-                                                                },
-                                                                {
-                                                                    block: 'text',
-                                                                    tag: 'span',
-                                                                    content: 'к записи'
-                                                                },
-                                                                {
-                                                                    block: 'link',
-                                                                    url: '#',
-                                                                    mods: {type: 'inline', theme: 'turquoise'},
-                                                                    content: '%notename%'
-                                                                },
-                                                                {
-                                                                    block: 'text',
-                                                                    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
-                                                                }
-                                                            ]
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    block: 'bottom',
-                                                    content: [
-                                                        {
-                                                            block: 'link',
-                                                            mods: {type: 'inline', theme: 'turquoise'},
-                                                            content: 'Все'
-                                                        },
-                                                        {
-                                                            block: 'link',
-                                                            mods: {type: 'inline', theme: 'turquoise'},
-                                                            content: 'Ожидающие (0)'
-                                                        },
-                                                        {
-                                                            block: 'link',
-                                                            mods: {type: 'inline', theme: 'turquoise'},
-                                                            content: 'Одобренный'
-                                                        },
-                                                        {
-                                                            block: 'link',
-                                                            mods: {type: 'inline', theme: 'turquoise'},
-                                                            content: 'Спам (0)'
-                                                        },
-                                                        {
-                                                            block: 'link',
-                                                            mods: {type: 'inline', theme: 'turquoise'},
-                                                            content: 'Корзина (0)'
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
+                                    block: 'input',
+                                    mods: {type: 'large'},
+                                    placeholder: 'Введите заголовок'
                                 }
                             ]
                         },
@@ -577,24 +634,31 @@ module.exports = {
                                     content: [
                                         {
                                             block: 'text',
-                                            mods: {type: 'heading-medium', 'fa-icon': 'caret-up'},
-                                            content: 'Быстрый черновик'
-                                        },
-
-                                        {
-                                            block: 'input',
-                                            mods: {type: 'medium'},
-                                            placeholder: 'Заголовок'
+                                            mods: {type: 'heading-medium'},
+                                            content: 'Опубликовать'
                                         },
                                         {
-                                            block: 'textarea',
-                                            placeholder: 'О чем хотите написать?'
-                                        },
-                                        {
-                                            block: 'button',
-                                            mods: {theme: 'turquoise', type: 'medium'},
-                                            content: 'Сохранить'
+                                            block: 'table',
+                                            content: [
+                                                {
+                                                    elem: 'row',
+                                                    content: {
+                                                        block: 'button',
+                                                        mods: {type: 'radius', side: 'left', theme: 'grey'},
+                                                        text: 'Сохранить'
+                                                    }
+                                                },
+                                                {
+                                                    elem: 'row',
+                                                    content: {
+                                                        block: 'button',
+                                                        mods: {type: 'radius', side: 'right', theme: 'grey'},
+                                                        text: 'Опубликовать'
+                                                    }
+                                                }
+                                            ]
                                         }
+
                                     ]
                                 }
                             ]
@@ -604,5 +668,6 @@ module.exports = {
             ]
         }
     ]
-};
+}
+;
 
