@@ -624,7 +624,74 @@ module.exports = {
                                     block: 'input',
                                     mods: {type: 'large'},
                                     placeholder: 'Введите заголовок'
+                                },
+                                {
+                                    block: 'inline',
+                                    content: [
+                                        {
+                                            block: 'text',
+                                            mods: {theme: 'bold'},
+                                            tag: 'span',
+                                            content: 'Постоянная ссылка:'
+                                        },
+                                        {
+                                            block: 'link',
+                                            url: '=content',
+                                            mods: {type: 'inline'},
+                                            content: 'https://github.com'
+                                        },
+                                        {
+                                            block: 'button',
+                                            mods: {theme: 'grey', type: 'radius'},
+                                            text: 'Изменить постоянные ссылки'
+                                        }
+                                    ]
+                                },
+                                {
+                                    block: 'lego',
+                                    mods: {type: 'edit'},
+                                    content:[
+                                        {
+                                            block: 'inline',
+                                            content: [
+                                                {
+                                                    block: 'text',
+                                                    tag: 'span',
+                                                    content: 'Загрузить/вставить'
+                                                },
+                                                {
+                                                    block: 'link',
+                                                    url: '#',
+                                                    mods: {type: 'inline', 'fa-icon': 'list-alt'}
+                                                },
+                                                {
+                                                    block: 'link',
+                                                    url: '#',
+                                                    mods: {type: 'inline', 'fa-icon': 'music'}
+                                                },
+                                                {
+                                                    block: 'link',
+                                                    url: '#',
+                                                    mods: {type: 'inline', 'fa-icon': 'video-camera'}
+                                                },
+                                                {
+                                                    block: 'link',
+                                                    url: '#',
+                                                    mods: {type: 'inline', 'fa-icon': 'star'}
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            block: 'lego',
+                                            content: [
+                                                {
+
+                                                }
+                                            ]
+                                        }
+                                    ]
                                 }
+
                             ]
                         },
                         {
@@ -771,7 +838,7 @@ module.exports = {
                                                     block: 'radio-body',
                                                     content: {
                                                         block: 'radio-group',
-                                                        val : 1,
+                                                        val: 1,
                                                         mods: {focused: true},
                                                         options: [
                                                             {val: 1, text: 'Без рубрики'},

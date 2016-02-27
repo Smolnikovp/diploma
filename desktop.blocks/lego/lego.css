@@ -34,3 +34,7 @@
     width: calc(100% - 50px);
     margin: 10px 20px;
 }
+
+.lego .inline span{
+    margin-right: 5px;
+}

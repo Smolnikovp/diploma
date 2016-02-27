@@ -103,9 +103,25 @@
 }
 
 *[class*='caret-up']:after{
-    content: "\f0d8 ";
+    content: "\f0d8";
 }
 
 *[class*='calendar']:before{
-    content: "\f073 ";
+    content: "\f073";
+}
+
+*[class*='list-alt']:before{
+    content: "\f022";
+}
+
+*[class*='music']:before{
+    content: "\f001";
+}
+
+*[class*='video-camera']:before{
+    content: "\f03d";
+}
+
+*[class*='star']:before{
+    content: "\f005";
 }

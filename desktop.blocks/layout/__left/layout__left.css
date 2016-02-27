@@ -2,4 +2,17 @@
     margin-right: 10px;
 }
 
+.layout__left .text_theme_bold{
+    padding: 10px 0 10px 10px;
+}
 
+.layout__left .inline .link_type_inline{
+    font-size: 14px;
+    color: #7a7a7a;
+}
+
+.layout__left .inline .button_theme_grey{
+    font-weight: bold;
+    font-size: 12px;
+    margin: 5px 20px;
+}

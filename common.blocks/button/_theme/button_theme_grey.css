@@ -1,10 +1,10 @@
 .button_theme_grey{
     padding: 2px 10px;
     border: 1px solid #a7a7a7;
-    background-color: #e3e3e3;
+    background-color: #f6f6f6;
 }
 
 .button_theme_grey:hover{
     cursor: pointer;
-    background-color: #efefef;
+    background-color: #dfdfdf;
 }
