@@ -1,3 +1,7 @@
 .text_type_heading-medium{
     font-size: 18px;
 }
+
+.comment .text_type_heading-medium{
+    font-weight: normal;
+}

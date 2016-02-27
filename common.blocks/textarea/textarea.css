@@ -1,5 +1,17 @@
 .textarea{
+    display: block;
+    height: 150px;
+    outline: none;
     font-size: 16px;
     padding: 6px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.layout__right .lego .textarea{
+    width: calc(100% - 50px);
+    margin: 10px 20px;
+}
+
+.layout__left .lego .textarea{
+    width: calc(100% - 14px);
 }

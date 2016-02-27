@@ -1,0 +1,14 @@
+.button_theme_white{
+    margin-right: 3px;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.button_theme_white:before{
+    margin: 0;
+}
+
+.button_theme_white:hover{
+    cursor: pointer;
+    background-color: #ededed;
+}

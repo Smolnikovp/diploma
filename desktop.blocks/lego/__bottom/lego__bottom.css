@@ -1,0 +1,19 @@
+.lego__bottom{
+    padding: 0 20px;
+}
+
+.article_type_note .lego__bottom{
+    background-color: #fbfffd;
+    line-height: 28px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.article_type_note .layout__right .lego__bottom{
+    border-top: 1px solid #a7a7a7;
+    padding: 10px 20px;
+}
+
+.article_type_note .layout__left .lego__bottom{
+    background-color: #dbdbdb;
+}

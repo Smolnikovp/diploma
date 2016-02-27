@@ -29,12 +29,6 @@
     float: right;
 }
 
-.lego .textarea{
-    height: 150px;
-    width: calc(100% - 50px);
-    margin: 10px 20px;
-}
-
-.lego .inline span{
-    margin-right: 5px;
+.article_type_note .layout__left .lego{
+    margin-top: 122px;
 }

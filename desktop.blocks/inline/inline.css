@@ -9,3 +9,24 @@
 .inline .link_theme_turquoise{
     float: right;
 }
+
+.layout__left .inline .link_type_inline{
+    font-size: 14px;
+    color: #7a7a7a;
+}
+
+.layout__left .inline .button_theme_grey{
+    font-weight: bold;
+    font-size: 12px;
+    margin: 5px 20px;
+}
+
+.layout__left .lego__body .inline{
+    width: 100%;
+    background-color: #dbdbdb;
+}
+
+.layout__right .lego .inline{
+    padding: 10px 20px;
+    border-top: 1px solid #eaeaea;
+}
