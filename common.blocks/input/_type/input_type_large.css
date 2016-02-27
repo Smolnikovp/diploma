@@ -4,7 +4,3 @@
     padding: 10px;
     outline: none;
 }
-
-.article_type_note .input__control{
-    width: calc(100% - 20px);
-}

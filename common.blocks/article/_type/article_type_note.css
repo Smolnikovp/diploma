@@ -1,3 +1,41 @@
 .article_type_note{
     padding: 20px;
 }
+
+.article_type_note .lego{
+    border-radius: 5px;
+}
+
+.article_type_note .layout__right{
+    flex-grow: 1;
+}
+
+.article_type_note .layout__left{
+    flex-grow: 3;
+}
+
+.article_type_note .input__control{
+    width: 100%;
+}
+
+.article_type_note .input__control{
+    width: calc(100% - 20px);
+}
+
+.article_type_note .bottom .button_type_small{
+    float: right;
+}
+
+.article_type_note .lego .bottom{
+    background-color: #fbfffd;
+    border-top: 1px solid #a7a7a7;
+    line-height: 28px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.article_type_note .text_type_heading-medium{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #cecece;
+}

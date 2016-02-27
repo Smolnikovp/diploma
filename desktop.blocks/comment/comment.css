@@ -1,3 +1,25 @@
-.comment{
+.comment .bottom .link{
+    padding: 0 20px;
+    border-right: 1px solid #a7a7a7;
+}
 
+.comment .bottom .link:last-child{
+    border: none;
+}
+
+.comment .table__row:last-child{
+    flex-grow: 2;
+}
+
+.comment .table{
+     padding-bottom: 20px;
+     border-bottom: 1px solid #a7a7a7;
+ }
+
+.comment .image{
+    margin: 20px;
+}
+
+.comment .text_type_heading-medium{
+    font-weight: normal;
 }

@@ -610,6 +610,7 @@ module.exports = {
             content: [
                 {
                     block: 'text',
+                    tag: 'span',
                     mods: {'fa-icon': 'thumb-tack', type: 'heading-large'},
                     content: 'Записи'
                 },
@@ -634,7 +635,8 @@ module.exports = {
                                     content: [
                                         {
                                             block: 'text',
-                                            mods: {type: 'heading-medium'},
+                                            tag: 'span',
+                                            mods: {type: 'heading-medium', theme: 'bold'},
                                             content: 'Опубликовать'
                                         },
                                         {
@@ -657,9 +659,131 @@ module.exports = {
                                                     }
                                                 }
                                             ]
+                                        },
+                                        {
+                                            block: 'inline',
+                                            content: [
+                                                {
+                                                    block: 'text',
+                                                    tag: 'span',
+                                                    content: 'Статус:'
+                                                },
+                                                {
+                                                    block: 'text',
+                                                    tag: 'span',
+                                                    mods: {theme: 'bold'},
+                                                    content: 'Черновик'
+                                                },
+                                                {
+                                                    block: 'link',
+                                                    url: '#',
+                                                    mods: {type: 'inline', theme: 'turquoise'},
+                                                    content: 'Изменить'
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            block: 'inline',
+                                            content: [
+                                                {
+                                                    block: 'text',
+                                                    tag: 'span',
+                                                    content: 'Видимость:'
+                                                },
+                                                {
+                                                    block: 'text',
+                                                    tag: 'span',
+                                                    mods: {theme: 'bold'},
+                                                    content: 'Открыто'
+                                                },
+                                                {
+                                                    block: 'link',
+                                                    url: '#',
+                                                    mods: {type: 'inline', theme: 'turquoise'},
+                                                    content: 'Изменить'
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            block: 'inline',
+                                            content: [
+                                                {
+                                                    block: 'text',
+                                                    mods: {'fa-icon': 'calendar'},
+                                                    tag: 'span',
+                                                    content: 'Опубликовать:'
+                                                },
+                                                {
+                                                    block: 'text',
+                                                    tag: 'span',
+                                                    mods: {theme: 'bold'},
+                                                    content: 'Сразу'
+                                                },
+                                                {
+                                                    block: 'link',
+                                                    url: '#',
+                                                    mods: {type: 'inline', theme: 'turquoise'},
+                                                    content: 'Изменить'
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            block: 'bottom',
+                                            content: [
+                                                {
+                                                    block: 'link',
+                                                    url: '#',
+                                                    mods: {type: 'inline', theme: 'red'},
+                                                    content: 'Удалить'
+                                                },
+                                                {
+                                                    block: 'button',
+                                                    mods: {theme: 'turquoise', type: 'small'},
+                                                    content: 'Опубликовать'
+                                                }
+                                            ]
                                         }
-
                                     ]
+                                },
+                                {
+                                    block: 'lego',
+                                    content: [
+                                        {
+                                            block: 'text',
+                                            mods: {type: 'heading-medium', theme: 'bold'},
+                                            content: 'Рубрики'
+                                        },
+                                        {
+                                            elem: 'body',
+                                            content: [
+                                                {
+                                                    block: 'radio-head',
+                                                    content: {
+                                                        block: 'radio-group',
+                                                        mods: {theme: 'grey', type: 'button', focused: true},
+                                                        options: [
+                                                            {val: 1, text: 'Все рубрики'},
+                                                            {val: 2, text: 'Часто используемые'}
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    block: 'radio-body',
+                                                    content: {
+                                                        block: 'radio-group',
+                                                        val : 1,
+                                                        mods: {focused: true},
+                                                        options: [
+                                                            {val: 1, text: 'Без рубрики'},
+                                                            {val: 2, text: 'Увлечения'},
+                                                            {val: 3, text: 'Прочее'}
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+
                                 }
                             ]
                         }
@@ -668,6 +792,4 @@ module.exports = {
             ]
         }
     ]
-}
-;
-
+};

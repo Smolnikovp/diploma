@@ -1,0 +1,18 @@
+.radio-group_theme_grey{
+    display: block;
+    margin: 5px auto 0 auto;
+}
+
+.radio-group_theme_grey .button{
+    background-color: #fff;
+    padding: 5px;
+    border: none;
+    color: #00bfff;
+}
+
+.radio-group_theme_grey .button_focused{
+    background-color: #dbdbdb;
+    color: #000;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}

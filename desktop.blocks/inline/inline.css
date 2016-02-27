@@ -1,0 +1,22 @@
+.inline{
+    padding: 10px 20px;
+    border-top: 1px solid #eaeaea;
+}
+
+.inline span{
+    margin-right: 5px;
+}
+
+.inline .link{
+    font-size: 15px;
+}
+
+.inline .link_theme_turquoise{
+    text-decoration: underline;
+}
+
+.inline .link_theme_turquoise{
+    float: right;
+}
+
+

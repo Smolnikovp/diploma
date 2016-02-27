@@ -1,3 +1,7 @@
 .article_type_console .layout > *{
     width: 50%;
 }
+
+.article_type_console .lego{
+    padding-bottom: 10px;
+}

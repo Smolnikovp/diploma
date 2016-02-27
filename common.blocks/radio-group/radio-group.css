@@ -1,0 +1,8 @@
+.radio-group .radio__box{
+    margin: 0 10px 0 5px;
+}
+
+.radio-body .radio-group .radio{
+    padding: 5px 0;
+    display: inline-block;
+}
