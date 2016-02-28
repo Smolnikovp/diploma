@@ -17,7 +17,3 @@
     color: #000;
     font-weight: bold;
 }
-
-.comment .table__row:last-child{
-    flex-grow: 2;
-}

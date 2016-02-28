@@ -13,3 +13,7 @@
 .lego__body .radio-head .button{
     color: #00bfff;
 }
+
+.lego__body .inline{
+    padding: 2px 0;
+}

@@ -9,11 +9,11 @@
     border: none;
 }
 
-.radio-group .button:focus{
+.radio-group .button_theme_grey.button_checked{
     background-color: #dbdbdb;
     color: #000;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .radio-group .radio__box{

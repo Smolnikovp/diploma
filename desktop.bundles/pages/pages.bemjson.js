@@ -4,20 +4,25 @@ module.exports = {
     favicon: '/favicon.ico',
     head: [
         {elem: 'meta', attrs: {name: 'description', content: ''}},
-        {elem: 'css', url: 'note.min.css'},
+        {elem: 'css', url: 'pages.min.css'},
         {block: 'font-awesome'}
     ],
-    scripts: [{elem: 'js', url: 'note.min.js'}],
+    scripts: [{elem: 'js', url: 'pages.min.js'}],
     content: [
         {
             block: 'article',
-            mods: {type: 'note'},
+            mods: {type: 'pages'},
             content: [
                 {
                     block: 'text',
                     tag: 'span',
-                    mods: {'fa-icon': 'thumb-tack', type: 'heading-large'},
-                    content: 'Записи'
+                    mods: {'fa-icon': 'file', type: 'heading-large'},
+                    content: 'Изменить страницу'
+                },
+                {
+                    block: 'button',
+                    mods: {theme: 'turquoise', type: 'small'},
+                    text: 'Добавить новую'
                 },
                 {
                     block: 'layout',
@@ -48,7 +53,12 @@ module.exports = {
                                         {
                                             block: 'button',
                                             mods: {theme: 'grey', type: 'radius'},
-                                            text: 'Изменить постоянные ссылки'
+                                            text: 'Изменить'
+                                        },
+                                        {
+                                            block: 'button',
+                                            mods: {theme: 'grey', type: 'radius'},
+                                            text: 'Показать страницу'
                                         }
                                     ]
                                 },
@@ -173,6 +183,51 @@ module.exports = {
                                                     ]
                                                 },
                                                 {
+                                                    block: 'inline',
+                                                    content:[
+                                                        {
+                                                            block: 'button',
+                                                            mods: {theme: 'white'},
+                                                            text: 'поиск'
+                                                        },
+                                                        {
+                                                            block: 'button',
+                                                            mods: {theme: 'white'},
+                                                            text: 'закрыть теги'
+                                                        },
+                                                        {
+                                                            block: 'button',
+                                                            mods: {theme: 'white'},
+                                                            text: 'закрыть теги'
+                                                        },
+                                                        {
+                                                            block: 'button',
+                                                            mods: {theme: 'white'},
+                                                            text: 'закрыть теги'
+                                                        },
+                                                        {
+                                                            block: 'button',
+                                                            mods: {theme: 'white'},
+                                                            text: 'закрыть теги'
+                                                        },
+                                                        {
+                                                            block: 'button',
+                                                            mods: {theme: 'white'},
+                                                            text: 'закрыть теги'
+                                                        },
+                                                        {
+                                                            block: 'button',
+                                                            mods: {theme: 'white'},
+                                                            text: 'закрыть теги'
+                                                        },
+                                                        {
+                                                            block: 'button',
+                                                            mods: {theme: 'white'},
+                                                            text: 'закрыть теги'
+                                                        }
+                                                    ]
+                                                },
+                                                {
                                                     block: 'textarea',
                                                     placeholder: 'Введите текст'
                                                 }
@@ -213,18 +268,11 @@ module.exports = {
                                         },
                                         {
                                             block: 'inline',
-                                            content: [
-                                                {
-                                                    block: 'button',
-                                                    mods: {type: 'radius', side: 'left', theme: 'grey'},
-                                                    text: 'Сохранить'
-                                                },
-                                                {
-                                                    block: 'button',
-                                                    mods: {type: 'radius', side: 'right', theme: 'grey'},
-                                                    text: 'Опубликовать'
-                                                }
-                                            ]
+                                            content: {
+                                                block: 'button',
+                                                mods: {type: 'radius', side: 'right', theme: 'grey'},
+                                                text: 'Просмотреть изменения'
+                                            }
                                         },
                                         {
                                             block: 'inline',
@@ -317,39 +365,88 @@ module.exports = {
                                         {
                                             block: 'text',
                                             mods: {type: 'heading-medium', theme: 'bold'},
-                                            content: 'Рубрики'
+                                            content: 'Атрибуты страницы'
                                         },
                                         {
                                             elem: 'body',
                                             content: [
                                                 {
-                                                    block: 'radio-head',
-                                                    content: {
-                                                        block: 'radio-group',
-                                                        val: 1,
-                                                        mods: {theme: 'grey', type: 'button', focused: true},
-                                                        options: [
-                                                            {val: 1, text: 'Все рубрики'},
-                                                            {val: 2, text: 'Часто используемые'}
-                                                        ]
-                                                    }
+                                                    block: 'inline',
+                                                    mods: {type: 'select'},
+                                                    content:[
+                                                        {
+                                                            block: 'text',
+                                                            mods: {theme: 'bold'},
+                                                            tag: 'span',
+                                                            content: 'Родительская'
+                                                        },
+                                                        {
+                                                            block : 'select',
+                                                            mods : { mode : 'radio', theme: 'islands', size: 'm'},
+                                                            val : 1,
+                                                            options : [
+                                                                { val : 1, text : '(нет родительских)' },
+                                                                { val : 2, text : 'Страницы' },
+                                                                { val : 3, text : 'Заметки' }
+                                                            ]
+                                                        }
+                                                    ]
                                                 },
                                                 {
-                                                    block: 'radio-body',
-                                                    content: {
-                                                        block: 'radio-group',
-                                                        val: 1,
-                                                        mods: {focused: true},
-                                                        options: [
-                                                            {val: 1, text: 'Без рубрики'},
-                                                            {val: 2, text: 'Увлечения'},
-                                                            {val: 3, text: 'Прочее'}
-                                                        ]
-                                                    }
-                                                }
+                                                    block: 'inline',
+                                                    mods: {type: 'select'},
+                                                    content:[
+                                                        {
+                                                            block: 'text',
+                                                            mods: {theme: 'bold'},
+                                                            tag: 'span',
+                                                            content: 'Шаблон'
+                                                        },
+                                                        {
+                                                            block : 'select',
+                                                            mods : { mode : 'radio', theme: 'islands', size: 'm'},
+                                                            val : 1,
+                                                            options : [
+                                                                { val : 1, text : 'Базовый шаблон' },
+                                                                { val : 2, text : 'typesomethinhere' },
+                                                                { val : 3, text : 'typesomethinhere' }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    block: 'inline',
+                                                    mods: {type: 'select'},
+                                                    content:[
+                                                        {
+                                                            block: 'text',
+                                                            mods: {theme: 'bold'},
+                                                            tag: 'span',
+                                                            content: 'Порядок'
+                                                        },
+                                                        {
+                                                            block : 'select',
+                                                            mods : { mode : 'radio', theme: 'islands', size: 'm'},
+                                                            val : 1,
+                                                            options : [
+                                                                { val : 1, text : '1' },
+                                                                { val : 2, text : '2' },
+                                                                { val : 3, text : '3' },
+                                                                { val : 4, text : '4' },
+                                                                { val : 5, text : '5' },
+                                                                { val : 6, text : '6' },
+                                                                { val : 7, text : '7' },
+                                                                { val : 8, text : '8' },
+                                                                { val : 9, text : '9' },
+                                                                { val : 10, text : '10' }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
                                             ]
                                         }
                                     ]
+
                                 }
                             ]
                         }

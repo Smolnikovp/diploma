@@ -1,0 +1,8 @@
+.popup{
+    color: #606060;
+}
+
+.popup .menu-item.menu-item_hovered{
+    background-color: #00bfff;
+    color: #fff;
+}

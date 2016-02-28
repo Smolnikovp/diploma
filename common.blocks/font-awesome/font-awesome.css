@@ -106,6 +106,10 @@
     content: "\f0d8";
 }
 
+*[class*='caret-down']:after{
+    content: "\f0d7";
+}
+
 *[class*='calendar']:before{
     content: "\f073";
 }

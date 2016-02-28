@@ -1,0 +1,83 @@
+.article_type_pages .layout__left .lego{
+    padding: 0 20px 10px 20px;
+    margin-top: 113px;
+    width: calc(100% - 40px);
+}
+
+.article_type_pages .text_type_heading-large{
+    margin-right: 20px;
+}
+
+.article_type_pages .lego{
+    border-radius: 5px;
+}
+
+.article_type_pages .lego__bottom{
+    background-color: #fbfffd;
+    line-height: 28px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+}
+
+.article_type_pages .layout__right .lego__bottom{
+    border-top: 1px solid #a7a7a7;
+    padding: 10px 20px;
+}
+
+.article_type_pages .layout__left .lego__bottom{
+    background-color: #dbdbdb;
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+.article_type_pages .layout__left{
+    flex-grow: 3;
+}
+
+.article_type_pages .layout__right{
+    flex-grow: 2;
+}
+
+.article_type_pages .inline:first-child{
+    border: none;
+}
+
+.article_type_pages .layout__right span{
+    margin-right: 5px;
+}
+
+.article_type_pages .text_type_heading-medium{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #cecece;
+}
+
+.article_type_pages .layout__left .input__control{
+    width: calc(100% - 20px);
+}
+
+.article_type_pages .layout__right .lego__body{
+    margin: 10px 20px;
+}
+
+.article_type_pages .select{
+    float: right;
+}
+
+.article_type_pages .layout__right{
+    flex-basis: 350px;
+}
+
+.article_type_pages .layout__right .lego .inline{
+    overflow: hidden;
+    padding: 10px 20px;
+    border-top: 1px solid #eaeaea;
+}
+
+.article_type_pages .lego .lego__body .inline_type_select{
+    border: none;
+    margin: 10px 0;
+    line-height: 27px;
+    padding: 0;
+}

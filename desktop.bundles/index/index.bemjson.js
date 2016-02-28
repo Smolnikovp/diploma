@@ -181,7 +181,7 @@ module.exports = {
                                 block: 'link',
                                 mods: {'fa-icon': 'plug'},
                                 url: '#',
-                                content: 'Плагины'
+                                content: 'Элементы'
                             }
                         },
                         {

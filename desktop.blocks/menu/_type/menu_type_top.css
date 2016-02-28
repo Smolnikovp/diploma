@@ -21,7 +21,7 @@
     cursor: pointer;
 }
 
-.menu-item .link_fa-icon_user{
+.menu_type_top .menu-item .link_fa-icon_user{
     position: absolute;
     right: 0;
     top: 0;
