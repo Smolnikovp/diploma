@@ -95,40 +95,28 @@ module.exports = {
                                             content: [
                                                 {
                                                     block: 'inline',
+                                                    mods: {type: 'text-format'},
                                                     content: [
                                                         {
                                                             block: 'button',
-                                                            mods: {theme: 'white'},
-                                                            attrs: {style: 'font-weight: bold'},
-                                                            text: 'b'
+                                                            mods: {theme: 'white', 'fa-icon': 'boldd'}
                                                         },
                                                         {
                                                             block: 'button',
-                                                            mods: {theme: 'white'},
-                                                            attrs: {style: 'font-style: italic'},
-                                                            text: 'i'
+                                                            mods: {theme: 'white', 'fa-icon': 'italic'}
                                                         },
                                                         {
                                                             block: 'button',
-                                                            mods: {theme: 'white'},
-                                                            attrs: {style: 'text-decoration: underline'},
-                                                            text: 'link'
+                                                            mods: {theme: 'white', 'fa-icon': 'underline'}
+                                                        },
+                                                        {
+                                                            block: 'button',
+                                                            mods: {theme: 'white', 'fa-icon': 'strikethrough'}
                                                         },
                                                         {
                                                             block: 'button',
                                                             mods: {theme: 'white'},
                                                             text: 'b-quote'
-                                                        },
-                                                        {
-                                                            block: 'button',
-                                                            mods: {theme: 'white'},
-                                                            attrs: {style: 'text-decoration: line-through'},
-                                                            text: 'del'
-                                                        },
-                                                        {
-                                                            block: 'button',
-                                                            mods: {theme: 'white'},
-                                                            text: 'ins'
                                                         },
                                                         {
                                                             block: 'button',

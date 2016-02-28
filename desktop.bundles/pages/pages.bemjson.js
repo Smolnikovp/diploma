@@ -105,125 +105,139 @@ module.exports = {
                                             content: [
                                                 {
                                                     block: 'inline',
+                                                    mods: {type: 'text-format'},
                                                     content: [
                                                         {
                                                             block: 'button',
-                                                            mods: {theme: 'white'},
-                                                            attrs: {style: 'font-weight: bold'},
-                                                            text: 'b'
+                                                            mods: {theme: 'white', 'fa-icon': 'boldd'}
                                                         },
                                                         {
                                                             block: 'button',
-                                                            mods: {theme: 'white'},
-                                                            attrs: {style: 'font-style: italic'},
-                                                            text: 'i'
+                                                            mods: {theme: 'white', 'fa-icon': 'italic'}
                                                         },
                                                         {
                                                             block: 'button',
-                                                            mods: {theme: 'white'},
-                                                            attrs: {style: 'text-decoration: underline'},
-                                                            text: 'link'
+                                                            mods: {theme: 'white', 'fa-icon': 'underline'}
                                                         },
                                                         {
                                                             block: 'button',
-                                                            mods: {theme: 'white'},
-                                                            text: 'b-quote'
+                                                            mods: {theme: 'white', 'fa-icon': 'strikethrough'},
+                                                            attrs: {style: 'margin-right: 10px'}
                                                         },
                                                         {
                                                             block: 'button',
-                                                            mods: {theme: 'white'},
-                                                            attrs: {style: 'text-decoration: line-through'},
-                                                            text: 'del'
+                                                            mods: {theme: 'white', 'fa-icon': 'list-ul'}
                                                         },
                                                         {
                                                             block: 'button',
-                                                            mods: {theme: 'white'},
-                                                            text: 'ins'
+                                                            mods: {theme: 'white', 'fa-icon': 'list-ol'},
+                                                            attrs: {style: 'margin-right: 10px'}
                                                         },
                                                         {
                                                             block: 'button',
-                                                            mods: {theme: 'white'},
-                                                            text: 'img'
+                                                            mods: {theme: 'white', 'fa-icon': 'outdent'}
                                                         },
                                                         {
                                                             block: 'button',
-                                                            mods: {theme: 'white'},
-                                                            text: 'ul'
+                                                            mods: {theme: 'white', 'fa-icon': 'indent'},
+                                                            attrs: {style: 'margin-right: 10px'}
                                                         },
                                                         {
                                                             block: 'button',
-                                                            mods: {theme: 'white'},
-                                                            text: 'ol'
+                                                            mods: {theme: 'white', 'fa-icon': 'align-left'}
                                                         },
                                                         {
                                                             block: 'button',
-                                                            mods: {theme: 'white'},
-                                                            text: 'li'
+                                                            mods: {theme: 'white', 'fa-icon': 'align-center'}
                                                         },
                                                         {
                                                             block: 'button',
-                                                            mods: {theme: 'white'},
-                                                            text: 'code'
+                                                            mods: {theme: 'white', 'fa-icon': 'align-justify'}
                                                         },
                                                         {
                                                             block: 'button',
-                                                            mods: {theme: 'white'},
-                                                            text: 'more'
+                                                            mods: {theme: 'white', 'fa-icon': 'align-right'},
+                                                            attrs: {style: 'margin-right: 10px'}
                                                         },
                                                         {
                                                             block: 'button',
-                                                            mods: {theme: 'white'},
-                                                            text: 'поиск'
+                                                            mods: {theme: 'white', 'fa-icon': 'linkz'}
                                                         },
                                                         {
                                                             block: 'button',
-                                                            mods: {theme: 'white'},
-                                                            text: 'закрыть теги'
+                                                            mods: {theme: 'white', 'fa-icon': 'chain-broken'},
+                                                            attrs: {style: 'margin-right: 10px'}
+                                                        },
+                                                        {
+                                                            block: 'button',
+                                                            mods: {theme: 'white', 'fa-icon': 'picture-o'},
+                                                            attrs: {style: 'margin-right: 10px'}
                                                         }
+
                                                     ]
                                                 },
                                                 {
                                                     block: 'inline',
-                                                    content:[
+                                                    mods: {type: 'text-format'},
+                                                    content: [
                                                         {
-                                                            block: 'button',
-                                                            mods: {theme: 'white'},
-                                                            text: 'поиск'
+                                                            block: 'select',
+                                                            attrs: {style: 'margin-right: 10px'},
+                                                            mods: {mode: 'radio', theme: 'islands', size: 's'},
+                                                            val: 1,
+                                                            options: [
+                                                                {val: 1, text: 'Размер шрифта', disabled: true},
+                                                                {val: 2, text: '2^n'},
+                                                                {val: 3, text: '2^n'},
+                                                                {val: 4, text: '2^n'},
+                                                                {val: 5, text: '2^n'},
+                                                                {val: 6, text: '2^n'},
+                                                                {val: 7, text: '2^n'},
+                                                                {val: 8, text: '2^n'},
+                                                                {val: 9, text: '2^n'}
+                                                            ]
                                                         },
                                                         {
                                                             block: 'button',
-                                                            mods: {theme: 'white'},
-                                                            text: 'закрыть теги'
+                                                            mods: {theme: 'white', 'fa-icon': 'copy'}
                                                         },
                                                         {
                                                             block: 'button',
-                                                            mods: {theme: 'white'},
-                                                            text: 'закрыть теги'
+                                                            mods: {theme: 'white', 'fa-icon': 'cut'}
                                                         },
                                                         {
                                                             block: 'button',
-                                                            mods: {theme: 'white'},
-                                                            text: 'закрыть теги'
+                                                            mods: {theme: 'white', 'fa-icon': 'clipboard'},
+                                                            attrs: {style: 'margin-right: 10px'}
                                                         },
                                                         {
                                                             block: 'button',
-                                                            mods: {theme: 'white'},
-                                                            text: 'закрыть теги'
+                                                            mods: {theme: 'white', 'fa-icon': 'print'},
+                                                            attrs: {style: 'margin-right: 10px'}
                                                         },
                                                         {
                                                             block: 'button',
-                                                            mods: {theme: 'white'},
-                                                            text: 'закрыть теги'
+                                                            mods: {theme: 'white', 'fa-icon': 'fontz'},
+                                                            attrs: {style: 'margin-right: 10px'}
                                                         },
                                                         {
                                                             block: 'button',
-                                                            mods: {theme: 'white'},
-                                                            text: 'закрыть теги'
+                                                            mods: {theme: 'white', 'fa-icon': 'superscript'}
                                                         },
                                                         {
                                                             block: 'button',
-                                                            mods: {theme: 'white'},
-                                                            text: 'закрыть теги'
+                                                            mods: {theme: 'white', 'fa-icon': 'subscript'},
+                                                            attrs: {style: 'margin-right: 10px'}
+                                                        },
+                                                        {
+                                                            block: 'button',
+                                                            mods: {theme: 'white', 'fa-icon': 'film'},
+                                                            attrs: {style: 'margin-right: 10px'}
+                                                        },
+                                                        {
+                                                            block: 'button',
+                                                            mods: {theme: 'white', 'fa-icon': 'table'},
+                                                            attrs: {style: 'margin-right: 10px'}
                                                         }
                                                     ]
                                                 },
@@ -373,7 +387,7 @@ module.exports = {
                                                 {
                                                     block: 'inline',
                                                     mods: {type: 'select'},
-                                                    content:[
+                                                    content: [
                                                         {
                                                             block: 'text',
                                                             mods: {theme: 'bold'},
@@ -381,13 +395,13 @@ module.exports = {
                                                             content: 'Родительская'
                                                         },
                                                         {
-                                                            block : 'select',
-                                                            mods : { mode : 'radio', theme: 'islands', size: 'm'},
-                                                            val : 1,
-                                                            options : [
-                                                                { val : 1, text : '(нет родительских)' },
-                                                                { val : 2, text : 'Страницы' },
-                                                                { val : 3, text : 'Заметки' }
+                                                            block: 'select',
+                                                            mods: {mode: 'radio', theme: 'islands', size: 'm'},
+                                                            val: 1,
+                                                            options: [
+                                                                {val: 1, text: '(нет родительских)'},
+                                                                {val: 2, text: 'Страницы'},
+                                                                {val: 3, text: 'Заметки'}
                                                             ]
                                                         }
                                                     ]
@@ -395,7 +409,7 @@ module.exports = {
                                                 {
                                                     block: 'inline',
                                                     mods: {type: 'select'},
-                                                    content:[
+                                                    content: [
                                                         {
                                                             block: 'text',
                                                             mods: {theme: 'bold'},
@@ -403,13 +417,13 @@ module.exports = {
                                                             content: 'Шаблон'
                                                         },
                                                         {
-                                                            block : 'select',
-                                                            mods : { mode : 'radio', theme: 'islands', size: 'm'},
-                                                            val : 1,
-                                                            options : [
-                                                                { val : 1, text : 'Базовый шаблон' },
-                                                                { val : 2, text : 'typesomethinhere' },
-                                                                { val : 3, text : 'typesomethinhere' }
+                                                            block: 'select',
+                                                            mods: {mode: 'radio', theme: 'islands', size: 'm'},
+                                                            val: 1,
+                                                            options: [
+                                                                {val: 1, text: 'Базовый шаблон'},
+                                                                {val: 2, text: 'typesomethinhere'},
+                                                                {val: 3, text: 'typesomethinhere'}
                                                             ]
                                                         }
                                                     ]
@@ -417,7 +431,7 @@ module.exports = {
                                                 {
                                                     block: 'inline',
                                                     mods: {type: 'select'},
-                                                    content:[
+                                                    content: [
                                                         {
                                                             block: 'text',
                                                             mods: {theme: 'bold'},
@@ -425,20 +439,20 @@ module.exports = {
                                                             content: 'Порядок'
                                                         },
                                                         {
-                                                            block : 'select',
-                                                            mods : { mode : 'radio', theme: 'islands', size: 'm'},
-                                                            val : 1,
-                                                            options : [
-                                                                { val : 1, text : '1' },
-                                                                { val : 2, text : '2' },
-                                                                { val : 3, text : '3' },
-                                                                { val : 4, text : '4' },
-                                                                { val : 5, text : '5' },
-                                                                { val : 6, text : '6' },
-                                                                { val : 7, text : '7' },
-                                                                { val : 8, text : '8' },
-                                                                { val : 9, text : '9' },
-                                                                { val : 10, text : '10' }
+                                                            block: 'select',
+                                                            mods: {mode: 'radio', theme: 'islands', size: 'm'},
+                                                            val: 1,
+                                                            options: [
+                                                                {val: 1, text: '1'},
+                                                                {val: 2, text: '2'},
+                                                                {val: 3, text: '3'},
+                                                                {val: 4, text: '4'},
+                                                                {val: 5, text: '5'},
+                                                                {val: 6, text: '6'},
+                                                                {val: 7, text: '7'},
+                                                                {val: 8, text: '8'},
+                                                                {val: 9, text: '9'},
+                                                                {val: 10, text: '10'}
                                                             ]
                                                         }
                                                     ]

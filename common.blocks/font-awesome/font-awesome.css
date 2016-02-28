@@ -129,3 +129,99 @@
 *[class*='star']:before{
     content: "\f005";
 }
+
+*[class*='underline']:before{
+    content: "\f0cd";
+}
+
+*[class*='italic']:before{
+    content: "\f033";
+}
+
+*[class*='boldd']:before{
+    content: "\f032";
+}
+
+*[class*='strikethrough']:before{
+    content: "\f0cc";
+}
+
+*[class*='list-ul']:before{
+    content: "\f0ca";
+}
+
+*[class*='list-ol']:before{
+    content: "\f0cb";
+}
+
+*[class*='outdent']:before{
+    content: "\f03b";
+}
+
+*[class*='indent']:before{
+    content: "\f03c";
+}
+
+*[class*='align-left']:before{
+    content: "\f036";
+}
+
+*[class*='align-justify']:before{
+    content: "\f039";
+}
+
+*[class*='align-right']:before{
+    content: "\f038";
+}
+
+*[class*='align-center']:before{
+    content: "\f037";
+}
+
+*[class*='linkz']:before{
+    content: "\f0c1";
+}
+
+*[class*='chain-broken']:before{
+    content: "\f127";
+}
+
+*[class*='picture-o']:before{
+    content: "\f03e";
+}
+
+*[class*='copy']:before{
+    content: "\f0c5";
+}
+
+*[class*='cut']:before{
+    content: "\f0c4";
+}
+
+*[class*='clipboard']:before{
+    content: "\f0ea";
+}
+
+*[class*='print']:before{
+    content: "\f02f";
+}
+
+*[class*='fontz']:before{
+    content: "\f031";
+}
+
+*[class*='superscript']:before{
+    content: "\f12b";
+}
+
+*[class*='subscript']:before{
+    content: "\f12c";
+}
+
+*[class*='film']:before{
+    content: "\f008";
+}
+
+*[class*='table']:before{
+    content: "\f0ce";
+}
