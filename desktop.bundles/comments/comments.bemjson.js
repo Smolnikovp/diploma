@@ -50,38 +50,48 @@ module.exports = {
                     ]
                 },
                 {
-                    block: 'inline',
+                    block: 'layout',
                     content: [
                         {
-                            block: 'select',
-                            mods: {mode: 'radio', theme: 'islands', size: 'm'},
-                            val: 1,
-                            options: [
-                                {val: 1, text: 'Действия', disabled: true},
-                                {val: 2, text: 'удалить'},
-                                {val: 3, text: 'anything'}
+                            elem: 'left',
+                            content:[
+                                {
+                                    block: 'select',
+                                    mods: {mode: 'radio', theme: 'islands', size: 'm'},
+                                    val: 1,
+                                    options: [
+                                        {val: 1, text: 'Действия', disabled: true},
+                                        {val: 2, text: 'удалить'},
+                                        {val: 3, text: 'anything'}
+                                    ]
+                                },
+                                {
+                                    block: 'button',
+                                    mods: {theme: 'grey'},
+                                    content: 'Применить'
+                                }
                             ]
                         },
                         {
-                            block: 'button',
-                            mods: {theme: 'grey'},
-                            content: 'Применить'
-                        },
-                        {
-                            block: 'select',
-                            mods: {mode: 'radio', theme: 'islands', size: 'm'},
-                            val: 1,
-                            options: [
-                                {val: 1, text: 'Все типы комментариев', disabled: true},
-                                {val: 2, text: 'Важные'},
-                                {val: 3, text: 'Личные'},
-                                {val: 4, text: 'etc.'}
+                            elem: 'right',
+                            content: [
+                                {
+                                    block: 'select',
+                                    mods: {mode: 'radio', theme: 'islands', size: 'm'},
+                                    val: 1,
+                                    options: [
+                                        {val: 1, text: 'Все типы комментариев', disabled: true},
+                                        {val: 2, text: 'Важные'},
+                                        {val: 3, text: 'Личные'},
+                                        {val: 4, text: 'etc.'}
+                                    ]
+                                },
+                                {
+                                    block: 'button',
+                                    mods: {theme: 'grey'},
+                                    content: 'Фильтр'
+                                }
                             ]
-                        },
-                        {
-                            block: 'button',
-                            mods: {theme: 'grey'},
-                            content: 'Фильтр'
                         }
                     ]
                 },

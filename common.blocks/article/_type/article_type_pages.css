@@ -63,10 +63,6 @@
     float: right;
 }
 
-.article_type_pages .layout__right{
-    flex-basis: 350px;
-}
-
 .article_type_pages .layout__right .lego .inline{
     overflow: hidden;
     padding: 10px 20px;

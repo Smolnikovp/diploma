@@ -1,23 +1,26 @@
-.article_type_console .layout > *{
-    width: 50%;
-}
-
 .article_type_console .control-group .button_theme_islands{
     padding: 0 19px 0 16px;
 }
 
 .article_type_console .welcome .table__row{
     flex: 1 1 300px;
+    margin: 10px 0;
+
 }
 .article_type_console .comment .table .table__row:first-child{
-    flex: 1 1 50px;
+    flex: 1 1 0;
 }
 
 .article_type_console .comment .table .table__row{
-    flex: 2 1 500px;
-    margin: 10px 0;
+    flex: 2 1 300px;
+
 }
 
+.article_type_console .layout__left,
 .article_type_console .layout__right{
     flex: 1 1 500px;
+}
+
+.article_type_console .layout__left{
+    margin-right: 10px;
 }
