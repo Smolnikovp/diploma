@@ -1,7 +1,3 @@
-.table__row{
-    flex-grow: 1;
-}
-
 .table__row *[class*='link_fa-icon']{
     padding: 10px 0;
     display: block;

@@ -2,6 +2,22 @@
     width: 50%;
 }
 
-.article_type_console .lego{
-    padding-bottom: 10px;
+.article_type_console .control-group .button_theme_islands{
+    padding: 0 19px 0 16px;
+}
+
+.article_type_console .welcome .table__row{
+    flex: 1 1 300px;
+}
+.article_type_console .comment .table .table__row:first-child{
+    flex: 1 1 50px;
+}
+
+.article_type_console .comment .table .table__row{
+    flex: 2 1 500px;
+    margin: 10px 0;
+}
+
+.article_type_console .layout__right{
+    flex: 1 1 500px;
 }

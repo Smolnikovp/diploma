@@ -1,0 +1,34 @@
+.article_type_comments .lego{
+    margin: 10px 0;
+}
+
+.article_type_comments .control-group{
+    margin: 20px 0;
+}
+
+.article_type_comments .button_theme_grey{
+    border-radius: 0;
+    margin: 0 50px 3px 10px;
+    padding: 3px 15px;
+}
+
+.article_type_comments .table__row:first-child{
+    flex: 1 0 0;
+}
+
+.article_type_comments .table__row{
+    border-bottom: 1px solid #a7a7a7;
+    flex: 2 0 600px;
+    flex-wrap: nowrap;
+    line-height: 27px;
+}
+
+.article_type_comments .checkbox__box{
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.article_type_comments .table__row .text{
+    vertical-align: top;
+}
+

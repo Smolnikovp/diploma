@@ -1,0 +1,9 @@
+.checkbox_theme_islands.checkbox_focused .checkbox__box{
+    box-shadow: none;
+}
+
+.checkbox_theme_islands.checkbox_checked .checkbox__box,
+.checkbox_theme_islands.checkbox_checked .checkbox__box:before,
+.checkbox_theme_islands.checkbox_hovered.checkbox_checked .checkbox__box{
+    background: #15fff0;
+}

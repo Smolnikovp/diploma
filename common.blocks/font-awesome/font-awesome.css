@@ -37,7 +37,7 @@
     content: "\f021";
 }
 
-*[class*='comments']:before{
+*[class*='commentz']:before{
     content: "\f086";
 }
 
@@ -222,6 +222,6 @@
     content: "\f008";
 }
 
-*[class*='table']:before{
+*[class*='tablez']:before{
     content: "\f0ce";
 }

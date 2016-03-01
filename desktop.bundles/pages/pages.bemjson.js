@@ -236,7 +236,7 @@ module.exports = {
                                                         },
                                                         {
                                                             block: 'button',
-                                                            mods: {theme: 'white', 'fa-icon': 'table'},
+                                                            mods: {theme: 'white', 'fa-icon': 'tablez'},
                                                             attrs: {style: 'margin-right: 10px'}
                                                         }
                                                     ]

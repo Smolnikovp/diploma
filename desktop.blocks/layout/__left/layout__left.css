@@ -1,5 +1,6 @@
 .layout__left{
     margin-right: 10px;
+    flex: 1 1 500px;
 }
 
 .layout__left .text_theme_bold{

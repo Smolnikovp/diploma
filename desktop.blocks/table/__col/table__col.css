@@ -1,9 +1,5 @@
-.layout{
+.table__col{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-}
-
-.layout > *{
-    margin: 20px 0;
 }

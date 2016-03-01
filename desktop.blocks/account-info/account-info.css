@@ -1,0 +1,13 @@
+.account-info{
+    overflow: hidden;
+    width: 200px;
+}
+
+.account-info > *{
+    float: left;
+    vertical-align: top;
+}
+
+.account-info .image{
+    margin-right: 10px;
+}

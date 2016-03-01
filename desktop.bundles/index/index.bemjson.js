@@ -60,7 +60,7 @@ module.exports = {
                         content: [
                             {
                                 block: 'link',
-                                mods: {'fa-icon': 'comments'},
+                                mods: {'fa-icon': 'commentz'},
                                 url: '#',
                                 content: '0'
                             }
@@ -153,8 +153,8 @@ module.exports = {
                             val: 6,
                             content: {
                                 block: 'link',
-                                mods: {'fa-icon': 'comments'},
-                                url: '#',
+                                mods: {'fa-icon': 'commentz'},
+                                url: '../comments/comments.html',
                                 content: 'Комментарии'
                             }
                         }
@@ -263,90 +263,93 @@ module.exports = {
                         },
                         {
                             block: 'table',
-                            content: [
-                                {
-                                    elem: 'row',
-                                    content: [
-                                        {
-                                            block: 'text',
-                                            mods: {type: 'heading-medium'},
-                                            content: 'Для начала'
-                                        },
-                                        {
-                                            block: 'button',
-                                            mods: {theme: 'turquoise', type: 'large'},
-                                            text: 'Настройте свой сайт'
-                                        },
-                                        {
-                                            block: 'text',
-                                            tag: 'span',
-                                            content: 'или'
-                                        },
-                                        {
-                                            block: 'link',
-                                            mods: {type: 'inline', theme: 'turquoise'},
-                                            url: '#',
-                                            content: 'выберите другую тему'
-                                        }
-                                    ]
-                                },
-                                {
-                                    elem: 'row',
-                                    content: [
-                                        {
-                                            block: 'text',
-                                            mods: {type: 'heading-medium'},
-                                            content: 'Следующие шаги'
-                                        },
-                                        {
-                                            block: 'link',
-                                            url: '#',
-                                            mods: {theme: 'turquoise', 'fa-icon': 'file-text'},
-                                            content: 'Напишите свою первую запись'
-                                        },
-                                        {
-                                            block: 'link',
-                                            url: '#',
-                                            mods: {theme: 'turquoise', 'fa-icon': 'pencil-square-o'},
-                                            content: 'Создайте запись &#171;обо мне&#187;'
-                                        },
-                                        {
-                                            block: 'link',
-                                            url: '#',
-                                            mods: {theme: 'turquoise', 'fa-icon': 'eye'},
-                                            content: 'Просмотрите свой сайт'
-                                        }
-                                    ]
-                                },
-                                {
-                                    elem: 'row',
-                                    content: [
-                                        {
-                                            block: 'text',
-                                            mods: {type: 'heading-medium'},
-                                            content: 'Другие действия'
-                                        },
-                                        {
-                                            block: 'link',
-                                            url: '#',
-                                            mods: {theme: 'turquoise', 'fa-icon': 'cogs'},
-                                            content: 'Настройте виджеты и меню'
-                                        },
-                                        {
-                                            block: 'link',
-                                            url: '#',
-                                            mods: {theme: 'turquoise', 'fa-icon': 'comments'},
-                                            content: 'Включите или выключите комментарии'
-                                        },
-                                        {
-                                            block: 'link',
-                                            url: '#',
-                                            mods: {theme: 'turquoise', 'fa-icon': 'wrench'},
-                                            content: 'Узнайте больше о %projectname%'
-                                        }
-                                    ]
-                                }
-                            ]
+                            content: {
+                                elem: 'col',
+                                content: [
+                                    {
+                                        elem: 'row',
+                                        content: [
+                                            {
+                                                block: 'text',
+                                                mods: {type: 'heading-medium'},
+                                                content: 'Для начала'
+                                            },
+                                            {
+                                                block: 'button',
+                                                mods: {theme: 'turquoise', type: 'large'},
+                                                text: 'Настройте свой сайт'
+                                            },
+                                            {
+                                                block: 'text',
+                                                tag: 'span',
+                                                content: 'или'
+                                            },
+                                            {
+                                                block: 'link',
+                                                mods: {type: 'inline', theme: 'turquoise'},
+                                                url: '#',
+                                                content: 'выберите другую тему'
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        elem: 'row',
+                                        content: [
+                                            {
+                                                block: 'text',
+                                                mods: {type: 'heading-medium'},
+                                                content: 'Следующие шаги'
+                                            },
+                                            {
+                                                block: 'link',
+                                                url: '#',
+                                                mods: {theme: 'turquoise', 'fa-icon': 'file-text'},
+                                                content: 'Напишите свою первую запись'
+                                            },
+                                            {
+                                                block: 'link',
+                                                url: '#',
+                                                mods: {theme: 'turquoise', 'fa-icon': 'pencil-square-o'},
+                                                content: 'Создайте запись &#171;обо мне&#187;'
+                                            },
+                                            {
+                                                block: 'link',
+                                                url: '#',
+                                                mods: {theme: 'turquoise', 'fa-icon': 'eye'},
+                                                content: 'Просмотрите свой сайт'
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        elem: 'row',
+                                        content: [
+                                            {
+                                                block: 'text',
+                                                mods: {type: 'heading-medium'},
+                                                content: 'Другие действия'
+                                            },
+                                            {
+                                                block: 'link',
+                                                url: '#',
+                                                mods: {theme: 'turquoise', 'fa-icon': 'cogs'},
+                                                content: 'Настройте виджеты и меню'
+                                            },
+                                            {
+                                                block: 'link',
+                                                url: '#',
+                                                mods: {theme: 'turquoise', 'fa-icon': 'commentz'},
+                                                content: 'Включите или выключите комментарии'
+                                            },
+                                            {
+                                                block: 'link',
+                                                url: '#',
+                                                mods: {theme: 'turquoise', 'fa-icon': 'wrench'},
+                                                content: 'Узнайте больше о %projectname%'
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
                         }
                     ]
                 },
@@ -366,34 +369,37 @@ module.exports = {
                                         },
                                         {
                                             block: 'table',
-                                            content: [
-                                                {
-                                                    elem: 'row',
-                                                    content: [
-                                                        {
+                                            content: {
+                                                elem: 'col',
+                                                content: [
+                                                    {
+                                                        elem: 'row',
+                                                        content: [
+                                                            {
+                                                                block: 'link',
+                                                                url: '#',
+                                                                mods: {theme: 'turquoise', 'fa-icon': 'thumb-tack'},
+                                                                content: 'n запись'
+                                                            },
+                                                            {
+                                                                block: 'link',
+                                                                url: '#',
+                                                                mods: {theme: 'turquoise', 'fa-icon': 'commentz'},
+                                                                content: 'n комментария'
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        elem: 'row',
+                                                        content: {
                                                             block: 'link',
                                                             url: '#',
-                                                            mods: {theme: 'turquoise', 'fa-icon': 'thumb-tack'},
-                                                            content: 'n запись'
-                                                        },
-                                                        {
-                                                            block: 'link',
-                                                            url: '#',
-                                                            mods: {theme: 'turquoise', 'fa-icon': 'comments'},
-                                                            content: 'n комментария'
+                                                            mods: {theme: 'turquoise', 'fa-icon': 'file'},
+                                                            content: 'n страница'
                                                         }
-                                                    ]
-                                                },
-                                                {
-                                                    elem: 'row',
-                                                    content: {
-                                                        block: 'link',
-                                                        url: '#',
-                                                        mods: {theme: 'turquoise', 'fa-icon': 'file'},
-                                                        content: 'n страница'
                                                     }
-                                                }
-                                            ]
+                                                ]
+                                            }
                                         },
                                         {
                                             elem: 'bottom',
@@ -454,113 +460,118 @@ module.exports = {
                                                     block: 'table',
                                                     content: [
                                                         {
-                                                            elem: 'row',
-                                                            content:[
+                                                            elem: 'col',
+                                                            content: [
                                                                 {
-                                                                    block: 'image',
-                                                                    url: 'https://cdn4.iconfinder.com/data/icons/gray-toolbar-7/512/user-512.png',
-                                                                    width: 50,
-                                                                    height: 50
+                                                                    elem: 'row',
+                                                                    content:[
+                                                                        {
+                                                                            block: 'image',
+                                                                            url: 'https://cdn4.iconfinder.com/data/icons/gray-toolbar-7/512/user-512.png',
+                                                                            width: 50,
+                                                                            height: 50
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    elem: 'row',
+                                                                    content: [
+                                                                        {
+                                                                            block: 'link',
+                                                                            url: '#',
+                                                                            mods: {type: 'inline', theme: 'turquoise'},
+                                                                            content: '%someone%'
+                                                                        },
+                                                                        {
+                                                                            block: 'text',
+                                                                            tag: 'span',
+                                                                            content: 'к записи'
+                                                                        },
+                                                                        {
+                                                                            block: 'link',
+                                                                            url: '#',
+                                                                            mods: {type: 'inline', theme: 'turquoise'},
+                                                                            content: '%notename%'
+                                                                        },
+                                                                        {
+                                                                            block: 'text',
+                                                                            content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
+                                                                        }
+                                                                    ]
                                                                 }
                                                             ]
                                                         },
                                                         {
-                                                            elem: 'row',
+                                                            elem: 'col',
                                                             content: [
                                                                 {
-                                                                    block: 'link',
-                                                                    url: '#',
-                                                                    mods: {type: 'inline', theme: 'turquoise'},
-                                                                    content: '%someone%'
+                                                                    elem: 'row',
+                                                                    content:[
+                                                                        {
+                                                                            block: 'image',
+                                                                            url: 'https://cdn4.iconfinder.com/data/icons/gray-toolbar-7/512/user-512.png',
+                                                                            width: 50,
+                                                                            height: 50
+                                                                        }
+                                                                    ]
                                                                 },
                                                                 {
-                                                                    block: 'text',
-                                                                    tag: 'span',
-                                                                    content: 'к записи'
-                                                                },
-                                                                {
-                                                                    block: 'link',
-                                                                    url: '#',
-                                                                    mods: {type: 'inline', theme: 'turquoise'},
-                                                                    content: '%notename%'
-                                                                },
-                                                                {
-                                                                    block: 'text',
-                                                                    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
+                                                                    elem: 'row',
+                                                                    content: [
+                                                                        {
+                                                                            block: 'link',
+                                                                            url: '#',
+                                                                            mods: {type: 'inline', theme: 'turquoise'},
+                                                                            content: '%someone%'
+                                                                        },
+                                                                        {
+                                                                            block: 'text',
+                                                                            tag: 'span',
+                                                                            content: 'к записи'
+                                                                        },
+                                                                        {
+                                                                            block: 'link',
+                                                                            url: '#',
+                                                                            mods: {type: 'inline', theme: 'turquoise'},
+                                                                            content: '%notename%'
+                                                                        },
+                                                                        {
+                                                                            block: 'text',
+                                                                            content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
+                                                                        }
+                                                                    ]
                                                                 }
                                                             ]
                                                         }
                                                     ]
                                                 },
                                                 {
-                                                    block: 'table',
-                                                    content: [
+                                                    block : 'control-group',
+                                                    content : [
                                                         {
-                                                            elem: 'row',
-                                                            content:[
-                                                                {
-                                                                    block: 'image',
-                                                                    url: 'https://cdn4.iconfinder.com/data/icons/gray-toolbar-7/512/user-512.png',
-                                                                    width: 50,
-                                                                    height: 50
-                                                                }
-                                                            ]
+                                                            block : 'button',
+                                                            mods : { theme : 'islands', size : 'm' },
+                                                            text : 'Все'
                                                         },
                                                         {
-                                                            elem: 'row',
-                                                            content: [
-                                                                {
-                                                                    block: 'link',
-                                                                    url: '#',
-                                                                    mods: {type: 'inline', theme: 'turquoise'},
-                                                                    content: '%someone%'
-                                                                },
-                                                                {
-                                                                    block: 'text',
-                                                                    tag: 'span',
-                                                                    content: 'к записи'
-                                                                },
-                                                                {
-                                                                    block: 'link',
-                                                                    url: '#',
-                                                                    mods: {type: 'inline', theme: 'turquoise'},
-                                                                    content: '%notename%'
-                                                                },
-                                                                {
-                                                                    block: 'text',
-                                                                    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
-                                                                }
-                                                            ]
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    elem: 'bottom',
-                                                    content: [
-                                                        {
-                                                            block: 'link',
-                                                            mods: {type: 'inline', theme: 'turquoise'},
-                                                            content: 'Все'
+                                                            block : 'button',
+                                                            mods : { theme : 'islands', size : 'm' },
+                                                            text : 'Ожидающие (0)'
                                                         },
                                                         {
-                                                            block: 'link',
-                                                            mods: {type: 'inline', theme: 'turquoise'},
-                                                            content: 'Ожидающие (0)'
+                                                            block : 'button',
+                                                            mods : { theme : 'islands', size : 'm' },
+                                                            text : 'Одобренные'
                                                         },
                                                         {
-                                                            block: 'link',
-                                                            mods: {type: 'inline', theme: 'turquoise'},
-                                                            content: 'Одобренный'
+                                                            block : 'button',
+                                                            mods : { theme : 'islands', size : 'm' },
+                                                            text : 'Спам'
                                                         },
                                                         {
-                                                            block: 'link',
-                                                            mods: {type: 'inline', theme: 'turquoise'},
-                                                            content: 'Спам (0)'
-                                                        },
-                                                        {
-                                                            block: 'link',
-                                                            mods: {type: 'inline', theme: 'turquoise'},
-                                                            content: 'Корзина (0)'
+                                                            block : 'button',
+                                                            mods : { theme : 'islands', size : 'm' },
+                                                            text : 'Корзина (0)'
                                                         }
                                                     ]
                                                 }

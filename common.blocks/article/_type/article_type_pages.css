@@ -15,8 +15,7 @@
 .article_type_pages .lego__bottom{
     background-color: #fbfffd;
     line-height: 28px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-radius: 0 0 5px 5px;
     overflow: hidden;
 }
 
@@ -32,11 +31,11 @@
 }
 
 .article_type_pages .layout__left{
-    flex-grow: 3;
+    flex: 4 1 600px;
 }
 
 .article_type_pages .layout__right{
-    flex-grow: 2;
+    flex: 1 1 350px;
 }
 
 .article_type_pages .inline:first-child{
@@ -48,8 +47,7 @@
 }
 
 .article_type_pages .text_type_heading-medium{
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-radius: 5px 5px 0 0;
     background-color: #cecece;
 }
 
@@ -80,4 +78,9 @@
     margin: 10px 0;
     line-height: 27px;
     padding: 0;
+}
+
+.article_type_pages .inline .link_theme_turquoise{
+    float: right;
+    text-decoration: underline;
 }
