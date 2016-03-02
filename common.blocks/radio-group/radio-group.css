@@ -12,8 +12,7 @@
 .radio-group .button_theme_grey.button_checked{
     background-color: #dbdbdb;
     color: #000;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    border-radius: 5px 5px 0 0;
 }
 
 .radio-group .radio__box{

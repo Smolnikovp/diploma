@@ -20,7 +20,3 @@
 .article_type_console .layout__right{
     flex: 1 1 500px;
 }
-
-.article_type_console .layout__left{
-    margin-right: 10px;
-}

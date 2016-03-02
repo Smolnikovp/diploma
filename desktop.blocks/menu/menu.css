@@ -1,4 +1,5 @@
 .menu{
+    overflow: hidden;
     color: #a6a6a6;
     font-size: 15px;
     line-height: 15px;

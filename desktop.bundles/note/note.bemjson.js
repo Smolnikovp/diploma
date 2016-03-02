@@ -188,6 +188,9 @@ module.exports = {
                             ]
                         },
                         {
+                            elem: 'center'
+                        },
+                        {
                             elem: 'right',
                             content: [
                                 {
