@@ -134,7 +134,7 @@ module.exports = {
                             content: {
                                 block: 'link',
                                 mods: {'fa-icon': 'thumb-tack'},
-                                url: '#',
+                                url: '../note/note.html',
                                 content: 'Заметки'
                             }
                         },
@@ -144,7 +144,7 @@ module.exports = {
                             content: {
                                 block: 'link',
                                 mods: {'fa-icon': 'file'},
-                                url: '#',
+                                url: '../pages/pages.html',
                                 content: 'Страницы'
                             }
                         },
@@ -180,7 +180,7 @@ module.exports = {
                             content: {
                                 block: 'link',
                                 mods: {'fa-icon': 'plug'},
-                                url: '#',
+                                url: '../elements/elements.html',
                                 content: 'Элементы'
                             }
                         },

@@ -21,11 +21,6 @@
     margin: 10px 20px;
 }
 
-.lego .input__control{
-    width: calc(100% - 50px);
-    margin: 10px 20px;
-}
-
 .lego .text:after{
     float: right;
 }

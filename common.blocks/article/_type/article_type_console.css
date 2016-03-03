@@ -20,3 +20,8 @@
 .article_type_console .layout__right{
     flex: 1 1 500px;
 }
+
+.article_type_console .input__control{
+    width: calc(100% - 50px);
+    margin: 10px 20px;
+}

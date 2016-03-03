@@ -1,0 +1,50 @@
+.article_type_options .inline{
+    padding: 10px;
+    margin: 10px;
+}
+
+.article_type_options .lego{
+    background-color: #f1f1f1;
+    border: none;
+    margin: 0;
+    padding: 20px 10px;
+}
+
+.article_type_options .table{
+    margin-bottom: 10px;
+}
+
+.article_type_options .table__col{
+    padding: 10px;
+}
+
+.article_type_options .table__row:first-child{
+    flex: 1 0 300px;
+}
+
+.article_type_options .table__row:first-child .text{
+    display: block;
+    padding: 5px 0;
+}
+
+.article_type_options .table__row:last-child{
+    flex: 3 0 500px;
+}
+
+.article_type_options .table__row:last-child .text{
+    font-size: 14px;
+}
+
+.article_type_options .table__row:last-child .textarea{
+    height: auto;
+}
+
+.article_type_options .table__row:last-child .textarea,
+.article_type_options .table__row:last-child .input__control{
+    width: 50%;
+    max-width: 500px;
+}
+
+.article_type_options .select .button{
+    padding-right: 100px;
+}
