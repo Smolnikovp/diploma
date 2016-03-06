@@ -1,5 +1,7 @@
 .link_type_close{
-    float: right;
+    position: absolute;
+    top: 15px;
+    right: 25px;
 }
 
 .link_type_close:before{

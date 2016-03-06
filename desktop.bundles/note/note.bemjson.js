@@ -81,7 +81,7 @@ module.exports = {
                                                 },
                                                 {
                                                     block: 'radio-group',
-                                                    val: 1,
+                                                    val: 2,
                                                     mods: {theme: 'grey', type: 'button', focused: true},
                                                     options: [
                                                         {val: 1, text: 'Визуально'},
@@ -186,9 +186,6 @@ module.exports = {
                                     ]
                                 }
                             ]
-                        },
-                        {
-                            elem: 'center'
                         },
                         {
                             elem: 'right',

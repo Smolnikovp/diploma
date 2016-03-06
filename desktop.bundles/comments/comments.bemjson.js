@@ -16,7 +16,7 @@ module.exports = {
                 {
                     block: 'text',
                     tag: 'span',
-                    mods: {type: 'heading-large'},
+                    mods: {type: 'heading-large', 'fa-icon': 'commentz'},
                     content: 'Комментарии'
                 },
                 {
@@ -68,7 +68,7 @@ module.exports = {
                                 {
                                     block: 'button',
                                     mods: {theme: 'grey'},
-                                    content: 'Применить'
+                                    text: 'Применить'
                                 }
                             ]
                         },
@@ -89,7 +89,7 @@ module.exports = {
                                 {
                                     block: 'button',
                                     mods: {theme: 'grey'},
-                                    content: 'Фильтр'
+                                    text: 'Фильтр'
                                 }
                             ]
                         }
@@ -354,7 +354,7 @@ module.exports = {
                         {
                             block: 'button',
                             mods: {theme: 'grey'},
-                            content: 'Применить'
+                            text: 'Применить'
                         }
                     ]
                 }

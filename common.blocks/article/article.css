@@ -5,7 +5,7 @@
     right: 0;
     left: 160px;
     overflow: auto;
-    padding: 25px 20px;
+    padding: 25px 0 25px 20px;
     background-color: #f1f1f1;
 }
 

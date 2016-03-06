@@ -25,6 +25,7 @@
 .article_type_options .table__row:first-child .text{
     display: block;
     padding: 5px 0;
+    color: #1357ff;
 }
 
 .article_type_options .table__row:last-child{
@@ -47,4 +48,9 @@
 
 .article_type_options .select .button{
     padding-right: 100px;
+}
+
+.article_type_options .input__control::-webkit-input-placeholder,
+.article_type_options .textarea::-webkit-input-placeholder{
+    font-size: 14px;
 }

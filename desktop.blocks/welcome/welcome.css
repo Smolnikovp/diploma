@@ -1,5 +1,6 @@
 .welcome{
-    width: calc(100% - 60px);
+    position: relative;
+    width: calc(100% - 80px);
     background-color: #fff;
     padding: 20px 30px;
     border: 1px solid #a9a9a9;
