@@ -28,31 +28,7 @@ module.exports = {
                                     block: 'menu',
                                     mods: {mode: 'radio-check', focused: true},
                                     val: 1,
-                                    content: [
-                                        {
-                                            block: 'text',
-                                            mods: {type: 'heading-medium'},
-                                            content: 'Выберите элемент'
-                                        },
-                                        {
-                                            block: 'menu-item',
-                                            val: 1,
-                                            content: '1'
-                                        },
-                                        {
-                                            block: 'menu-item',
-                                            val: 2,
-                                            content: '2'
-                                        },
-                                        {
-                                            block: 'menu-item',
-                                            content: '3'
-                                        },
-                                        {
-                                            block: 'menu-item',
-                                            content: '4'
-                                        }
-                                    ]
+                                    names: ['BEM', 'BEMJSON', 'BEMHTML']
                                 }
                             ]
                         },
