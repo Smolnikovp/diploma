@@ -1,0 +1,8 @@
+.welcome__table{
+    margin-top: 30px;
+}
+
+.welcome__table .table__row{
+    flex: 1 1 300px;
+    margin: 10px 0;
+}

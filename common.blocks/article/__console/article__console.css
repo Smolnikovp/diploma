@@ -1,0 +1,17 @@
+.article__console .control-group .button_theme_islands{
+    padding: 0 19px 0 16px;
+}
+
+.article__console .comment .table .table__row:first-child{
+    flex: 1 1 0;
+}
+
+.article__console .comment .table .table__row{
+    flex: 2 1 300px;
+
+}
+
+.article__console .input__control{
+    width: calc(100% - 50px);
+    margin: 10px 20px;
+}

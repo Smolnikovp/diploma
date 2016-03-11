@@ -1,0 +1,7 @@
+.article__heading-text{
+    font-size: 25px;
+}
+
+.article__heading-text:before{
+    margin: 0 10px;
+}

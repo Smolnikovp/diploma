@@ -1,0 +1,6 @@
+block('table').elem('col')(
+    tag()('ul')
+);
+block('table').elem('row')(
+    tag()('li')
+)

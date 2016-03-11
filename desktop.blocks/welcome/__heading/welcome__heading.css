@@ -6,6 +6,7 @@
     display: inline-block;
 }
 
-.welcome__heading .text_type_heading-large{
+.welcome__heading span{
     margin: 0;
+    font-size: 25px;
 }
