@@ -1,0 +1,19 @@
+.table_type_comment .table__col{
+    border-bottom: 1px solid #a7a7a7;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.table_type_comment .table__row:first-child{
+    flex: 1 0 0;
+    margin-left: 10px;
+}
+
+.table_type_comment .table__row{
+    flex: 2 0 450px;
+}
+
+.table_type_comment .table__row .text:last-child{
+    display: block;
+    margin: 5px 0;
+}

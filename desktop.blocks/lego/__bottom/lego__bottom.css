@@ -2,3 +2,33 @@
     padding: 0 20px 10px 20px;
 }
 
+.lego__bottom_type_comment{
+    padding: 0;
+}
+
+.lego__bottom .control-group{
+    text-align: center;
+}
+
+.lego__bottom .control-group .button_theme_islands.button_size_m{
+    font-size: 18px;
+    line-height: 31px;
+    color: #00bfff;
+    background: #fff;
+    padding: 0 8px;
+    border-right: 1px solid #a7a7a7;
+}
+
+.lego__bottom .control-group .button_theme_islands.button_size_m.button_focused,
+.lego__bottom .control-group .button_theme_islands.button_size_m.button_focused-hard{
+    box-shadow: none;
+    color: #000;
+}
+
+.lego__bottom .control-group .button_theme_islands.button_size_m.button_hovered span{
+    text-decoration: underline;
+}
+
+.lego__bottom .control-group .button_theme_islands.button_size_m:last-child{
+    border: none;
+}

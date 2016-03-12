@@ -1,19 +1,13 @@
-.layout__right .lego__body{
-    margin: 0 10px 10px 10px;
+.lego__body{
+    padding: 10px 20px;
 }
 
-.lego__body .radio-body{
-    border: 1px solid #a7a7a7;
+.lego__body_type_comment{
+    padding: 0;
 }
 
-.lego__body .radio-head{
-    margin: 0 10px;
-}
-
-.lego__body .radio-head .button{
-    color: #00bfff;
-}
-
-.lego__body .inline{
-    padding: 2px 0;
+.lego__body .input__control,
+.lego__body .textarea{
+    width: calc(100% - 10px);
+    margin-bottom: 10px;
 }

@@ -1,5 +1,20 @@
-.lego__head .text{
-    display: inline-block;
-    font-size: 15px;
-    margin: 8px;
+.lego__head{
+    padding: 10px 20px;
+    border-bottom: 1px solid #a7a7a7;
+    font-weight: bold;
+}
+
+.lego__head:nth-child(2) .text,
+.lego__head:nth-child(2) .link{
+    margin-right: 40px;
+    font-weight: normal;
+}
+
+.lego__head .text:after{
+    float: right;
+}
+
+.lego__head .text_type_font-segoe{
+    display: block;
+    margin-bottom: 10px;
 }

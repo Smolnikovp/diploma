@@ -369,50 +369,61 @@ module.exports = {
                                             block: 'lego',
                                             content: [
                                                 {
-                                                    block: 'text',
-                                                    mix: {block: 'lego', elem: 'heading-text'},
-                                                    mods: {'fa-icon': 'caret-up'},
-                                                    content: 'На виду'
+                                                    elem: 'head',
+                                                    content: {
+                                                        block: 'text',
+                                                        mods: {'fa-icon': 'caret-up'},
+                                                        content: 'На виду'
+                                                    }
                                                 },
                                                 {
-                                                    block: 'table',
-                                                    content: {
-                                                        elem: 'col',
-                                                        content: [
-                                                            {
-                                                                elem: 'row',
+                                                    elem: 'body',
+                                                    content: [
+                                                        {
+                                                            block: 'table',
+                                                            mix: {block: 'lego', elem: 'table'},
+                                                            content: {
+                                                                elem: 'col',
                                                                 content: [
                                                                     {
-                                                                        block: 'link',
-                                                                        url: '#',
-                                                                        mods: {
-                                                                            theme: 'turquoise',
-                                                                            'fa-icon': 'thumb-tack'
-                                                                        },
-                                                                        content: 'n запись'
+                                                                        elem: 'row',
+                                                                        content: [
+                                                                            {
+                                                                                block: 'link',
+                                                                                url: '#',
+                                                                                mods: {
+                                                                                    theme: 'turquoise',
+                                                                                    'fa-icon': 'thumb-tack'
+                                                                                },
+                                                                                content: 'n запись'
+                                                                            },
+                                                                            {
+                                                                                block: 'link',
+                                                                                url: '#',
+                                                                                mods: {
+                                                                                    theme: 'turquoise',
+                                                                                    'fa-icon': 'commentz'
+                                                                                },
+                                                                                content: 'n комментария'
+                                                                            }
+                                                                        ]
                                                                     },
                                                                     {
-                                                                        block: 'link',
-                                                                        url: '#',
-                                                                        mods: {
-                                                                            theme: 'turquoise',
-                                                                            'fa-icon': 'commentz'
-                                                                        },
-                                                                        content: 'n комментария'
+                                                                        elem: 'row',
+                                                                        content: {
+                                                                            block: 'link',
+                                                                            url: '#',
+                                                                            mods: {
+                                                                                theme: 'turquoise',
+                                                                                'fa-icon': 'file'
+                                                                            },
+                                                                            content: 'n страница'
+                                                                        }
                                                                     }
                                                                 ]
-                                                            },
-                                                            {
-                                                                elem: 'row',
-                                                                content: {
-                                                                    block: 'link',
-                                                                    url: '#',
-                                                                    mods: {theme: 'turquoise', 'fa-icon': 'file'},
-                                                                    content: 'n страница'
-                                                                }
                                                             }
-                                                        ]
-                                                    }
+                                                        }
+                                                    ]
                                                 },
                                                 {
                                                     elem: 'bottom',
@@ -435,16 +446,19 @@ module.exports = {
                                             block: 'lego',
                                             content: [
                                                 {
-                                                    block: 'text',
-                                                    mods: {type: 'heading-medium', 'fa-icon': 'caret-up'},
-                                                    content: 'Активность'
+                                                    elem: 'head',
+                                                    content: {
+                                                        block: 'text',
+                                                        mods: {'fa-icon': 'caret-up'},
+                                                        content: 'Активность'
+                                                    }
                                                 },
                                                 {
-                                                    block: 'publish',
+                                                    elem: 'head',
                                                     content: [
                                                         {
                                                             block: 'text',
-                                                            mods: {type: 'heading'},
+                                                            mods: {type: 'font-segoe'},
                                                             content: 'Недавно добавлены'
                                                         },
                                                         {
@@ -460,15 +474,19 @@ module.exports = {
                                                     ]
                                                 },
                                                 {
-                                                    block: 'comment',
+                                                    elem: 'head',
+                                                    content: {
+                                                        block: 'text',
+                                                        content: 'Комментарии'
+                                                    }
+                                                },
+                                                {
+                                                    elem: 'body',
+                                                    mods: {type: 'comment'},
                                                     content: [
                                                         {
-                                                            block: 'text',
-                                                            mods: {type: 'heading-medium'},
-                                                            content: 'Комментарии'
-                                                        },
-                                                        {
                                                             block: 'table',
+                                                            mods: {type: 'comment'},
                                                             content: [
                                                                 {
                                                                     elem: 'col',
@@ -563,40 +581,44 @@ module.exports = {
                                                                             ]
                                                                         }
                                                                     ]
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            block: 'control-group',
-                                                            content: [
-                                                                {
-                                                                    block: 'button',
-                                                                    mods: {theme: 'islands', size: 'm'},
-                                                                    text: 'Все'
-                                                                },
-                                                                {
-                                                                    block: 'button',
-                                                                    mods: {theme: 'islands', size: 'm'},
-                                                                    text: 'Ожидающие (0)'
-                                                                },
-                                                                {
-                                                                    block: 'button',
-                                                                    mods: {theme: 'islands', size: 'm'},
-                                                                    text: 'Одобренные'
-                                                                },
-                                                                {
-                                                                    block: 'button',
-                                                                    mods: {theme: 'islands', size: 'm'},
-                                                                    text: 'Спам'
-                                                                },
-                                                                {
-                                                                    block: 'button',
-                                                                    mods: {theme: 'islands', size: 'm'},
-                                                                    text: 'Корзина (0)'
                                                                 }
                                                             ]
                                                         }
                                                     ]
+                                                },
+                                                {
+                                                    elem: 'bottom',
+                                                    mods: {type: 'comment'},
+                                                    content: {
+                                                        block: 'control-group',
+                                                        content: [
+                                                            {
+                                                                block: 'button',
+                                                                mods: {theme: 'islands', size: 'm'},
+                                                                text: 'Все'
+                                                            },
+                                                            {
+                                                                block: 'button',
+                                                                mods: {theme: 'islands', size: 'm'},
+                                                                text: 'Ожидающие (0)'
+                                                            },
+                                                            {
+                                                                block: 'button',
+                                                                mods: {theme: 'islands', size: 'm'},
+                                                                text: 'Одобренные'
+                                                            },
+                                                            {
+                                                                block: 'button',
+                                                                mods: {theme: 'islands', size: 'm'},
+                                                                text: 'Спам'
+                                                            },
+                                                            {
+                                                                block: 'button',
+                                                                mods: {theme: 'islands', size: 'm'},
+                                                                text: 'Корзина (0)'
+                                                            }
+                                                        ]
+                                                    }
                                                 }
                                             ]
                                         }
@@ -609,24 +631,33 @@ module.exports = {
                                             block: 'lego',
                                             content: [
                                                 {
-                                                    block: 'text',
-                                                    mods: {type: 'heading-medium', 'fa-icon': 'caret-up'},
-                                                    content: 'Быстрый черновик'
-                                                },
-
-                                                {
-                                                    block: 'input',
-                                                    mods: {type: 'medium'},
-                                                    placeholder: 'Заголовок'
-                                                },
-                                                {
-                                                    block: 'textarea',
-                                                    placeholder: 'О чем хотите написать?'
+                                                    elem: 'head',
+                                                    content: [
+                                                        {
+                                                            block: 'text',
+                                                            mods: {type: 'heading-medium', 'fa-icon': 'caret-up'},
+                                                            content: 'Быстрый черновик'
+                                                        }
+                                                    ]
                                                 },
                                                 {
-                                                    block: 'button',
-                                                    mods: {theme: 'turquoise', type: 'medium'},
-                                                    content: 'Сохранить'
+                                                    elem: 'body',
+                                                    content: [
+                                                        {
+                                                            block: 'input',
+                                                            mods: {type: 'medium'},
+                                                            placeholder: 'Заголовок'
+                                                        },
+                                                        {
+                                                            block: 'textarea',
+                                                            placeholder: 'О чем хотите написать?'
+                                                        },
+                                                        {
+                                                            block: 'button',
+                                                            mods: {theme: 'turquoise', type: 'medium'},
+                                                            content: 'Сохранить'
+                                                        }
+                                                    ]
                                                 }
                                             ]
                                         }
