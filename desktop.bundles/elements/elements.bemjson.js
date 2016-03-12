@@ -24,23 +24,16 @@ module.exports = {
                         {
                             elem: 'left',
                             content: [
-                                //{
-                                //    block: 'menu',
-                                //    mods: {mode: 'radio-check', focused: true},
-                                //    val: 1,
-                                //    content: ['BEM', 'BEMJSON', 'BEMHTML']
-                                //}
                                 {
                                     block: 'menu',
-                                    // построим BEMJSON списка динамически из массива текстов элементов
-                                    content: [
-                                        'Привет',
-                                        'BEM!'
-                                    ].map(function(text) {
+                                    mods: {mode: 'radio-check', focused: true},
+                                    val: 1,
+                                    content: ['BEM', 'BEMJSON', 'BEMHTML'].map(function(text)
+                                    {
                                         return {
                                             elem: 'item',
                                             content: text
-                                        };
+                                        }
                                     })
                                 }
                             ]

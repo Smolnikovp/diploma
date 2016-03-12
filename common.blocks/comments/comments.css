@@ -1,0 +1,15 @@
+.comments{
+    padding: 0 20px 25px 0;
+}
+
+.comments .select{
+    margin-right: 15px;
+}
+
+.comments__layout > *{
+    margin: 25px 50px 10px 0;
+}
+
+.comments .button_theme_grey{
+    line-height: 21px;
+}

@@ -238,7 +238,6 @@ module.exports = {
                 },
                 {
                     block: 'console',
-                    mix: {block: 'article', elem: 'console'},
                     content: [
                         {
                             block: 'welcome',

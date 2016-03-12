@@ -1,20 +1,5 @@
 block('menu')(
     tag()('ul'),
-
-    /**
-     * Вынесем в шаблон всю разметку,
-     * которая необходима для представления.
-     *
-     * Семантика блока простая: меню и ссылки в нем
-     *
-     * {
-     *     block: 'menu',
-     *     content: [
-     *         { url: '#', content: 'Привет' },
-     *         { url: '#', content: 'БЭМ' }
-     *     ]
-     * }
-     */
     content()(function() {
         var content = this.ctx.content;
 

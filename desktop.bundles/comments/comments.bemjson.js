@@ -1,105 +1,107 @@
 module.exports = {
     block: 'page',
-    title: 'Title of the page',
+    title: 'Комментарии',
     favicon: '/favicon.ico',
     head: [
         {elem: 'meta', attrs: {name: 'description', content: ''}},
-        {elem: 'css', url: 'comments.min.css'},
+        {elem: 'css', url: 'comments.css'},
         {block: 'font-awesome'}
     ],
-    scripts: [{elem: 'js', url: 'comments.min.js'}],
+    scripts: [{elem: 'js', url: 'comments.js'}],
     content: [
         {
             block: 'article',
-            mods: {type: 'comments'},
             content: [
                 {
                     block: 'text',
-                    tag: 'span',
-                    mods: {type: 'heading-large', 'fa-icon': 'commentz'},
+                    mix: {block: 'article', elem: 'heading-text'},
+                    mods: {'fa-icon': 'commentz'},
                     content: 'Комментарии'
                 },
                 {
-                    block: 'control-group',
+                    block: 'comments',
                     content: [
                         {
-                            block: 'button',
-                            mods: {focused: true, theme: 'islands', size: 'm'},
-                            text: 'Все'
-                        },
-                        {
-                            block: 'button',
-                            mods: {theme: 'islands', size: 'm'},
-                            text: 'Ожидающие (0)'
-                        },
-                        {
-                            block: 'button',
-                            mods: {theme: 'islands', size: 'm'},
-                            text: 'Одобренные'
-                        },
-                        {
-                            block: 'button',
-                            mods: {theme: 'islands', size: 'm'},
-                            text: 'Спам'
-                        },
-                        {
-                            block: 'button',
-                            mods: {theme: 'islands', size: 'm'},
-                            text: 'Корзина (0)'
-                        }
-                    ]
-                },
-                {
-                    block: 'layout',
-                    content: [
-                        {
-                            elem: 'left',
-                            content:[
-                                {
-                                    block: 'select',
-                                    mods: {mode: 'radio', theme: 'islands', size: 'm'},
-                                    val: 1,
-                                    options: [
-                                        {val: 1, text: 'Действия', disabled: true},
-                                        {val: 2, text: 'удалить'},
-                                        {val: 3, text: 'anything'}
-                                    ]
-                                },
-                                {
-                                    block: 'button',
-                                    mods: {theme: 'grey'},
-                                    text: 'Применить'
-                                }
-                            ]
-                        },
-                        {
-                            elem: 'right',
+                            block: 'control-group',
+                            mix: {block: 'comments', elem: 'control-group'},
                             content: [
                                 {
-                                    block: 'select',
-                                    mods: {mode: 'radio', theme: 'islands', size: 'm'},
-                                    val: 1,
-                                    options: [
-                                        {val: 1, text: 'Все типы комментариев', disabled: true},
-                                        {val: 2, text: 'Важные'},
-                                        {val: 3, text: 'Личные'},
-                                        {val: 4, text: 'etc.'}
-                                    ]
+                                    block: 'button',
+                                    mods: {focused: true, theme: 'islands', size: 'l'},
+                                    text: 'Все'
                                 },
                                 {
                                     block: 'button',
-                                    mods: {theme: 'grey'},
-                                    text: 'Фильтр'
+                                    mods: {theme: 'islands', size: 'l'},
+                                    text: 'Ожидающие (0)'
+                                },
+                                {
+                                    block: 'button',
+                                    mods: {theme: 'islands', size: 'l'},
+                                    text: 'Одобренные'
+                                },
+                                {
+                                    block: 'button',
+                                    mods: {theme: 'islands', size: 'l'},
+                                    text: 'Спам'
+                                },
+                                {
+                                    block: 'button',
+                                    mods: {theme: 'islands', size: 'l'},
+                                    text: 'Корзина (0)'
                                 }
                             ]
-                        }
-                    ]
-                },
-                {
-                    block: 'lego',
-                    content: [
+                        },
+                        {
+                            elem: 'layout',
+                            mix: {block: 'layout'},
+                            content: [
+                                {
+                                    elem: 'left',
+                                    content: [
+                                        {
+                                            block: 'select',
+                                            mods: {mode: 'radio', theme: 'islands', size: 'm'},
+                                            val: 1,
+                                            options: [
+                                                {val: 1, text: 'Изменить'},
+                                                {val: 2, text: 'Удалить'},
+                                                {val: 3, text: 'Сохранить'}
+                                            ]
+                                        },
+                                        {
+                                            block: 'button',
+                                            mods: {theme: 'grey'},
+                                            text: 'Применить'
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'right',
+                                    content: [
+                                        {
+                                            block: 'select',
+                                            mods: {mode: 'radio', theme: 'islands', size: 'm'},
+                                            val: 1,
+                                            options: [
+                                                {val: 1, text: 'Все типы комментариев', disabled: true},
+                                                {val: 2, text: 'Важные'},
+                                                {val: 3, text: 'Личные'},
+                                                {val: 4, text: 'etc.'}
+                                            ]
+                                        },
+                                        {
+                                            block: 'button',
+                                            mods: {theme: 'grey'},
+                                            text: 'Фильтр'
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
                         {
                             block: 'table',
+                            mix: {block: 'comments', elem: 'table'},
                             content: [
                                 {
                                     elem: 'col',
@@ -151,7 +153,6 @@ module.exports = {
                                                         },
                                                         {
                                                             block: 'text',
-                                                            tag: 'span',
                                                             content: '%username%\n'
                                                         },
                                                         {
@@ -177,7 +178,6 @@ module.exports = {
                                                     content: [
                                                         {
                                                             block: 'text',
-                                                            tag: 'span',
                                                             content: 'Отправлен'
                                                         },
                                                         {
@@ -189,7 +189,6 @@ module.exports = {
                                                 },
                                                 {
                                                     block: 'text',
-                                                    tag: 'span',
                                                     content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
                                                 }
                                             ]
@@ -220,7 +219,6 @@ module.exports = {
                                                         },
                                                         {
                                                             block: 'text',
-                                                            tag: 'span',
                                                             content: '%username%\n'
                                                         },
                                                         {
@@ -246,7 +244,6 @@ module.exports = {
                                                     content: [
                                                         {
                                                             block: 'text',
-                                                            tag: 'span',
                                                             content: 'Отправлен'
                                                         },
                                                         {
@@ -258,7 +255,6 @@ module.exports = {
                                                 },
                                                 {
                                                     block: 'text',
-                                                    tag: 'span',
                                                     content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
                                                 }
                                             ]
@@ -289,7 +285,6 @@ module.exports = {
                                                         },
                                                         {
                                                             block: 'text',
-                                                            tag: 'span',
                                                             content: '%username%\n'
                                                         },
                                                         {
@@ -315,7 +310,6 @@ module.exports = {
                                                     content: [
                                                         {
                                                             block: 'text',
-                                                            tag: 'span',
                                                             content: 'Отправлен'
                                                         },
                                                         {
@@ -327,7 +321,6 @@ module.exports = {
                                                 },
                                                 {
                                                     block: 'text',
-                                                    tag: 'span',
                                                     content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
                                                 }
                                             ]
@@ -335,26 +328,26 @@ module.exports = {
                                     ]
                                 }
                             ]
-                        }
-                    ]
-                },
-                {
-                    block: 'inline',
-                    content: [
-                        {
-                            block: 'select',
-                            mods: {mode: 'radio', theme: 'islands', size: 'm'},
-                            val: 1,
-                            options: [
-                                {val: 1, text: 'Действия', disabled: true},
-                                {val: 2, text: 'удалить'},
-                                {val: 3, text: 'anything'}
-                            ]
                         },
                         {
-                            block: 'button',
-                            mods: {theme: 'grey'},
-                            text: 'Применить'
+                            block: 'inline',
+                            content: [
+                                {
+                                    block: 'select',
+                                    mods: {mode: 'radio', theme: 'islands', size: 'm'},
+                                    val: 1,
+                                    options: [
+                                        {val: 1, text: 'Изменить'},
+                                        {val: 2, text: 'Удалить'},
+                                        {val: 3, text: 'Сохранить'}
+                                    ]
+                                },
+                                {
+                                    block: 'button',
+                                    mods: {theme: 'grey'},
+                                    text: 'Применить'
+                                }
+                            ]
                         }
                     ]
                 }

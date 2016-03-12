@@ -1,0 +1,22 @@
+.control-group .button_theme_islands{
+    color: #00bfff;
+}
+
+.control-group .button_theme_islands.button_focused-hard{
+    box-shadow: none;
+    background-color: #a7a7a7;
+}
+
+.control-group .button_theme_islands.button_hovered:before{
+    background: #f9f9f9;
+}
+
+.control-group .button_theme_islands.button_hovered .button__text{
+    text-decoration: underline;
+}
+
+.control-group .button_theme_islands.button_focused{
+    font-weight: bold;
+    color: #000;
+}
+

@@ -1,0 +1,20 @@
+.comments__table{
+    background-color: #fff;
+    border: 1px solid #000;
+    margin-bottom: 10px;
+}
+
+.comments__table .table__col{
+    flex-wrap: nowrap;
+}
+
+.comments__table .table__row{
+    padding: 5px 10px;
+    border-bottom: 1px solid #a7a7a7;
+    flex: 15 0 200px;
+    line-height: 27px;
+}
+
+.comments__table .table__row:first-child{
+    flex: 1 0 0;
+}

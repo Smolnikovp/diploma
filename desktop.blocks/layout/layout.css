@@ -3,7 +3,3 @@
     display: flex;
     flex-wrap: wrap;
 }
-
-.layout > *{
-    margin: 25px 20px 0 0;
-}
