@@ -1,6 +1,6 @@
 module.exports = {
     block: 'page',
-    title: 'Title of the page',
+    title: 'Консоль',
     favicon: '/favicon.ico',
     head: [
         {elem: 'meta', attrs: {name: 'description', content: ''}},
@@ -135,7 +135,7 @@ module.exports = {
                                 block: 'link',
                                 mods: {'fa-icon': 'thumb-tack'},
                                 url: '../note/note.html',
-                                content: 'Заметки'
+                                content: 'Записи'
                             }
                         },
                         {
