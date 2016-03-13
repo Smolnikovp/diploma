@@ -1,7 +1,6 @@
 .comments__table{
     background-color: #fff;
     border: 1px solid #000;
-    margin-bottom: 10px;
 }
 
 .comments__table .table__col{
@@ -17,4 +16,8 @@
 
 .comments__table .table__row:first-child{
     flex: 1 0 0;
+}
+
+.comments__table .table__row:last-child .text:last-child{
+    display: block;
 }

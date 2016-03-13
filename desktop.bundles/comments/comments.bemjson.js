@@ -24,33 +24,13 @@ module.exports = {
                         {
                             block: 'control-group',
                             mix: {block: 'comments', elem: 'control-group'},
-                            content: [
-                                {
+                            content: ['Все', 'Ожидающие(0)', 'Одобренные(0)', 'Спам', 'Корзина(0)'].map(function (service) {
+                                return {
                                     block: 'button',
-                                    mods: {focused: true, theme: 'islands', size: 'l'},
-                                    text: 'Все'
-                                },
-                                {
-                                    block: 'button',
-                                    mods: {theme: 'islands', size: 'l'},
-                                    text: 'Ожидающие (0)'
-                                },
-                                {
-                                    block: 'button',
-                                    mods: {theme: 'islands', size: 'l'},
-                                    text: 'Одобренные'
-                                },
-                                {
-                                    block: 'button',
-                                    mods: {theme: 'islands', size: 'l'},
-                                    text: 'Спам'
-                                },
-                                {
-                                    block: 'button',
-                                    mods: {theme: 'islands', size: 'l'},
-                                    text: 'Корзина (0)'
-                                }
-                            ]
+                                    mods: {theme: 'islands', size: 'l', focused: service === 'Все'},
+                                    text: service
+                                };
+                            })
                         },
                         {
                             elem: 'layout',
@@ -174,18 +154,13 @@ module.exports = {
                                             elem: 'row',
                                             content: [
                                                 {
-                                                    block: 'inline',
-                                                    content: [
-                                                        {
-                                                            block: 'text',
-                                                            content: 'Отправлен'
-                                                        },
-                                                        {
-                                                            block: 'link',
-                                                            mods: {type: 'inline', theme: 'turquoise'},
-                                                            content: 'DateTime'
-                                                        }
-                                                    ]
+                                                    block: 'text',
+                                                    content: 'Отправлен'
+                                                },
+                                                {
+                                                    block: 'link',
+                                                    mods: {type: 'inline', theme: 'turquoise'},
+                                                    content: 'DateTime'
                                                 },
                                                 {
                                                     block: 'text',
@@ -240,18 +215,13 @@ module.exports = {
                                             elem: 'row',
                                             content: [
                                                 {
-                                                    block: 'inline',
-                                                    content: [
-                                                        {
-                                                            block: 'text',
-                                                            content: 'Отправлен'
-                                                        },
-                                                        {
-                                                            block: 'link',
-                                                            mods: {type: 'inline', theme: 'turquoise'},
-                                                            content: 'DateTime'
-                                                        }
-                                                    ]
+                                                    block: 'text',
+                                                    content: 'Отправлен'
+                                                },
+                                                {
+                                                    block: 'link',
+                                                    mods: {type: 'inline', theme: 'turquoise'},
+                                                    content: 'DateTime'
                                                 },
                                                 {
                                                     block: 'text',
@@ -306,18 +276,13 @@ module.exports = {
                                             elem: 'row',
                                             content: [
                                                 {
-                                                    block: 'inline',
-                                                    content: [
-                                                        {
-                                                            block: 'text',
-                                                            content: 'Отправлен'
-                                                        },
-                                                        {
-                                                            block: 'link',
-                                                            mods: {type: 'inline', theme: 'turquoise'},
-                                                            content: 'DateTime'
-                                                        }
-                                                    ]
+                                                    block: 'text',
+                                                    content: 'Отправлен'
+                                                },
+                                                {
+                                                    block: 'link',
+                                                    mods: {type: 'inline', theme: 'turquoise'},
+                                                    content: 'DateTime'
                                                 },
                                                 {
                                                     block: 'text',
@@ -330,22 +295,28 @@ module.exports = {
                             ]
                         },
                         {
-                            block: 'inline',
+                            elem: 'layout',
+                            mix: {block: 'layout'},
                             content: [
                                 {
-                                    block: 'select',
-                                    mods: {mode: 'radio', theme: 'islands', size: 'm'},
-                                    val: 1,
-                                    options: [
-                                        {val: 1, text: 'Изменить'},
-                                        {val: 2, text: 'Удалить'},
-                                        {val: 3, text: 'Сохранить'}
+                                    elem: 'left',
+                                    content: [
+                                        {
+                                            block: 'select',
+                                            mods: {mode: 'radio', theme: 'islands', size: 'm'},
+                                            val: 1,
+                                            options: [
+                                                {val: 1, text: 'Изменить'},
+                                                {val: 2, text: 'Удалить'},
+                                                {val: 3, text: 'Сохранить'}
+                                            ]
+                                        },
+                                        {
+                                            block: 'button',
+                                            mods: {theme: 'grey'},
+                                            text: 'Применить'
+                                        }
                                     ]
-                                },
-                                {
-                                    block: 'button',
-                                    mods: {theme: 'grey'},
-                                    text: 'Применить'
                                 }
                             ]
                         }
