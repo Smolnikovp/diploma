@@ -37,28 +37,12 @@ module.exports = {
                             mix: {block: 'layout'},
                             content: [
                                 {
-                                    elem: 'left'
+                                    block: 'groupbox',
+                                    mods: { type: 'default' }
                                 },
                                 {
-                                    elem: 'right',
-                                    content: [
-                                        {
-                                            block: 'select',
-                                            mods: {mode: 'radio', theme: 'islands', size: 'm'},
-                                            val: 1,
-                                            options: [
-                                                {val: 1, text: 'Все типы комментариев', disabled: true},
-                                                {val: 2, text: 'Важные'},
-                                                {val: 3, text: 'Личные'},
-                                                {val: 4, text: 'etc.'}
-                                            ]
-                                        },
-                                        {
-                                            block: 'button',
-                                            mods: {theme: 'grey'},
-                                            text: 'Фильтр'
-                                        }
-                                    ]
+                                    block: 'groupbox',
+                                    mods: { type: 'comments' }
                                 }
                             ]
                         },
@@ -161,7 +145,7 @@ module.exports = {
                             content: [
                                 {
                                     block: 'groupbox',
-                                    mods: {type: 'comments'}
+                                    mods: { type: 'default' }
                                 }
                             ]
                         }
