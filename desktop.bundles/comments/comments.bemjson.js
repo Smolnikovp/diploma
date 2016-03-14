@@ -37,11 +37,28 @@ module.exports = {
                             mix: {block: 'layout'},
                             content: [
                                 {
-                                    block: 'groupbox'
+                                    elem: 'left'
                                 },
                                 {
-                                    block: 'groupbox',
-                                    mods: {type: 'comments'}
+                                    elem: 'right',
+                                    content: [
+                                        {
+                                            block: 'select',
+                                            mods: {mode: 'radio', theme: 'islands', size: 'm'},
+                                            val: 1,
+                                            options: [
+                                                {val: 1, text: 'Все типы комментариев', disabled: true},
+                                                {val: 2, text: 'Важные'},
+                                                {val: 3, text: 'Личные'},
+                                                {val: 4, text: 'etc.'}
+                                            ]
+                                        },
+                                        {
+                                            block: 'button',
+                                            mods: {theme: 'grey'},
+                                            text: 'Фильтр'
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -143,7 +160,8 @@ module.exports = {
                             mix: {block: 'layout'},
                             content: [
                                 {
-                                    block: 'groupbox'
+                                    block: 'groupbox',
+                                    mods: {type: 'comments'}
                                 }
                             ]
                         }
