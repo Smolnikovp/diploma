@@ -84,7 +84,7 @@ module.exports = {
                         content: [
                             {
                                 block: 'link',
-                                mods: {'fa-icon': 'user'},
+                                mods: {'fa-icon': 'userz'},
                                 url: '#',
                                 content: 'Привет, %user%'
                             }

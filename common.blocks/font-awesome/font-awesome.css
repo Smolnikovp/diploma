@@ -46,7 +46,7 @@
     margin-right: 10px;
 }
 
-*[class*='user']:after{
+*[class*='userz']:after{
     content: "\f007";
 }
 
