@@ -1,0 +1,7 @@
+.groupbox_type_default .select .button{
+    min-width: 120px;
+}
+
+.groupbox_type_comments .select .button{
+    min-width: 200px;
+}
