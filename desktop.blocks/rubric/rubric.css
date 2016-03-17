@@ -1,0 +1,12 @@
+.publish{
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: 0 20px 20px 0;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+.publish > *{
+    padding: 10px 20px;
+}
