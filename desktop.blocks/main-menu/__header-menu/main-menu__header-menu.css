@@ -1,0 +1,37 @@
+.header-menu{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 25px;
+    padding: 5px;
+    background-color: #000;
+}
+
+.header-menu .menu__menu-item{
+    height: 16px;
+    padding: 4px 10px;
+    display: inline-block;
+}
+
+.header-menu .menu__menu-item:last-child{
+    float: right;
+}
+
+.header-menu *[class*='fa-icon']:after,
+.header-menu *[class*='fa-icon']:before{
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+.header-menu .menu__menu-item .link_hovered{
+    color: #00bfff;
+    cursor: pointer;
+}
+
+.header-menu .menu-item .link_fa-icon_user{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 8px 10px;
+}
