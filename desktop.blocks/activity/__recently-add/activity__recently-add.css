@@ -1,0 +1,9 @@
+.activity__recently-add .text,
+.activity__recently-add .link{
+    margin-right: 40px;
+    font-weight: normal;
+}
+
+.activity__recently-add .text:first-child{
+    font-family: "Segoe UI";
+}
