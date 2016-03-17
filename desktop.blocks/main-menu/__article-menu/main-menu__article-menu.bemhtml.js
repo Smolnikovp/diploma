@@ -1,4 +1,4 @@
-block('article-menu').mod( 'type', 'default').content()(
+block('main-menu').elem('article-menu').content()(
     function () {
         return [
             {

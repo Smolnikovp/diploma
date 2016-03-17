@@ -1,4 +1,10 @@
-.console__left,
-.console__right{
+.console .layout{
+    justify-content: space-between;
+    width: calc(100% + 20px);
+}
+
+.console .layout__left,
+.console .layout__right{
     flex: 1 1 500px;
+    margin-right: 20px;
 }

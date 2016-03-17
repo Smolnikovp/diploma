@@ -1,5 +1,7 @@
 .article__heading-text{
+    display: block;
     font-size: 25px;
+    margin-bottom: 15px;
 }
 
 .article__heading-text:before{

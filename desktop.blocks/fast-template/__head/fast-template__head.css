@@ -1,8 +1,8 @@
-.activity__head{
+.fast-template__head{
     border-bottom: 1px solid #a7a7a7;
     font-weight: bold;
 }
 
-.activity__head .text:after{
+.fast-template__head .text:after{
     float: right;
 }

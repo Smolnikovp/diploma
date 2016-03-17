@@ -1,0 +1,26 @@
+.publish__head {
+    overflow: hidden;
+    padding: 10px 20px;
+    border-bottom: 1px solid #a7a7a7;
+    font-weight: bold;
+}
+
+.publish__head .text:after{
+    float: right;
+}
+
+.publish__head .button{
+    background-color: #fff;
+    padding: 5px 15px;
+    border: 1px solid #a7a7a7;
+    border-radius: 10px;
+}
+
+.publish__head .button:last-child{
+    float: right;
+}
+
+.publish__head .button:hover{
+    cursor: pointer;
+    background-color: #e5e5e5;
+}

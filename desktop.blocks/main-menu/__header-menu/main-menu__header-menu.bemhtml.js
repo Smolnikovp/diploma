@@ -1,4 +1,4 @@
-block( 'header-menu' ).mod( 'type', 'default' ).content()(
+block('main-menu').elem( 'header-menu' ).content()(
     function(){
         return {
             block: 'menu',

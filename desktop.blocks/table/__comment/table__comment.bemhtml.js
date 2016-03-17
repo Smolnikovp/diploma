@@ -1,4 +1,4 @@
-block('table-comment').content()(
+block('table').elem('comment').content()(
     function () {
         return [
             {

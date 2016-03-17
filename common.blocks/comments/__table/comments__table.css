@@ -1,0 +1,17 @@
+.comments__table{
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+.comments__table .table__col{
+    padding: 10px 15px;
+    border-bottom: 1px solid #a7a7a7;
+}
+
+.comments__table .table__row:first-child{
+    flex: 1 0 0;
+}
+
+.comments__table .table__row{
+    flex: 3 0 500px;
+}

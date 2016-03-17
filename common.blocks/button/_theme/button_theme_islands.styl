@@ -69,8 +69,8 @@ ctx = '.button_theme_islands'
     &.button_focused-hard {
         z-index: 1;
 
-        background: rgba(178, 142, 0, 0.6);
-        box-shadow: 0 0 0 1px #ffcc00, inset 0 0 0 1px #ffcc00;
+        box-shadow: none;
+        background: #a7a7a7;
     }
 
     &.button_pressed:before {
@@ -264,14 +264,12 @@ ctx = '.button_theme_islands'
         color: #00bfff;
 
             &.button_focused{
-                font-weight: bold;
                 color: #000;
             }
 
             &.button_focused-hard {
                 z-index: 1;
                 box-shadow: none;
-                background: #a7a7a7;
             }
 
             &.button_hovered .button__text{

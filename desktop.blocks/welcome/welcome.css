@@ -1,9 +1,9 @@
 .welcome{
     position: relative;
-    width: calc(100% - 80px);
+    width: calc(100% - 60px);
     background-color: #fff;
     padding: 20px 30px;
     border: 1px solid #a9a9a9;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 

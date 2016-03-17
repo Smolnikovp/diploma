@@ -1,0 +1,3 @@
+.activity .activity__bottom{
+    padding: 0;                 /*для большего приоритета*/
+}

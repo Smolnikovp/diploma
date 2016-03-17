@@ -1,0 +1,5 @@
+.fast-template__body .input__control,
+.fast-template__body .textarea{
+    width: calc(100% - 15px);
+    margin-bottom: 15px;
+}

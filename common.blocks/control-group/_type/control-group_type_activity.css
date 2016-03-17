@@ -1,0 +1,20 @@
+.control-group_type_activity{
+    text-align: center;
+}
+
+.control-group_type_activity .button_theme_islands.button_size_m{
+    font-size: 18px;
+    line-height: 31px;
+    color: #00bfff;
+    background: #fff;
+    padding: 0 8px;
+    border-right: 1px solid #a7a7a7;
+}
+
+.control-group_type_activity .button_theme_islands.button_hovered:before{
+    background: #fff;
+}
+
+.control-group_type_activity .button_theme_islands.button_size_m:last-child{
+    border: none;
+}

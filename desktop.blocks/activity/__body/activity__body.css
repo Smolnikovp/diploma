@@ -1,0 +1,23 @@
+.activity .activity__body{ /*для большего приоритета*/
+    padding: 0;
+}
+
+.activity__body .table__col{
+    padding: 10px 20px;
+    border-bottom: 1px solid #a7a7a7;
+    align-items: center;
+}
+
+.activity__body .table__row:first-child{
+    flex: 1 0 0;
+    margin-left: 10px;
+}
+
+.activity__body .table__row{
+    flex: 2 0 450px;
+}
+
+.activity__body .table__row .text:last-child{
+    display: block;
+    margin: 5px 0;
+}

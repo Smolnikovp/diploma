@@ -1,3 +1,4 @@
-.table-comment .text:last-child{
+.table__comment .text:last-child{
     display: block;
+    padding: 10px 0;
 }

@@ -1,4 +1,4 @@
-.header-menu{
+.main-menu__header-menu{
     position: fixed;
     left: 0;
     right: 0;
@@ -8,28 +8,28 @@
     background-color: #000;
 }
 
-.header-menu .menu__menu-item{
+.main-menu__header-menu .menu__menu-item{
     height: 16px;
     padding: 4px 10px;
     display: inline-block;
 }
 
-.header-menu .menu__menu-item:last-child{
+.main-menu__header-menu .menu__menu-item:last-child{
     float: right;
 }
 
-.header-menu *[class*='fa-icon']:after,
-.header-menu *[class*='fa-icon']:before{
+.main-menu__header-menu *[class*='fa-icon']:after,
+.main-menu__header-menu *[class*='fa-icon']:before{
     font-size: 18px;
     margin: 0 5px;
 }
 
-.header-menu .menu__menu-item .link_hovered{
+.main-menu__header-menu .menu__menu-item .link_hovered{
     color: #00bfff;
     cursor: pointer;
 }
 
-.header-menu .menu-item .link_fa-icon_user{
+.main-menu__header-menu .menu-item .link_fa-icon_user{
     position: absolute;
     right: 0;
     top: 0;
