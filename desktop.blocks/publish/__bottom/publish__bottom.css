@@ -1,0 +1,7 @@
+.publish__bottom .button{
+    padding: 8px 10px;
+}
+
+.publish__bottom .button:last-child{
+    float: right;
+}

@@ -1,0 +1,17 @@
+.publish__buttons{
+    border-bottom: 1px solid #a7a7a7;
+}
+
+.publish__buttons .button{
+    background-color: #fff;
+    border: 1px solid #a7a7a7;
+    padding: 5px 15px;
+}
+
+.publish__buttons .button:hover{
+    background-color: #efefef;
+}
+
+.publish__buttons .button:nth-child(2){
+    float: right;
+}

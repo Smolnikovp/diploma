@@ -3,18 +3,3 @@
     border: none;
     border-radius: 10px;
 }
-
-.radio-group .button_theme_grey.button_checked{
-    background-color: #dbdbdb;
-    color: #000;
-    border-radius: 5px 5px 0 0;
-}
-
-.radio-group .radio__box{
-    margin: 0 10px 0 5px;
-}
-
-.radio-body .radio-group .radio{
-    padding: 5px 0;
-    display: inline-block;
-}

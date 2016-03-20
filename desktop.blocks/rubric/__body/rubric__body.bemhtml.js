@@ -1,16 +1,23 @@
-block('publish').elem('body').content()(
+block('rubric').elem('body').content()(
     function(){
         return [
             {
                 block: 'radio-group',
-                content: ['Все рубрики', 'Часто используемые'].map(function(service){
-                    return {
-                        block: 'button',
-                        mods: {focused: service === 'Все рубрики'},
-                        text: service
-                    }
-
-                })
+                mods: { type: 'button', theme: 'islands', size: 'l' },
+                val: 1,
+                options: [
+                    { val: 1, text: 'Все рубрики' },
+                    { val: 2, text: 'Часто используемые' }
+                ]
+            },
+            {
+                block : 'checkbox-group',
+                mods : { theme : 'islands', size : 'm' },
+                options : [
+                    { val : 1, text : 'Без рубрики' },
+                    { val : 2, text : 'Популярные' },
+                    { val : 3, text : 'Новости' }
+                ]
             }
         ]
     }

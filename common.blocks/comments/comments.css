@@ -13,6 +13,13 @@
     margin: 25px 50px 10px 0;
 }
 
-.comments .button_theme_grey{
+.comments .layout .button_theme_grey{
+    padding: 2px 15px;
     line-height: 21px;
+    background-color: #fff;
+    border: 1px solid #a7a7a7;
+}
+
+.comments .layout .button_theme_grey:hover{
+    background-color: #efefef;
 }

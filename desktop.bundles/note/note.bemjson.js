@@ -1,13 +1,13 @@
 module.exports = {
     block: 'page',
-    title: 'Title of the page',
+    title: 'Записи',
     favicon: '/favicon.ico',
     head: [
         {elem: 'meta', attrs: {name: 'description', content: ''}},
-        {elem: 'css', url: 'note.min.css'},
+        {elem: 'css', url: 'note.css'},
         {block: 'font-awesome'}
     ],
-    scripts: [{elem: 'js', url: 'note.min.js'}],
+    scripts: [{elem: 'js', url: 'note.js'}],
     content: [
         {
             block: 'main-menu'
@@ -22,7 +22,7 @@ module.exports = {
                     content: 'Записи'
                 },
                 {
-                    block: 'publish'
+                    block: 'note'
                 }
             ]
         }

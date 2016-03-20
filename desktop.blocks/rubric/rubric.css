@@ -1,4 +1,4 @@
-.publish{
+.rubric{
     position: relative;
     width: 100%;
     display: block;
@@ -7,6 +7,6 @@
     background-color: #fff;
 }
 
-.publish > *{
+.rubric > *{
     padding: 10px 20px;
 }

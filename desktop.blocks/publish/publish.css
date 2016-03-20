@@ -6,3 +6,7 @@
     border: 1px solid #000;
     background-color: #fff;
 }
+
+.publish > *{
+    padding: 10px 20px;
+}

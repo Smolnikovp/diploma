@@ -10,7 +10,7 @@ block('main-menu').elem('article-menu').content()(
                         content: {
                             block: 'link',
                             mods: {'fa-icon': 'tachometer'},
-                            url: '#',
+                            url: '../console/console.html',
                             content: 'Консоль'
                         }
                     },

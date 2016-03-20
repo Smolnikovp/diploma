@@ -1,0 +1,12 @@
+.publish__body{
+    border-bottom: 1px solid #a7a7a7;
+}
+
+.publish__body .link{
+    float: right;
+}
+
+.publish__body .text:nth-child(2){
+    margin: 0 5px;
+    font-weight: bold;
+}

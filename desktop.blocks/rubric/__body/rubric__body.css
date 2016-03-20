@@ -1,0 +1,29 @@
+.rubric__body{
+    padding: 0 20px;
+}
+
+.rubric__body .radio-group{
+    width: 100%;
+    vertical-align: top;
+    display: block;
+}
+
+.rubric__body .radio-group .button{
+    border: none;
+    border-radius: 10px;
+}
+
+.rubric__body .radio-group .button:last-child{
+    float: right;
+}
+
+.rubric__body .checkbox-group{
+    padding: 10px;
+    width: calc(100% - 20px);
+    border: 1px solid #a7a7a7;
+}
+
+.rubric__body .checkbox-group .checkbox{
+    display: block;
+    font-size: 16px;
+}

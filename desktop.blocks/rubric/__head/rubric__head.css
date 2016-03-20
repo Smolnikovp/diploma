@@ -1,9 +1,9 @@
-.publish__head {
+.rubric__head {
     overflow: hidden;
     border-bottom: 1px solid #a7a7a7;
     font-weight: bold;
 }
 
-.publish__head .text:after{
+.rubric__head .text:after{
     float: right;
 }

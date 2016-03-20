@@ -1,5 +1,5 @@
 ({
     shouldDeps: [
-        { block: 'control-group'}
+        { block: 'radio-group', mods: { type: 'button', theme: 'islands', size: 'l' }}
     ]
 })
