@@ -6,6 +6,9 @@ block('layout').mod( 'type', 'note').content()(
                 content: [
                     {
                         block: 'header-input'
+                    },
+                    {
+                        block: 'edit'
                     }
                 ]
             },

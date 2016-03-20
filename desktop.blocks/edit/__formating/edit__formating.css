@@ -1,0 +1,30 @@
+.edit__formating{
+    padding: 5px;
+    background-color: #868686;
+    border: 1px solid #a7a7a7;
+}
+
+.edit__formating .select{
+    margin: 5px 10px 0 0;
+    width: 150px;
+}
+
+.edit__formating .button{
+    margin-right: 5px;
+    background-color: #fff;
+    border-radius: 0;
+    border: 1px solid #d7d7d7;
+}
+
+*[class*='fa-icon']:before {
+    margin: 0 10px;
+}
+
+.edit__formating .button:hover{
+    background-color: #e8e8e8;
+    cursor: pointer;
+}
+
+.edit__formating .button_type_delim{
+    margin-right: 15px;
+}

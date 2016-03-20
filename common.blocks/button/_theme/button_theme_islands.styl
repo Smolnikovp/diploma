@@ -63,7 +63,7 @@ ctx = '.button_theme_islands'
     &.button_hovered {
         cursor: pointer;
 
-        background: rgba(0, 0, 0, 0.3);
+        background: #979797;
     }
 
     &.button_focused-hard {
@@ -78,7 +78,7 @@ ctx = '.button_theme_islands'
     }
 
     &.button_checked {
-        background: rgba(153, 122, 0, 0.5);
+        background: #979797;
         color: #000;
 
         &:before {
@@ -94,7 +94,7 @@ ctx = '.button_theme_islands'
         }
 
         &.button_hovered {
-            background: rgba(129, 103, 0, 0.6);
+            background: #979797;
         }
     }
 
@@ -110,10 +110,10 @@ ctx = '.button_theme_islands'
         }
 
         &.button_checked {
-            background: #ffeba0;
+            background: #a7a7a7;
 
             &.button_pressed {
-                background: #fee481;
+                background: #a7a7a7;
             }
         }
 
@@ -126,15 +126,15 @@ ctx = '.button_theme_islands'
         background: rgba(191, 153, 0, 0.8);
 
         &:before {
-            background: #ffdb4d;
+            background: #a7a7a7;
         }
 
         &.button_pressed:before {
-            background: #fc0;
+            background: #a7a7a7;
         }
 
         &.button_hovered {
-            background: rgba(159, 127, 0, 0.8);
+            background: #979797;
         }
     }
 
@@ -145,34 +145,21 @@ ctx = '.button_theme_islands'
 
         &:before {
             background: none;
-            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
-        }
-
-        &.button_hovered:before {
-            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
-        }
-
-        &.button_focused-hard:before {
-            box-shadow: 0 0 0 1px rgba(178, 142, 0, 0.6);
-        }
-
-        &.button_pressed:before {
-            background: rgba(0, 0, 0, 0.05);
+            box-shadow: #979797
         }
 
         &.button_checked {
             &:before {
-                background: #ffeba0;
-                box-shadow: 0 0 0 1px rgba(153, 122, 0, 0.5);
+                background: #a7a7a7;
+                box-shadow: none;
             }
 
             &.button_hovered:before {
-                box-shadow: 0 0 0 1px rgba(129, 103, 0, 0.6);
+                box-shadow: none;
             }
 
             &.button_pressed:before {
                 background: #e2e2e2;
-                box-shadow: 0 0 0 1px rgba(129, 103, 0, 0.6);
             }
         }
     }
@@ -187,7 +174,6 @@ ctx = '.button_theme_islands'
         &.button_checked:before {
             display: block;
 
-            background: #ffeba0;
         }
 
         .button__text {
@@ -263,6 +249,7 @@ ctx = '.button_theme_islands'
 .control-group {
     {ctx} {
         color: #00bfff;
+
             &.button_checked{
                 color: #000;
             }

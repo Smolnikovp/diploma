@@ -1,0 +1,22 @@
+.edit__head .control-group{
+    float: right;
+}
+
+.edit__head .control-group .button_theme_islands.button_hovered .button__text{
+    text-decoration: none;
+}
+
+.edit__head .text,
+.edit__head .link{
+    margin: 8px 10px 6px 0;
+    display: inline-block;
+}
+
+.edit__head .link{
+    vertical-align: bottom;
+    color: #979797;
+}
+
+.edit__head .link:hover{
+    cursor: pointer;
+}
