@@ -1,12 +1,7 @@
-.radio-group{
-    display: inline-block;
-    margin: 5px auto 0 auto;
-}
-
-.radio-group .button{
+.radio-group .button_theme_islands{
     background-color: #fff;
-    padding: 5px;
     border: none;
+    border-radius: 10px;
 }
 
 .radio-group .button_theme_grey.button_checked{
