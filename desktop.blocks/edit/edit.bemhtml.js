@@ -6,6 +6,9 @@ block('edit').content()(
             },
             {
                 elem: 'formating'
+            },
+            {
+                elem: 'body'
             }
         ]
     }

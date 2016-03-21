@@ -1,0 +1,4 @@
+.edit__body .textarea{
+    width: calc(100% - 14px);
+    padding: 5px 10px;
+}

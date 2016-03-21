@@ -2,6 +2,7 @@
     padding: 5px;
     background-color: #dfdfdf;
     border: 1px solid #a7a7a7;
+    border-bottom: none;
 }
 
 .edit__formating .select{
@@ -9,7 +10,12 @@
     width: 150px;
 }
 
+.edit__formating .select .button.button_theme_islands.button_size_s{
+    line-height: 19px;
+}
+
 .edit__formating .button{
+    padding: 2px 4px;
     margin-right: 5px;
     background-color: #fff;
     border-radius: 0;
