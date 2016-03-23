@@ -11,3 +11,11 @@
     color: #a6a6a6;
     text-decoration: none;
 }
+
+.menu .menu-item_theme_islands{
+    color: #000;
+}
+
+.menu .menu-item_theme_islands.menu-item_checked.menu-item_disabled{
+    background: none;
+}

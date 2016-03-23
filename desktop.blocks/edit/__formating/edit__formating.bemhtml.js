@@ -1,69 +1,58 @@
 block('edit').elem('formating').content()(
-    function(){
+    function () {
         return [
-            {
-                block: 'button',
-                mods: { 'fa-icon': 'boldd'}
-            },
-            {
-                block: 'button',
-                mods: { 'fa-icon': 'italic'}
-            },
-            {
-                block: 'button',
-                mods: { 'fa-icon': 'underline'}
-            },
-            {
-                block: 'button',
-                mods: { type: 'delim', 'fa-icon': 'strikethrough'}
-            },
-            {
-                block: 'button',
-                mods: { 'fa-icon': 'list-ul'}
-            },
-            {
-                block: 'button',
-                mods: { type: 'delim', 'fa-icon': 'list-ol'}
-            },
-            {
-                block: 'button',
-                mods: { 'fa-icon': 'outdent'}
-            },
-            {
-                block: 'button',
-                mods: { type: 'delim', 'fa-icon': 'indent'}
-            },
-            {
-                block: 'button',
-                mods: { 'fa-icon': 'align-left'}
-            },
-            {
-                block: 'button',
-                mods: { 'fa-icon': 'align-center'}
-            },
-            {
-                block: 'button',
-                mods: { 'fa-icon': 'align-justify'}
-            },
-            {
-                block: 'button',
-                mods: { type: 'delim', 'fa-icon': 'align-right'}
-            },
-            {
-                block: 'button',
-                mods: { 'fa-icon': 'linkz'}
-            },
-            {
-                block: 'button',
-                mods: { type: 'delim', 'fa-icon': 'chain-broken'}
-            },
-            {
-                block: 'button',
-                mods: { 'fa-icon': 'picture-o'}
-            },
-            {
-                tag: 'br'
-            },
+            [
+                {
+                    mods: {'fa-icon': 'boldd'}
+                },
+                {
+                    mods: {'fa-icon': 'italic'}
+                },
+                {
+                    mods: {'fa-icon': 'underline'}
+                },
+                {
+                    mods: {type: 'delim', 'fa-icon': 'strikethrough'}
+                },
+                {
+                    mods: {'fa-icon': 'list-ul'}
+                },
+                {
+                    mods: {type: 'delim', 'fa-icon': 'list-ol'}
+                },
+                {
+                    mods: {'fa-icon': 'outdent'}
+                },
+                {
+                    mods: {type: 'delim', 'fa-icon': 'indent'}
+                },
+                {
+                    mods: {'fa-icon': 'align-left'}
+                },
+                {
+                    mods: {'fa-icon': 'align-center'}
+                },
+                {
+                    mods: {'fa-icon': 'align-justify'}
+                },
+                {
+                    mods: {type: 'delim', 'fa-icon': 'align-right'}
+                },
+                {
+                    mods: {'fa-icon': 'linkz'}
+                },
+                {
+                    mods: {type: 'delim', 'fa-icon': 'chain-broken'}
+                },
+                {
+                    mods: {'fa-icon': 'picture-o'}
+                }
+            ].map(function (item) {
+                return {
+                    block: 'button',
+                    mods: item.mods
+                }
+            }),
             {
                 block: 'select',
                 mods: {mode: 'radio', theme: 'islands', size: 's'},
@@ -80,43 +69,39 @@ block('edit').elem('formating').content()(
                     {val: 9, text: '2^n'}
                 ]
             },
-            {
-                block: 'button',
-                mods: { 'fa-icon': 'copy'}
-            },
-            {
-                block: 'button',
-                mods: { 'fa-icon': 'cut'}
-            },
-            {
-                block: 'button',
-                mods: { type: 'delim', 'fa-icon': 'clipboard'}
-            },
-            {
-                block: 'button',
-                mods: { 'fa-icon': 'print'}
-            },
-            {
-                block: 'button',
-                mods: { type: 'delim', 'fa-icon': 'fontz'}
-            },
-            {
-                block: 'button',
-                mods: { 'fa-icon': 'superscript'}
-            },
-            {
-                block: 'button',
-                mods: { type: 'delim', 'fa-icon': 'subscript'}
-            },
-            {
-                block: 'button',
-                mods: { 'fa-icon': 'film'}
-            },
-            {
-                block: 'button',
-                mods: { 'fa-icon': 'tablez'}
-            }
-
+            [
+                {
+                    mods: {'fa-icon': 'copy'}
+                },
+                {
+                    mods: {'fa-icon': 'cut'}
+                },
+                {
+                    mods: {type: 'delim', 'fa-icon': 'clipboard'}
+                },
+                {
+                    mods: {'fa-icon': 'print'}
+                },
+                {
+                    mods: {type: 'delim', 'fa-icon': 'fontz'}
+                },
+                {
+                    mods: {'fa-icon': 'superscript'}
+                },
+                {
+                    mods: {type: 'delim', 'fa-icon': 'subscript'}
+                },
+                {
+                    mods: {'fa-icon': 'film'}
+                },
+                {
+                    mods: {'fa-icon': 'tablez'}
+                }].map(function (item) {
+                return {
+                    block: 'button',
+                    mods: item.mods
+                }
+            })
         ]
     }
 )
