@@ -4,15 +4,16 @@ block('comments')(
         function () {
             return [
                 {
-                    block: 'control-group',
-                    mix: {block: 'comments', elem: 'control-group'},
-                    content: ['Все', 'Ожидающие(0)', 'Одобренные(0)', 'Спам', 'Корзина(0)'].map(function (service) {
-                        return {
-                            block: 'button',
-                            mods: {theme: 'islands', size: 'l', focused: service === 'Все'},
-                            text: service
-                        };
-                    })
+                    block : 'radio-group',
+                    mods : { theme : 'islands', size : 'm', type : 'button' },
+                    val: 1,
+                    options : [
+                        { val : 1, text : 'Все' },
+                        { val : 2, text : 'Ожидающие(0)' },
+                        { val : 3, text : 'Одобренные(0)' },
+                        { val : 4, text : 'Спам' },
+                        { val : 5, text : 'Корзина(0)' }
+                    ]
                 },
                 {
                     elem: 'layout',

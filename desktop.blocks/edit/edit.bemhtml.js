@@ -8,7 +8,8 @@ block('edit').content()(
                 elem: 'formating'
             },
             {
-                elem: 'body'
+                elem: 'body',
+                mods: this.ctx.mods
             }
         ]
     }

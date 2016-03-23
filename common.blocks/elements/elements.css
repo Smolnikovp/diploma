@@ -1,0 +1,41 @@
+.elements{
+    width: calc(100% + 20px);
+}
+
+.elements .layout__left,
+.elements .layout__right{
+    margin-right: 20px;
+}
+
+.elements .layout__left{
+    flex: 1 1 300px;
+}
+
+.elements .layout__right{
+    flex: 3 1 700px;
+}
+
+.elements .layout__left .radio-group{
+    width: 100%;
+    background-color: #fff;
+}
+
+.elements .layout__left .radio-group label{
+    display: block;
+    width: 100%;
+}
+
+.elements .layout__left .radio-group .button{
+    width: 100%;
+    color: #000;
+}
+
+.elements .layout__left .radio-group .button .button__text{
+    font-size: 18px;
+    padding: 10px;
+}
+
+.elements .layout__left .radio-group .button_hovered .button__text{
+    text-decoration: none;
+    color: #00bfff;
+}

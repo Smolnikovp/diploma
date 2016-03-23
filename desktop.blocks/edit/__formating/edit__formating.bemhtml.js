@@ -54,6 +54,9 @@ block('edit').elem('formating').content()(
                 }
             }),
             {
+                tag: 'br'
+            },
+            {
                 block: 'select',
                 mods: {mode: 'radio', theme: 'islands', size: 's'},
                 val: 1,

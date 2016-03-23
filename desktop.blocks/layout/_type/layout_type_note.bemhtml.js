@@ -8,7 +8,8 @@ block('layout').mod( 'type', 'note').content()(
                         block: 'header-input'
                     },
                     {
-                        block: 'edit'
+                        block: 'edit',
+                        mods: { note: true }
                     }
                 ]
             },

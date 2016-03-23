@@ -9,6 +9,15 @@
     margin-right: 15px;
 }
 
+.comments .radio-group .button{
+    font-size: 18px;
+    padding: 3px 5px;
+}
+
+.comments__layout.layout{
+    justify-content: flex-start;
+}
+
 .comments__layout > *{
     margin: 25px 50px 10px 0;
 }

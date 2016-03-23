@@ -1,3 +1,7 @@
+.edit__head{
+    padding-left: 15px;
+}
+
 .edit__head .control-group{
     float: right;
 }
