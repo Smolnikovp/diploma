@@ -10,3 +10,12 @@
 .insight .table__row{
     flex: 1 0 250px;
 }
+
+.insight_type_open{
+    height: auto;
+}
+
+.insight_type_close{
+    height: 35px;
+    overflow: hidden;
+}

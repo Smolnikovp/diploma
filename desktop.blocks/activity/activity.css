@@ -10,3 +10,12 @@
 .activity > *{
     padding: 10px 20px;
 }
+
+.activity_type_open{
+    height: auto;
+}
+
+.activity_type_close{
+    height: 35px;
+    overflow: hidden;
+}

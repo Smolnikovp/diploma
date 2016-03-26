@@ -10,3 +10,12 @@
 .fast-template > *{
     padding: 10px 20px;
 }
+
+.fast-template_type_open{
+    height: auto;
+}
+
+.fast-template_type_close{
+    height: 35px;
+    overflow: hidden;
+}

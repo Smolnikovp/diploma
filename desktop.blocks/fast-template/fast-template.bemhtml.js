@@ -1,12 +1,15 @@
-block('fast-template').content()(
-    function(){
-        return [
-            {
-                elem: 'head'
-            },
-            {
-                elem: 'body'
-            }
-        ]
-    }
+block('fast-template')(
+    js()(true),
+    content()(
+        function(){
+            return [
+                {
+                    elem: 'head'
+                },
+                {
+                    elem: 'body'
+                }
+            ]
+        }
+    )
 )

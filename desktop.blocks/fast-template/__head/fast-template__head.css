@@ -2,3 +2,7 @@
     border-bottom: 1px solid #a7a7a7;
     font-weight: bold;
 }
+
+.fast-template__head .link{
+    outline: none;
+}

@@ -9,7 +9,7 @@
 }
 
 .activity__body .table__row:first-child{
-    flex: 1 0 0;
+    flex: 0 1 90px;
     margin-left: 10px;
 }
 
