@@ -3,14 +3,12 @@ modules.define('welcome', ['i-bem__dom'], function(provide, BEMDOM) {
         onSetMod: {
             js: {
                 'inited': function() {
-                    //console.log(
-                    //    this.findElem('heading')
-                    //)
-                    //console.log(
-                    //
-                    //)
-                    this.findBlockInside('link').bindTo('pointerclick', function () {
-                        this.setMod('hui', this.getMod('hui') == 'close' ? 'open' : 'close')
+                    var welcome = this;
+                    var link = this.findBlockInside('link');
+                    link.setMod( 'type', 'open');
+                    link.bindTo('pointerclick', function () {
+                        this.setMod('type', this.getMod('type') == 'close' ? 'open' : 'close');
+                        welcome.setMod( 'type', 'close');
                     });
                 }
             }

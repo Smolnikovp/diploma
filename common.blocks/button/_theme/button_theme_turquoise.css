@@ -7,3 +7,7 @@
     cursor: pointer;
     background-color: #00a6de;
 }
+
+.button_theme_turquoise .link{
+    color: #fff;
+}

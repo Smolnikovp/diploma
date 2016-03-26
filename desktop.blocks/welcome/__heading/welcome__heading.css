@@ -10,3 +10,9 @@
     margin: 0;
     font-size: 25px;
 }
+
+.welcome__heading .link_type_open,
+.welcome__heading .link_type_close{
+    top: 15px;
+    right: 25px;
+}

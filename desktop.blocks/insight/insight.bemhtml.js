@@ -1,13 +1,18 @@
 block('insight').content()(
-    function(){
+    function () {
         return [
             {
                 elem: 'head',
-                content: {
-                    block: 'text',
-                    mods: {'fa-icon': 'caret-up'},
-                    content: 'На виду'
-                }
+                content: [
+                    {
+                        block: 'text',
+                        content: 'На виду'
+                    },
+                    {
+                        block: 'link',
+                        mods: { type: 'close', 'fa-icon': 'caret-up'}
+                    }
+                ]
             },
             {
                 elem: 'body'

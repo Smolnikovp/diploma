@@ -14,7 +14,7 @@ block('welcome')(
                         {
                             block: 'link',
                             url: '#',
-                            mods: {type: 'close', 'fa-icon': 'times-circle', theme: 'turquoise'},
+                            mods: {'fa-icon': 'times-circle', theme: 'turquoise'},
                             content: 'Закрыть'
                         }
                     ]
@@ -42,7 +42,12 @@ block('welcome')(
                                         {
                                             block: 'button',
                                             mods: {theme: 'turquoise', type: 'large'},
-                                            text: 'Настройте свой сайт'
+                                            content: {
+                                                block: 'link',
+                                                url: '../../desktop.bundles/options/options.html',
+                                                content: 'Настройте свой сайт'
+                                            }
+
                                         },
                                         {
                                             block: 'text',

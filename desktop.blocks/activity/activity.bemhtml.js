@@ -3,11 +3,16 @@ block('activity').content()(
         return [
             {
                 elem: 'head',
-                content: {
-                    block: 'text',
-                    mods: {'fa-icon': 'caret-up'},
-                    content: 'Активность'
-                }
+                content: [
+                    {
+                        block: 'text',
+                        content: 'Активность'
+                    },
+                    {
+                        block: 'link',
+                        mods: {type: 'close', 'fa-icon': 'caret-up'}
+                    }
+                ]
             },
             {
                 elem: 'recently-add'

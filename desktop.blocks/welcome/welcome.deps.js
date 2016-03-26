@@ -7,6 +7,7 @@
         {block: 'text'},
         {block: 'link'},
         {block: 'link', mods: {type: 'close'}},
+        {block: 'link', mods: {type: 'open'}},
         {block: 'button', mods: {theme: 'turquoise', type: 'large'}},
         {block: 'table'},
         {block: 'table', elem: 'col'},
