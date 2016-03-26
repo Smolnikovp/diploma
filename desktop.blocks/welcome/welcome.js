@@ -10,7 +10,7 @@ modules.define('welcome', ['i-bem__dom'], function(provide, BEMDOM) {
                     //
                     //)
                     this.findBlockInside('link').bindTo('pointerclick', function () {
-                        console.log(this)
+                        this.setMod('hui', this.getMod('hui') == 'close' ? 'open' : 'close')
                     });
                 }
             }
