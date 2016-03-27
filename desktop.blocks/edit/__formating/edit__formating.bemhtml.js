@@ -1,6 +1,6 @@
 block('edit').elem('formating').content()(
     function () {
-        return this.mod == 'visual' ? [
+        return this.mods ? [
             [
                 {
                     mods: {'fa-icon': 'boldd'}
@@ -108,63 +108,51 @@ block('edit').elem('formating').content()(
         ] : [
             {
                 block: 'button',
-                mods: {theme: 'white', 'fa-icon': 'boldd'}
+                mods: { 'fa-icon': 'boldd'}
             },
             {
                 block: 'button',
-                mods: {theme: 'white', 'fa-icon': 'italic'}
+                mods: { 'fa-icon': 'italic'}
             },
             {
                 block: 'button',
-                mods: {theme: 'white', 'fa-icon': 'underline'}
+                mods: { 'fa-icon': 'underline'}
             },
             {
                 block: 'button',
-                mods: { type: 'delim', theme: 'white', 'fa-icon': 'strikethrough'}
+                text: 'b-quote'
             },
             {
                 block: 'button',
-                mods: {theme: 'white', 'fa-icon': 'list-ul'}
+                mods: { type: 'delim',  'fa-icon': 'strikethrough'}
             },
             {
                 block: 'button',
-                mods: { type: 'delim', theme: 'white', 'fa-icon': 'list-ol'}
+                text: 'ins'
             },
             {
                 block: 'button',
-                mods: {theme: 'white', 'fa-icon': 'outdent'}
+                text: 'img'
             },
             {
                 block: 'button',
-                mods: { type: 'delim', theme: 'white', 'fa-icon': 'indent'}
+                text: 'ol'
             },
             {
                 block: 'button',
-                mods: {theme: 'white', 'fa-icon': 'align-left'}
+                text: 'ul'
             },
             {
                 block: 'button',
-                mods: {theme: 'white', 'fa-icon': 'align-center'}
+                text: 'li'
             },
             {
                 block: 'button',
-                mods: {theme: 'white', 'fa-icon': 'align-justify'}
+                text: 'code'
             },
             {
                 block: 'button',
-                mods: { type: 'delim', theme: 'white', 'fa-icon': 'align-right'}
-            },
-            {
-                block: 'button',
-                mods: {theme: 'white', 'fa-icon': 'linkz'}
-            },
-            {
-                block: 'button',
-                mods: { type: 'delim', theme: 'white', 'fa-icon': 'chain-broken'}
-            },
-            {
-                block: 'button',
-                mods: { type: 'delim', theme: 'white', 'fa-icon': 'picture-o'}
+                text: 'поиск'
             }
         ]
     }

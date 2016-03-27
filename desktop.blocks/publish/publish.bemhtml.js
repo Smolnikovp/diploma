@@ -5,7 +5,6 @@ block('publish').content()(
                 elem: 'head',
                 content: {
                     block: 'text',
-                    mods: {'fa-icon': 'caret-up'},
                     content: 'Опубликовать'
                 }
             },

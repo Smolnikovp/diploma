@@ -22,6 +22,7 @@
     border: 1px solid #d7d7d7;
 }
 
+.edit__formating .button .button__text,
 .edit__formating *[class*='fa-icon']:before {
     margin: 0 10px;
 }
