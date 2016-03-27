@@ -3,7 +3,7 @@ block('fast-template')(
     def()(function(){
         var mods = this.mods;
 
-        mods.type = mods.type ? mods.type : 'open';
+        mods.open = mods.open ? mods.open : 'yes';
 
         return applyNext();
     }),
@@ -11,7 +11,20 @@ block('fast-template')(
         function(){
             return [
                 {
-                    elem: 'head'
+                    elem: 'head',
+                    content: [
+                        {
+                            block: 'text',
+                            content: 'Быстрый черновик'
+                        },
+                        {
+                            block: 'link',
+                            mods: {
+                                open: this.mods.open,
+                                'fa-icon': 'caret-up'
+                            }
+                        }
+                    ]
                 },
                 {
                     elem: 'body'

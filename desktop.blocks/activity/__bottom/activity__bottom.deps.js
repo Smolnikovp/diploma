@@ -1,5 +1,5 @@
 ({
     mustDeps: [
-        { block: 'control-group', mods: { type: 'activity'}}
+        { block: 'control-group', mods: { type: 'activity' }}
     ]
 })

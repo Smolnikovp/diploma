@@ -6,9 +6,9 @@ modules.define('fast-template', ['i-bem__dom'], function(provide, BEMDOM) {
                     var fasttemplate = this;
                     var link = this.findBlockInside('link');
                     link.bindTo('pointerclick', function () {
-                        (fasttemplate.getMod('type') == 'open' && this.getMod('type') == 'open') ? [
-                            this.setMod('type', 'close') && fasttemplate.setMod('type', 'close')] : [
-                            this.setMod('type', 'open') && fasttemplate.setMod('type', 'open')
+                        (fasttemplate.getMod('open') == 'yes' && this.getMod('open') == 'yes') ? [
+                            this.setMod('open', 'no') && fasttemplate.setMod('open', 'no')] : [
+                            this.setMod('open', 'yes') && fasttemplate.setMod('open', 'yes')
                         ];
                     });
                 }

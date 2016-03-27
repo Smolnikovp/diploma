@@ -1,13 +1,13 @@
-.link_type_open{
+.link_open_no{
     position: absolute;
     top: 10px;
     right: 20px;
 }
 
-.link_type_open:before{
+.link_open_no:before{
     color: #777777;
 }
 
-.link_type_open:hover{
+.link_open_no:hover{
     cursor: pointer;
 }

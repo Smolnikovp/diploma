@@ -3,7 +3,7 @@ block('activity')(
     def()(function(){
         var mods = this.mods;
 
-        mods.type = mods.type ? mods.type : 'open';
+        mods.open = mods.open ? mods.open : 'yes';
 
         return applyNext();
     }),
@@ -20,7 +20,7 @@ block('activity')(
                         {
                             block: 'link',
                             mods: {
-                                type: this.mods.type,
+                                open: this.mods.open,
                                 'fa-icon': 'caret-up'
                             }
                         }

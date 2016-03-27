@@ -12,6 +12,8 @@
         { block: 'link', mods:{ theme: 'turquoise', 'fa-icon': 'commentz' }},
         { block: 'link', mods:{ theme: 'turquoise', 'fa-icon': 'thumb-tack' }},
         { block: 'link', mods:{ theme: 'turquoise', 'fa-icon': 'file' }},
-        { block: 'link', mods:{ type: 'inline', theme: 'turquoise'}}
+        { block: 'link', mods:{ type: 'inline', theme: 'turquoise'}},
+        { block: 'link', mods:{ open: 'yes' }},
+        { block: 'link', mods:{ open: 'no' }}
     ]
 })

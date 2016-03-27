@@ -6,11 +6,8 @@
         { block: 'activity', elem: 'bottom'}
     ],
     shouldDeps: [
-        { block: 'table'},
-        { block: 'table', elem: 'row' },
-        { block: 'table', elem: 'col' },
-        { block: 'image'},
-        { block: 'link', mods:{ type: 'inline', theme: 'turquoise'}},
-        { block: 'control-group', mods: {type: 'activity'}}
+        { block: 'link', mods:{ type: 'inline', theme: 'turquoise' }},
+        { block: 'link', mods:{ open: 'yes' }},
+        { block: 'link', mods:{ open: 'no' }}
     ]
 })

@@ -11,11 +11,11 @@
     padding: 10px 20px;
 }
 
-.activity_type_open{
+.activity_open_yes{
     height: auto;
 }
 
-.activity_type_close{
+.activity_open_no{
     height: 35px;
     overflow: hidden;
 }

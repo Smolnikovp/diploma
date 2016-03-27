@@ -6,9 +6,9 @@ modules.define('insight', ['i-bem__dom'], function(provide, BEMDOM) {
                     var insight = this;
                     var link = this.findBlockInside('link');
                     link.bindTo('pointerclick', function () {
-                        (insight.getMod('type') == 'open' && this.getMod('type') == 'open') ? [
-                            this.setMod('type', 'close') && insight.setMod('type', 'close')] : [
-                            this.setMod('type', 'open') && insight.setMod('type', 'open')
+                        (insight.getMod('open') == 'yes' && this.getMod('open') == 'yes') ? [
+                            this.setMod('open', 'no') && insight.setMod('open', 'no')] : [
+                            this.setMod('open', 'yes') && insight.setMod('open', 'yes')
                         ];
                     });
                 }

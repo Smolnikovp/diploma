@@ -11,11 +11,11 @@
     padding: 10px 20px;
 }
 
-.fast-template_type_open{
+.fast-template_open_yes{
     height: auto;
 }
 
-.fast-template_type_close{
+.fast-template_open_no{
     height: 35px;
     overflow: hidden;
 }

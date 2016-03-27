@@ -11,11 +11,11 @@
     flex: 1 0 250px;
 }
 
-.insight_type_open{
+.insight_open_yes{
     height: auto;
 }
 
-.insight_type_close{
+.insight_open_no{
     height: 35px;
     overflow: hidden;
 }

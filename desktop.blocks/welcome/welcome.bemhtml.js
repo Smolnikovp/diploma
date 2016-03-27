@@ -1,5 +1,12 @@
 block('welcome')(
     js()(true),
+    def()(function(){
+        var mods = this.mods;
+
+        mods.open = mods.open ? mods.open : 'yes';
+
+        return applyNext();
+    }),
     content()(
         function () {
             return [
@@ -14,7 +21,7 @@ block('welcome')(
                         {
                             block: 'link',
                             url: '#',
-                            mods: {'fa-icon': 'times-circle', theme: 'turquoise'},
+                            mods: {'fa-icon': 'times-circle', theme: 'turquoise', open: this.mods.open},
                             content: 'Закрыть'
                         }
                     ]

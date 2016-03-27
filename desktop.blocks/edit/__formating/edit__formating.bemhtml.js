@@ -1,6 +1,6 @@
 block('edit').elem('formating').content()(
     function () {
-        return this.ctx.mod == 'visual' ? [
+        return this.mod == 'visual' ? [
             [
                 {
                     mods: {'fa-icon': 'boldd'}

@@ -1,4 +1,5 @@
 block('edit').content()(
+    mod( 'type', 'visual' ),
     function(){
         return [
             {
