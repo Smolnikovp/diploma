@@ -7,7 +7,10 @@ block('fast-template').elem('head').content()(
             },
             {
                 block: 'link',
-                mods: {type: 'close', 'fa-icon': 'caret-up'}
+                mods: {
+                    type: this.mods.type,
+                    'fa-icon': 'caret-up'
+                }
             }
         ]
     }

@@ -5,8 +5,6 @@ modules.define('insight', ['i-bem__dom'], function(provide, BEMDOM) {
                 'inited': function() {
                     var insight = this;
                     var link = this.findBlockInside('link');
-                    link.setMod( 'type', 'open');
-                    insight.setMod( 'type', 'open');
                     link.bindTo('pointerclick', function () {
                         (insight.getMod('type') == 'open' && this.getMod('type') == 'open') ? [
                             this.setMod('type', 'close') && insight.setMod('type', 'close')] : [

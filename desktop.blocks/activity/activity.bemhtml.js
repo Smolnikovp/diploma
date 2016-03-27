@@ -1,5 +1,12 @@
 block('activity')(
     js()(true),
+    def()(function(){
+        var mods = this.mods;
+
+        mods.type = mods.type ? mods.type : 'open';
+
+        return applyNext();
+    }),
     content()(
         function () {
             return [
@@ -12,7 +19,10 @@ block('activity')(
                         },
                         {
                             block: 'link',
-                            mods: {type: 'close', 'fa-icon': 'caret-up'}
+                            mods: {
+                                type: this.mods.type,
+                                'fa-icon': 'caret-up'
+                            }
                         }
                     ]
                 },
