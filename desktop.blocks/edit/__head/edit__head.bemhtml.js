@@ -25,6 +25,7 @@ block('edit').elem('head')(
                 {
                     block: 'radio-group',
                     mods: { type: 'button', theme: 'islands', size: 'l' },
+                    name: 'edit-radio',
                     val: 1,
                     options: [
                         {val: 1, text: 'Визуально' },

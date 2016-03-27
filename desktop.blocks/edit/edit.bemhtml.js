@@ -1,4 +1,5 @@
 block('edit')(
+    js()(true),
     content()(
         function(){
             return [
