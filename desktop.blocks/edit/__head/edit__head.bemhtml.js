@@ -23,14 +23,14 @@ block('edit').elem('head')(
                     mods: { 'fa-icon': 'star' }
                 },
                 {
-                    block: 'radio-group',
-                    mods: { type: 'button', theme: 'islands', size: 'l' },
-                    name: 'edit-radio',
-                    val: 1,
-                    options: [
-                        {val: 1, text: 'Визуально' },
-                        {val: 2, text: 'HTML' }
-                    ]
+                    block: 'button',
+                    mods: { type: 'html' },
+                    text: 'HTML'
+                },
+                {
+                    block: 'button',
+                    mods: { type: 'visual', focused: true },
+                    text: 'Визуально'
                 }
             ]
         }

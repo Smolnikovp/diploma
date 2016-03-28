@@ -2,8 +2,22 @@
     padding-left: 15px;
 }
 
-.edit__head .control-group{
+.edit__head .button{
+    height: 32px;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid #a7a7a7;
     float: right;
+    background-color: #fff;
+}
+
+.edit__head .button.button_hovered{
+    background-color: #efefef;
+    cursor: pointer;
+}
+
+.edit__head .button.button_focused{
+    background-color: #efefef;
+    color: #00bfff;
 }
 
 .edit__head .control-group .button_theme_islands.button_hovered .button__text{
