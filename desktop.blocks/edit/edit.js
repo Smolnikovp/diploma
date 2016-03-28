@@ -4,15 +4,14 @@ modules.define('edit', ['i-bem__dom'], function (provide, BEMDOM) {
             js: {
                 'inited': function () {
                     var button = this.findBlocksInside('button');
-                    console.log(this);
                     var _this = this;
+
                     button[0].bindTo( 'pointerclick', function () {
-                            console.log(arguments);
-                            //this.findBlockOutside('edit').setMod( 'type', 'html' )
-                    }, this);
+                        _this.setMod(_this.findElem('formating'), 'type', '2' )
+                    });
 
                     button[1].bindTo( 'pointerclick', function () {
-                            //this.findBlockOutside('edit').setMod( 'type', 'visual' )
+                        _this.setMod(_this.findElem('formating'), 'type', '1' )
                     });
                 }
             }
