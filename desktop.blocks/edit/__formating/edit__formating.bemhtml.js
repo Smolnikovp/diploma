@@ -2,8 +2,7 @@ block('edit').elem('formating')(
     content()(
         function () {
             var rtn;
-            console.log(this.mods.type);
-            if (this.mods.type == 'visual') {
+            if (!this.mods.type) {
                 rtn = [
                     [
                         {mods: {'fa-icon': 'boldd'}},
@@ -117,5 +116,6 @@ block('edit').elem('formating')(
             }
             return rtn;
         }
-    )
+    ),
+    js()(true)
 )
