@@ -1,11 +1,11 @@
 block('edit')(
-    def()(function(){
-        var mods = this.mods;
-
-        mods.type = mods.type ? mods.type : 'visual';
-
-        return applyNext();
-    }),
+    //def()(function(){
+    //    var mods = this.mods;
+    //
+    //    mods.type = mods.type ? mods.type : 'visual';
+    //
+    //    return applyNext();
+    //}),
     js()(true),
     content()(
         function(){
