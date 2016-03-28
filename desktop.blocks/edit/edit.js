@@ -15,9 +15,7 @@ modules.define('edit', ['i-bem__dom'], function (provide, BEMDOM) {
                     });
                 }
             }
-        }
-    }));
-    BEMDOM.decl(this.name, {
+        },
         onElemSetMod: {
             'formating': {
                 'type': {
@@ -30,5 +28,5 @@ modules.define('edit', ['i-bem__dom'], function (provide, BEMDOM) {
                 }
             }
         }
-    })
+    }))
 });

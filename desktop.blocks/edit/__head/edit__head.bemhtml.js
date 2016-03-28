@@ -24,12 +24,11 @@ block('edit').elem('head')(
                 },
                 {
                     block: 'button',
-                    mods: { type: 'html' },
                     text: 'HTML'
                 },
                 {
                     block: 'button',
-                    mods: { type: 'visual', focused: true },
+                    mods: {focused: true },
                     text: 'Визуально'
                 }
             ]

@@ -2,7 +2,7 @@ block('edit').elem('formating')(
     content()(
         function () {
             var rtn;
-            if (!this.mods.type) {
+            if (this.mods.type == '1') {
                 rtn = [
                     [
                         {mods: {'fa-icon': 'boldd'}},
