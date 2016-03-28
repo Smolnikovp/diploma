@@ -1,7 +1,28 @@
 block('edit').elem('formating')(
+    js()({
+            ctx: this.ctx
+        }),
     content()(
         function () {
             var rtn;
+            if (this.mods.type == '1') {
+                rtn = [
+                    {
+                        block: 'button',
+                        mods: {'fa-icon': 'boldd'}
+                    }
+                ]
+            } else {
+                rtn = [
+                    {
+                        block: 'button',
+                        mods: {'fa-icon': 'italic'}
+                    }
+                ]
+            }
+
+            return rtn;
+
             if (this.mods.type == '1') {
                 rtn = [
                     [
