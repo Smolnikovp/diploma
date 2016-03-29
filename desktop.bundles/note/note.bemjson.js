@@ -7,7 +7,10 @@ module.exports = {
         {elem: 'css', url: 'note.css'},
         {block: 'font-awesome'}
     ],
-    scripts: [{elem: 'js', url: 'note.js'}],
+    scripts: [
+        {elem: 'js', url: 'note.js'},
+        {elem: 'js', url: 'note.bemhtml.js'}
+    ],
     content: [
         {
             block: 'main-menu'
