@@ -18,6 +18,7 @@ modules.define('edit', ['BEMHTML', 'strings__escape', 'i-bem__dom'], function (p
                 }
             }
         },
+
         onElemSetMod: {
             'formating': {
                 'type': {
@@ -86,56 +87,28 @@ modules.define('edit', ['BEMHTML', 'strings__escape', 'i-bem__dom'], function (p
                     },
                     '2': function (elem, modName, modVal, prevModVal) {
                         BEMDOM.update(elem,
-                            BEMHTML.apply([
-                                {
-                                    block: 'button',
-                                    mods: {'fa-icon': 'boldd'}
-                                },
-                                {
-                                    block: 'button',
-                                    mods: {'fa-icon': 'italic'}
-                                },
-                                {
-                                    block: 'button',
-                                    mods: {'fa-icon': 'underline'}
-                                },
-                                {
-                                    block: 'button',
-                                    text: 'b-quote'
-                                },
-                                {
-                                    block: 'button',
-                                    mods: {type: 'delim', 'fa-icon': 'strikethrough'}
-                                },
-                                {
-                                    block: 'button',
-                                    text: 'ins'
-                                },
-                                {
-                                    block: 'button',
-                                    text: 'img'
-                                },
-                                {
-                                    block: 'button',
-                                    text: 'ol'
-                                },
-                                {
-                                    block: 'button',
-                                    text: 'ul'
-                                },
-                                {
-                                    block: 'button',
-                                    text: 'li'
-                                },
-                                {
-                                    block: 'button',
-                                    text: 'code'
-                                },
-                                {
-                                    block: 'button',
-                                    text: 'поиск'
-                                }
-                            ])
+                            BEMHTML.apply(
+                                [
+                                {mods: {'fa-icon': 'boldd'}},
+                                {mods: {'fa-icon': 'italic'}},
+                                {mods: {'fa-icon': 'underline'}},
+                                {text: 'b-quote'},
+                                {mods: {type: 'delim', 'fa-icon': 'strikethrough'}},
+                                {text: 'ins'},
+                                {text: 'img'},
+                                {text: 'ol'},
+                                {text: 'ul'},
+                                {text: 'li'},
+                                {text: 'code'},
+                                {text: 'поиск'}
+                                ].map(function (item) {
+                                    return {
+                                        block: 'button',
+                                        mods: item.mods,
+                                        text: item.text
+                                    }
+                                })
+                            )
                         )
                     }
                 }

@@ -7,7 +7,11 @@
 
 .edit__formating .select{
     margin: 5px 10px 0 0;
-    width: 150px;
+    width: 175px;
+}
+
+.edit__formating .select .button{
+    padding: 2px 0;
 }
 
 .edit__formating .select .button.button_theme_islands.button_size_s{
@@ -15,16 +19,11 @@
 }
 
 .edit__formating .button{
-    padding: 2px 4px;
+    padding: 2px 10px 2px 15px;
     margin-right: 5px;
     background-color: #fff;
     border-radius: 0;
     border: 1px solid #d7d7d7;
-}
-
-.edit__formating .button .button__text,
-.edit__formating *[class*='fa-icon']:before {
-    margin: 0 10px;
 }
 
 .edit__formating .button:hover{
