@@ -1,4 +1,4 @@
-modules.define('edit', ['BEMHTML', 'strings__escape', 'i-bem__dom'], function (provide, BEMHTML, escape, BEMDOM) {
+modules.define('edit', ['BEMHTML', 'strings__escape', 'i-bem__dom', 'jquery', 'publish'], function (provide, BEMHTML, escape, BEMDOM, $, Publish) {
     provide(BEMDOM.decl(this.name, {
         onSetMod: {
             js: {
@@ -15,6 +15,12 @@ modules.define('edit', ['BEMHTML', 'strings__escape', 'i-bem__dom'], function (p
                     });
 
                     _this.setMod(_this.findElem('formating'), 'type', '1');
+
+                    _this.bindTo('formating', 'pointerclick', function (e) {
+                        if(e.currentTarget != e.target) {
+                            console.log(Publish.test());
+                        }
+                    });
                 }
             }
         },
@@ -25,28 +31,23 @@ modules.define('edit', ['BEMHTML', 'strings__escape', 'i-bem__dom'], function (p
                     '1': function (elem, modName, modVal, prevModVal) {
                         BEMDOM.update(elem,
                             BEMHTML.apply([
-                                [
-                                    {mods: {'fa-icon': 'boldd'}},
-                                    {mods: {'fa-icon': 'italic'}},
-                                    {mods: {'fa-icon': 'underline'}},
-                                    {mods: {type: 'delim', 'fa-icon': 'strikethrough'}},
-                                    {mods: {'fa-icon': 'list-ul'}},
-                                    {mods: {type: 'delim', 'fa-icon': 'list-ol'}},
-                                    {mods: {'fa-icon': 'outdent'}},
-                                    {mods: {type: 'delim', 'fa-icon': 'indent'}},
-                                    {mods: {'fa-icon': 'align-left'}},
-                                    {mods: {'fa-icon': 'align-center'}},
-                                    {mods: {'fa-icon': 'align-justify'}},
-                                    {mods: {type: 'delim', 'fa-icon': 'align-right'}},
-                                    {mods: {'fa-icon': 'linkz'}},
-                                    {mods: {type: 'delim', 'fa-icon': 'chain-broken'}},
-                                    {mods: {'fa-icon': 'picture-o'}}
-                                ].map(function (item) {
-                                    return {
-                                        block: 'button',
-                                        mods: item.mods
-                                    }
-                                }),
+                                this.__self.map([
+                                    ['boldd'],
+                                    ['italic'],
+                                    ['underline'],
+                                    ['strikethrough', true],
+                                    ['list-ul'],
+                                    ['list-ol', true],
+                                    ['outdent'],
+                                    ['indent', true],
+                                    ['align-left'],
+                                    ['align-center'],
+                                    ['align-justify'],
+                                    ['align-right'],
+                                    ['linkz'],
+                                    ['chain-broken', true],
+                                    ['picture-o']
+                                ]),
                                 {
                                     tag: 'br'
                                 },
@@ -66,53 +67,63 @@ modules.define('edit', ['BEMHTML', 'strings__escape', 'i-bem__dom'], function (p
                                         {val: 9, text: '2^n'}
                                     ]
                                 },
-                                [
-                                    { mods: {'fa-icon': 'copy'} },
-                                    { mods: {'fa-icon': 'cut'} },
-                                    { mods: {type: 'delim', 'fa-icon': 'clipboard'} },
-                                    { mods: {'fa-icon': 'print'} },
-                                    { mods: {type: 'delim', 'fa-icon': 'fontz'} },
-                                    { mods: {'fa-icon': 'superscript'} },
-                                    { mods: {type: 'delim', 'fa-icon': 'subscript'} },
-                                    { mods: {'fa-icon': 'film'} },
-                                    { mods: {'fa-icon': 'tablez'} }
-                                ].map(function (item) {
-                                    return {
-                                        block: 'button',
-                                        mods: item.mods
-                                    }
-                                })
+                                this.__self.map([
+                                    ['copy'],
+                                    ['cut'],
+                                    ['clipboard', true],
+                                    ['print'],
+                                    ['fontz', true],
+                                    ['superscript'],
+                                    ['subscript', true],
+                                    ['film'],
+                                    ['tablez']
+                                ])
                             ])
                         );
                     },
                     '2': function (elem, modName, modVal, prevModVal) {
                         BEMDOM.update(elem,
                             BEMHTML.apply(
-                                [
-                                {mods: {'fa-icon': 'boldd'}},
-                                {mods: {'fa-icon': 'italic'}},
-                                {mods: {'fa-icon': 'underline'}},
-                                {text: 'b-quote'},
-                                {mods: {type: 'delim', 'fa-icon': 'strikethrough'}},
-                                {text: 'ins'},
-                                {text: 'img'},
-                                {text: 'ol'},
-                                {text: 'ul'},
-                                {text: 'li'},
-                                {text: 'code'},
-                                {text: 'поиск'}
-                                ].map(function (item) {
-                                    return {
-                                        block: 'button',
-                                        mods: item.mods,
-                                        text: item.text
-                                    }
-                                })
+                                this.__self.map([
+                                    ['boldd'],
+                                    ['italic'],
+                                    ['underline'],
+                                    'b-quote',
+                                    ['strikethrough', true],
+                                    'ins',
+                                    'img',
+                                    'ol',
+                                    'ul',
+                                    'li',
+                                    'code',
+                                    'поиск'
+                                ])
                             )
                         )
                     }
                 }
             }
+        }
+    }, {
+        map: function (arr) {
+            //var rst = [];
+            return arr.map(function (item) {
+                var rtn = {
+                        block: 'button'
+                    }
+
+                if(typeof item == 'string'){
+                    rtn.text = item;
+                    rtn.js = {action: item};
+                } else {
+                    rtn.mods = {
+                        'fa-icon': item[0],
+                        type: item[1] ? 'delim' : ''
+                    }
+                    rtn.js = {action: item[0]};
+                }
+                return rtn
+            })
         }
     }))
 });
